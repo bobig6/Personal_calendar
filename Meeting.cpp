@@ -24,6 +24,36 @@ public:
         setEndHour(endHour);
     }
 
+    //! Default constructor creates empty meeting object
+    Meeting(){
+
+        // Creating sample name and description to give to the set function
+        char* new_name = new char[20];
+        char* new_description = new char[100];
+
+        strcpy(new_name, "Empty");
+        strcpy(new_description, "");
+
+        this->name = new char[strlen(new_name)];
+        this->description = new char[strlen(new_description)];
+        setMeeting(new_name,
+                   new_description,
+                  MyDate(),
+                  MyHour(),
+                  MyHour());
+
+        delete[] new_name;
+        delete[] new_description;
+    }
+
+    //! Copy constructor for the Meeting class
+    Meeting(const Meeting &other){
+        this->name = new char[strlen(other.name)];
+        this->description = new char[strlen(other.description)];
+        setMeeting(other.name, other.description, other.date, other.startHour, other.endHour);
+    }
+
+
     //! Destructor for the Meeting class
     ~Meeting() {
         delete [] name;
@@ -88,6 +118,15 @@ public:
         this->endHour = new_endHour;
     }
 
+    //! Setter for the meeting object. It gets all the arguments and sets them to the current object
+    void setMeeting(char* new_name, char* new_description, const MyDate& new_date, const MyHour& new_startHour, const MyHour& new_endHour){
+        setName(new_name);
+        setDescription(new_description);
+        setDate(new_date);
+        setStartHour(new_startHour);
+        setEndHour(new_endHour);
+    }
+
     /*! A print function for the Meeting class. Includes memory handling for the
      * strings of date, startHour and endHour*/
     void print(){
@@ -105,21 +144,30 @@ public:
 
     /*! Test of initialization with correct values */
     static void initializationTest(){
-        char* name = new char[20];
-        char* description = new char[100];
+        char* test_name = new char[20];
+        char* test_description = new char[100];
 
-        strcpy(name, "Appointment");
-        strcpy(description, "Appointment with the doctor");
+        strcpy(test_name, "Appointment");
+        strcpy(test_description, "Appointment with the doctor");
 
-        Meeting meeting = Meeting(name,
-                                  description,
+        Meeting meeting = Meeting(test_name,
+                                  test_description,
                                   MyDate(24, 10, 2022),
                                   MyHour(10, 15),
                                   MyHour(12, 15));
 
-        delete[] name;
-        delete[] description;
+        delete[] test_name;
+        delete[] test_description;
 
         meeting.print();
+
+        cout << endl << "Testing constructors. Empty meeting: " << endl;
+        Meeting empty = Meeting();
+        empty.print();
+        cout << endl << "Copying the meeting to new one and changing the date: New meeting: " << endl;
+        Meeting empty1 = Meeting(empty);
+        empty1.setDate(MyDate(23, 4, 2024));
+        empty1.print();
+
     }
 };
