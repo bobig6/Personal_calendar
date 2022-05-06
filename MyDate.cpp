@@ -197,4 +197,52 @@ public:
         return !(*this < rhs);
     }
 
+    // SECTION: TESTS-----------------------------------------
+
+    /*! Initializes date1. Then it initializes date2 by copying day1. Then it runs the following tests:
+     * - Date change
+     * - Leap year check
+     * - Not a leap year check
+     * - Wrong date check */
+    static void initializationAndValidationTest(){
+        MyDate date1 = MyDate(31, 10, 2022);
+        cout << "date1: " << date1.getDateAsString() << endl << endl;
+
+        MyDate date2 = MyDate(date1);
+        cout << "date2 is copied from date1 and it's value is: " << date2.getDateAsString() << endl << endl;
+
+        cout << "Changing date to 2022-05-06" << endl;
+        date2.setDate(6, 5, 2022);
+        cout << "date2: " << date2.getDateAsString() << endl << endl;
+
+        cout << "Leap year check 2024-02-29" << endl;
+        date2.setDate(29, 2, 2024);
+        cout << "date2: " << date2.getDateAsString() << endl << endl;
+
+        cout << "Changing the year to 2023. Should throw an error!!!" << endl;
+        try {
+            date2.setYear(2023);
+        } catch (std::invalid_argument const& ex) {
+            cout << "Exception caught: " << ex.what() << endl;
+        }
+        cout << "date2: " << date2.getDateAsString() << endl << endl;
+
+        cout << "Changing date to 10000-13-42. Should throw an error!!!" << endl;
+        try {
+            date2.setDate(42, 13, 10000);
+        } catch (std::invalid_argument const& ex) {
+            cout << "Exception caught: " << ex.what() << endl;
+        }
+        cout << "date2: " << date2.getDateAsString() << endl << endl;
+    }
+
+    /*! Test for all operators. The function accepts two dates and runs tests on the operators of the class. */
+    static void operatorsTest(MyDate date1, MyDate date2){
+        cout << "== : " << ((date1==date2) ? "true" : "false") << endl;
+        cout << "!= : " << ((date1!=date2) ? "true" : "false") << endl;
+        cout << "> : " << ((date1>date2) ? "true" : "false") << endl;
+        cout << "< : " << ((date1<date2) ? "true" : "false") << endl;
+        cout << ">= : " << ((date1>=date2) ? "true" : "false") << endl;
+        cout << "<= : " << ((date1<=date2) ? "true" : "false") << endl;
+    }
 };
