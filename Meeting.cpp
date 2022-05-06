@@ -93,14 +93,12 @@ public:
     void print(){
         cout << "Meeting \"" << name << "\": " << endl;
         cout << "Description: " << description << endl;
-        char* string_date = date.getDateAsString();
-        char* string_start = startHour.getHourAsString();
-        char* string_end = endHour.getHourAsString();
-        cout << "Date: " << string_date << endl;
-        cout << "Time: " << string_start << " - " << string_end << endl;
-        delete [] string_start;
-        delete [] string_end;
-        delete [] string_date;
+        cout << "Date: ";
+        date.print();
+        cout << "Starting hour: ";
+        startHour.print();
+        cout << "Ending hour: ";
+        endHour.print();
     }
 
     // SECTION: TESTS-------------------------------------------------------

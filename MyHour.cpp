@@ -113,6 +113,12 @@ public:
         return str;
     }
 
+    void print(){
+        char* string_hour = getHourAsString();
+        cout <<  string_hour << endl;
+        delete [] string_hour;
+    }
+
     // SECTION: OPERATORS------------------------------------------------
 
     //! Overloading of the = operator
@@ -160,13 +166,13 @@ public:
     //! Test of initialization with input 20:59
     static void initializationTestPositive(){
         MyHour hour = MyHour(20, 59);
-        cout << hour.getHourAsString() << endl;
+        hour.print();
     }
 
     //! Test of initialization with input 30:59
     static void initializationTestNegative(){
         MyHour hour = MyHour(30, 59);
-        cout << hour.getHourAsString() << endl;
+        hour.print();
     }
 
     /*! Test of assignment operator. It creates two MyHour objects, first is empty and the second one
@@ -175,7 +181,7 @@ public:
         MyHour myHour = MyHour();
         MyHour myHour1 = MyHour(1, 3);
         myHour = myHour1;
-        cout << myHour.getHourAsString() << endl;
+        myHour.print();
     }
 
     /*! Test for all operators. The function accepts four numbers and runs tests on the operators of the class.
