@@ -46,8 +46,8 @@ public:
 
     //! Copy constructor for MyHour class
     MyHour(MyHour const &other){
-        setMinutes(other.minutes);
-        setHours(other.hours);
+        setMinutes(other.getMinutes());
+        setHours(other.getHours());
     }
 
 
@@ -86,7 +86,7 @@ public:
     /*! A function for getting the hour in HH:MM format as char*
       - NOTE: The string has to be freed after use
     */
-    char* getHourAsString(){
+    char * getHourAsString() const {
         // Allocating new memory for the string
         char* str = new char[6];
 
@@ -97,6 +97,7 @@ public:
         sprintf(hours_string, "%d", hours);
         sprintf(minutes_string, "%d", minutes);
 
+        strcpy(str, "");
         // Formatting of the string
         if(hours<10){
             strcat(str, "0");
@@ -113,7 +114,7 @@ public:
         return str;
     }
 
-    void print(){
+    void print() const {
         char* string_hour = getHourAsString();
         cout <<  string_hour << endl;
         delete [] string_hour;
@@ -123,17 +124,17 @@ public:
 
     //! Overloading of the = operator
     void operator = (const MyHour& rhs){
-        this->hours = rhs.hours;
-        this->minutes = rhs.minutes;
+        this->hours = rhs.getHours();
+        this->minutes = rhs.getMinutes();
     }
 
     //! Overloading of the < operator
     bool operator<(const MyHour &rhs) const {
-        if (hours < rhs.hours)
+        if (hours < rhs.getHours())
             return true;
-        if (rhs.hours < hours)
+        if (rhs.getHours() < hours)
             return false;
-        return minutes < rhs.minutes;
+        return minutes < rhs.getMinutes();
     }
 
     //! Overloading of the > operator
@@ -153,8 +154,8 @@ public:
 
     //! Overloading of the == operator
     bool operator==(const MyHour &rhs) const {
-        return hours == rhs.hours &&
-               minutes == rhs.minutes;
+        return hours == rhs.getHours() &&
+               minutes == rhs.getMinutes();
     }
 
     //! Overloading of the != operator

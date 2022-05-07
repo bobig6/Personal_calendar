@@ -5,11 +5,11 @@
 using namespace std;
 
 class Meeting{
-    char* name;
-    char* description;
-    MyDate date;
-    MyHour startHour;
-    MyHour endHour;
+    char* name;           //! TEXT: A char array used for containing the name of the meeting
+    char* description;    //! TEXT: A char array used for describing the meeting
+    MyDate date;          //! DATE: A MyDate object used for keeping the date of the meeting
+    MyHour startHour;     //! TIME: A MyHour object containing the starting hour
+    MyHour endHour;       //! TIME: A MyHour object containing the ending hour
 
 public:
     // SECTION: CONSTRUCTORS--------------------------------------------------------
@@ -48,9 +48,9 @@ public:
 
     //! Copy constructor for the Meeting class
     Meeting(const Meeting &other){
-        this->name = new char[strlen(other.name)];
-        this->description = new char[strlen(other.description)];
-        setMeeting(other.name, other.description, other.date, other.startHour, other.endHour);
+        this->name = new char[strlen(other.getName())];
+        this->description = new char[strlen(other.getDescription())];
+        setMeeting(other.getName(), other.getDescription(), other.getDate(), other.getStartHour(), other.getEndHour());
     }
 
 
@@ -140,6 +140,59 @@ public:
         endHour.print();
     }
 
+    // SECTION: OPERATORS---------------------------------------------------
+
+    void operator = (const Meeting& rhs){
+        setMeeting(rhs.getName(), rhs.getDescription(), rhs.getDate(), rhs.getStartHour(), getEndHour());
+    }
+
+    /*! Equality operator for the Meeting class.
+     * Compares two meetings by all arguments. */
+    bool operator==(const Meeting &rhs) const {
+        return name == rhs.getName() &&
+               description == rhs.getDescription() &&
+               date == rhs.getDate() &&
+               startHour == rhs.getStartHour() &&
+               endHour == rhs.getEndHour();
+    }
+
+    /*! Overloading of the < operator.
+     * It compares on date, startHour and endHour in this order*/
+    bool operator<(const Meeting &rhs) const {
+        if (date < rhs.getDate())
+            return true;
+        if (rhs.getDate() < date)
+            return false;
+        if (startHour < rhs.getStartHour())
+            return true;
+        if (rhs.getStartHour() < startHour)
+            return false;
+        return endHour < rhs.getEndHour();
+
+    }
+
+    /*! Overloading of the > operator. */
+    bool operator>(const Meeting &rhs) const {
+        return rhs < *this;
+    }
+
+    /*! Overloading of the <= operator. */
+    bool operator<=(const Meeting &rhs) const {
+        return !(rhs < *this);
+    }
+
+    /*! Overloading of the >= operator. */
+    bool operator>=(const Meeting &rhs) const {
+        return !(*this < rhs);
+    }
+
+    /*! Overloading of the != operator. */
+    bool operator!=(const Meeting &rhs) const {
+        return !(rhs == *this);
+    }
+
+
+
     // SECTION: TESTS-------------------------------------------------------
 
     /*! Test of initialization with correct values */
@@ -169,5 +222,15 @@ public:
         empty1.setDate(MyDate(23, 4, 2024));
         empty1.print();
 
+    }
+
+    /*! Test for all operators. The function accepts two meetings and runs tests on the operators of the class. */
+    static void operatorsTest(const Meeting& meeting1, const Meeting& meeting2){
+        cout << "== : " << ((meeting1==meeting2) ? "true" : "false") << endl;
+        cout << "!= : " << ((meeting1!=meeting2) ? "true" : "false") << endl;
+        cout << "> : " << ((meeting1>meeting2) ? "true" : "false") << endl;
+        cout << "< : " << ((meeting1<meeting2) ? "true" : "false") << endl;
+        cout << ">= : " << ((meeting1>=meeting2) ? "true" : "false") << endl;
+        cout << "<= : " << ((meeting1<=meeting2) ? "true" : "false") << endl;
     }
 };

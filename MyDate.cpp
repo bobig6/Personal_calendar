@@ -62,7 +62,7 @@ public:
 
     //! Copy constructor for MyDate class
     MyDate(MyDate const &other){
-        setDate(other.day, other.month, other.year);
+        setDate(other.getDay(), other.getMonth(), other.getYear());
     }
 
     // SECTION: GETTERS AND SETTERS------------------------------------------------
@@ -119,7 +119,7 @@ public:
     /*! A function for getting the hour in HH:MM format as char*
       - NOTE: The string has to be freed after use
     */
-    char* getDateAsString(){
+    char * getDateAsString() const {
         // Allocating new memory for the string
         char* str = new char[11];
 
@@ -133,7 +133,7 @@ public:
         sprintf(year_string, "%d", year);
 
         // Formatting of the string
-        strcat(str, year_string);
+        strcpy(str, year_string);
         strcat(str, "-");
 
         if(month < 10){
@@ -150,7 +150,7 @@ public:
         return str;
     }
 
-    void print(){
+    void print() const {
         char* string_date = getDateAsString();
         cout <<  string_date << endl;
         delete [] string_date;
@@ -160,14 +160,14 @@ public:
 
     //! Overloading of the = operator
     void operator = (const MyDate& rhs){
-        setDate(rhs.day, rhs.month, rhs.year);
+        setDate(rhs.getDay(), rhs.getMonth(), rhs.getYear());
     }
 
     //! Overloading of the == operator
     bool operator==(const MyDate &rhs) const {
-        return day == rhs.day &&
-               month == rhs.month &&
-               year == rhs.year;
+        return day == rhs.getDay() &&
+               month == rhs.getMonth() &&
+               year == rhs.getYear();
     }
 
     //! Overloading of the != operator
@@ -177,15 +177,15 @@ public:
 
     //! Overloading of the < operator
     bool operator<(const MyDate &rhs) const {
-        if (year < rhs.year)
+        if (year < rhs.getYear())
             return true;
-        if (rhs.year < year)
+        if (rhs.getYear() < year)
             return false;
-        if (month < rhs.month)
+        if (month < rhs.getMonth())
             return true;
-        if (rhs.month < month)
+        if (rhs.month < getMonth())
             return false;
-        return day < rhs.day;
+        return day < rhs.getDay();
     }
 
     //! Overloading of the > operator
@@ -254,7 +254,7 @@ public:
     }
 
     /*! Test for all operators. The function accepts two dates and runs tests on the operators of the class. */
-    static void operatorsTest(MyDate date1, MyDate date2){
+    static void operatorsTest(const MyDate& date1, const MyDate& date2){
         cout << "== : " << ((date1==date2) ? "true" : "false") << endl;
         cout << "!= : " << ((date1!=date2) ? "true" : "false") << endl;
         cout << "> : " << ((date1>date2) ? "true" : "false") << endl;
