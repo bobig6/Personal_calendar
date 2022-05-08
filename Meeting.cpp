@@ -36,12 +36,15 @@ public:
 
         this->name = new char[strlen(new_name)];
         this->description = new char[strlen(new_description)];
+
+        // Setting the sample meeting parameters
         setMeeting(new_name,
                    new_description,
                   MyDate(),
                   MyHour(),
                   MyHour());
 
+        // Deleting the sample name and description
         delete[] new_name;
         delete[] new_description;
     }
@@ -143,7 +146,7 @@ public:
     // SECTION: OPERATORS---------------------------------------------------
 
     void operator = (const Meeting& rhs){
-        setMeeting(rhs.getName(), rhs.getDescription(), rhs.getDate(), rhs.getStartHour(), getEndHour());
+        setMeeting(rhs.getName(), rhs.getDescription(), rhs.getDate(), rhs.getStartHour(), rhs.getEndHour());
     }
 
     /*! Equality operator for the Meeting class.
