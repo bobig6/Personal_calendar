@@ -120,6 +120,17 @@ public:
         return j;
     }
 
+    int getAllByWordInName(Meeting* newMeetingList, char* word){
+        int j = 0;
+        for (int i = 0; i < current; ++i) {
+            if(strstr(meetingList[i].getName(), word) != NULL){
+                newMeetingList[j] = meetingList[i];
+                j++;
+            }
+        }
+        return j;
+    }
+
     //! Setter for the meeting list
     void setMeetingList(Meeting *newMeetingList, int new_current, int new_size) {
         delete [] this->meetingList;
@@ -138,6 +149,21 @@ public:
     void setSize(int new_size) {
         this->size = new_size;
     }
+
+    //! Returns the earliest meeting found in the calendar
+    Meeting getEarliestMeeting(){
+        // If the array is empty throws exception
+        if(current <= 0) throw std::invalid_argument( "Meeting list is empty so minimal date cannot be found" );
+        // Sets the first element as minimal
+        Meeting* min = &meetingList[0];
+        // Goes through all elements and if it finds an element that is smaller it sets it as a minimal
+        for (int i = 0; i < current; ++i) {
+            if(meetingList[i] < *min) min = &meetingList[i];
+        }
+        return *min;
+    }
+
+    // SECTION: HELPER FUNCTIONS----------------------------------------------------------
 
     //! A function to add a new meeting to the meeting list. Resizes the list if necessary
     void addMeeting(const Meeting& meeting){
@@ -170,6 +196,7 @@ public:
         }
             return false;
     }
+
 
     //! A function to print the class
     void print(){
@@ -211,6 +238,24 @@ public:
             removeMeeting(buffer[i]);
         }
         delete [] buffer;
+    }
+
+    PersonalCalendar getDailyProgram(const MyDate& date){
+        PersonalCalendar buffer = PersonalCalendar(*this);
+        PersonalCalendar result = PersonalCalendar();
+
+        Meeting min;
+
+        for (int i = 0; i < buffer.current; ++i) {
+            min = buffer.getEarliestMeeting();
+            if(min.getDate() == date){
+                result.addMeeting(min);
+            }
+            buffer.removeMeeting(min);
+        }
+
+        return result;
+
     }
 
     // SECTION: TESTS---------------------------------------------------------
@@ -265,15 +310,26 @@ public:
 
         cout << "Getting the meeting with name pin: " << endl;
         personalCalendar.getByName((char*)"pin").print();
-        cout << endl;
+        cout << "------------------------------------------------" << endl;
+        cout << "Getting all meetings which name contains Appointment" << endl;
+
+        // Creating new personal calendar
+        PersonalCalendar personalCalendar2 = PersonalCalendar();
+        // Getting all the words and putting them in the personal calendar's array
+        int p2_size = personalCalendar.getAllByWordInName(personalCalendar2.getMeetingList(), (char*)"Appointment");
+        // Setting the current element number
+        personalCalendar2.setCurrent(p2_size);
+        personalCalendar2.print();
+
+        cout << "------------------------------------------------" << endl;
         cout << "Getting the meeting with date 2022-02-04: " << endl;
         personalCalendar.getByDate(MyDate(4, 2, 2022)).print();
-        cout << endl;
+        cout << "------------------------------------------------" << endl;
         cout << "Getting the first meeting containing the word \"with\" in it's description:" << endl;
         personalCalendar.getFirstByWordInDescription((char*)"with").print();
 
-        cout << endl;
-        cout << "Getting all words containing the word \"with\" in it's description and putting it into a calendar:" << endl;
+        cout << "------------------------------------------------" << endl;
+        cout << "Getting all meetings containing the word \"with\" in it's description and putting it into a calendar:" << endl;
         // Creating new personal calendar
         PersonalCalendar personalCalendar1 = PersonalCalendar();
         // Getting all the words and putting them in the personal calendar's array
@@ -353,6 +409,41 @@ public:
         personalCalendar.addMeeting(meeting2);
         personalCalendar.removeAllMeetingsWithWordInDescription((char*)"anime");
         personalCalendar.print();
+    }
+
+    //*! Test for getting the first meeting in a list and getting the program for a specific date*/
+    static void getDailyProgramTest(){
+        cout << "#Adding 3 meetings and returning the earliest of them: " << endl;
+        PersonalCalendar personalCalendar = PersonalCalendar();
+        personalCalendar.bookMeeting((char*) "Anime Convention 2",
+                                     (char*)"Going to anime convention",
+                                     MyDate(23, 10, 2022),
+                                     MyHour(12, 0),
+                                     MyHour(15, 0)
+        );
+        personalCalendar.bookMeeting((char*) "Anime Convention 3",
+                                     (char*)"Going to anime convention",
+                                     MyDate(22, 10, 2022),
+                                     MyHour(12, 0),
+                                     MyHour(15, 0)
+        );
+
+        personalCalendar.bookMeeting((char*) "Anime Convention 4",
+                                     (char*)"Going to anime convention",
+                                     MyDate(22, 10, 2022),
+                                     MyHour(10, 0),
+                                     MyHour(15, 0)
+        );
+        personalCalendar.print();
+        cout << "#The earliest meeting is: " << endl;
+        personalCalendar.getEarliestMeeting().print();
+
+        cout << "#Adding 3 meetings and returning the daily program for 2022-10-22: " << endl;
+
+
+        cout << "#Calendar for 2022-10-22" << endl;
+        PersonalCalendar calendarForTheDay = personalCalendar.getDailyProgram(MyDate(22, 10, 2022));
+        calendarForTheDay.print();
     }
 };
 
