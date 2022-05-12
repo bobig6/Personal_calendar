@@ -67,15 +67,14 @@ public:
 
     void save(ofstream& file){
 
-        //TODO:(FIX) SAVES THE CHAR* AS POINTER AND THE DESTRUCTOR TRIES TO DELETE IT 2 TIMES
 
         size_t nameSize = strlen(name);
         file.write(reinterpret_cast<char *>(&nameSize), sizeof(nameSize));
-        file.write(reinterpret_cast<char *>(&name), nameSize);
+        file.write(reinterpret_cast<char *>(name), nameSize);
 
         size_t descSize = strlen(description);
         file.write(reinterpret_cast<char *>(&descSize), sizeof(descSize));
-        file.write(reinterpret_cast<char *>(&description), descSize);
+        file.write(reinterpret_cast<char *>(description), descSize);
 
         date.save(file);
         startHour.save(file);
@@ -86,7 +85,7 @@ public:
         size_t nameSize = 0;
         file.read(reinterpret_cast<char *>(&nameSize), sizeof(nameSize));
         char* new_name = new char[nameSize+1];
-        file.read(reinterpret_cast<char *>(&new_name), nameSize);
+        file.read(reinterpret_cast<char *>(new_name), nameSize);
         setName(new_name);
         delete [] new_name;
 
@@ -94,7 +93,7 @@ public:
         file.read(reinterpret_cast<char *>(&descSize), sizeof(descSize));
 
         char* new_desc = new char[descSize + 1];
-        file.read(reinterpret_cast<char *>(&new_desc), descSize);
+        file.read(reinterpret_cast<char *>(new_desc), descSize);
         setDescription(new_desc);
         delete [] new_desc;
 
