@@ -63,6 +63,46 @@ public:
         delete [] description;
     }
 
+    // SECTION: HELPER FUNCTIONS------------------------------------------
+
+    void save(ofstream& file){
+
+        //TODO:(FIX) SAVES THE CHAR* AS POINTER AND THE DESTRUCTOR TRIES TO DELETE IT 2 TIMES
+
+        size_t nameSize = strlen(name);
+        file.write(reinterpret_cast<char *>(&nameSize), sizeof(nameSize));
+        file.write(reinterpret_cast<char *>(&name), nameSize);
+
+        size_t descSize = strlen(description);
+        file.write(reinterpret_cast<char *>(&descSize), sizeof(descSize));
+        file.write(reinterpret_cast<char *>(&description), descSize);
+
+        date.save(file);
+        startHour.save(file);
+        endHour.save(file);
+    }
+
+    void load(ifstream& file){
+        size_t nameSize = 0;
+        file.read(reinterpret_cast<char *>(&nameSize), sizeof(nameSize));
+        char* new_name = new char[nameSize+1];
+        file.read(reinterpret_cast<char *>(&new_name), nameSize);
+        setName(new_name);
+        delete [] new_name;
+
+        size_t descSize = 0;
+        file.read(reinterpret_cast<char *>(&descSize), sizeof(descSize));
+
+        char* new_desc = new char[descSize + 1];
+        file.read(reinterpret_cast<char *>(&new_desc), descSize);
+        setDescription(new_desc);
+        delete [] new_desc;
+
+
+        date.load(file);
+        startHour.load(file);
+        endHour.load(file);
+    }
 
     // SECTION: GETTERS AND SETTERS-------------------------------------------------
     //! Getter for name field

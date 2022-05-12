@@ -448,5 +448,21 @@ public:
 };
 
 int main(){
+    cout << "Saving meeting1 to file and loading it to meeting2:" << endl;
+    ofstream file("Meeting.dat", ios::out | ios::binary);
+    if(!file){
+        throw invalid_argument("Couldn't open file");
+    }
+    Meeting m = Meeting((char*)"pin", (char*)"go now", MyDate(12, 10, 2021), MyHour(14, 20), MyHour(13, 2));
+    m.save(file);
+    file.close();
 
+    ifstream in("Meeting.dat", ios::in | ios::binary);
+    if(!in){
+        throw invalid_argument("Couldn't open file");
+    }
+    Meeting meeting2 = Meeting();
+    meeting2.load(in);
+    in.close();
+    meeting2.print();
 }

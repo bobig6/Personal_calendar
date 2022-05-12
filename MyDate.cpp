@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string.h>
+#include <fstream>
 
 using namespace std;
 
@@ -63,6 +64,20 @@ public:
     //! Copy constructor for MyDate class
     MyDate(MyDate const &other){
         setDate(other.getDay(), other.getMonth(), other.getYear());
+    }
+
+    // SECTION: HELPER FUNCTIONS------------------------------------------
+    void save(ofstream& file){
+        file.write((char*)&day, sizeof(int));
+        file.write((char*)&month, sizeof(int));
+        file.write((char*)&year, sizeof(int));
+
+    }
+
+    void load(ifstream& file){
+        file.read((char*)&day, sizeof(int));
+        file.read((char*)&month, sizeof(int));
+        file.read((char*)&year, sizeof(int));
     }
 
     // SECTION: GETTERS AND SETTERS------------------------------------------------
@@ -261,5 +276,25 @@ public:
         cout << "< : " << ((date1<date2) ? "true" : "false") << endl;
         cout << ">= : " << ((date1>=date2) ? "true" : "false") << endl;
         cout << "<= : " << ((date1<=date2) ? "true" : "false") << endl;
+    }
+
+    static void saveAndLoadTest(){
+        cout << "Saving date1 to file and loading it to date2:" << endl;
+        ofstream file("Date.dat", ios::out | ios::binary);
+        if(!file){
+            throw invalid_argument("Couldn't open file");
+        }
+        MyDate date1 = MyDate(10, 12, 2021);
+        date1.save(file);
+        file.close();
+
+        ifstream in("Date.dat", ios::in | ios::binary);
+        if(!in){
+            throw invalid_argument("Couldn't open file");
+        }
+        MyDate date2 = MyDate();
+        date2.load(in);
+        in.close();
+        date2.print();
     }
 };

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string.h>
+#include <fstream>
 
 using namespace std;
 
@@ -50,6 +51,17 @@ public:
         setHours(other.getHours());
     }
 
+    // SECTION: HELPER FUNCTIONS------------------------------------------
+    void save(ofstream& file){
+        file.write((char*)&hours, sizeof(int));
+        file.write((char*)&minutes, sizeof(int));
+
+    }
+
+    void load(ifstream& file){
+        file.read((char*)&hours, sizeof(int));
+        file.read((char*)&minutes, sizeof(int));
+    }
 
 
     // SECTION: GETTERS AND SETTERS---------------------------------------
@@ -198,5 +210,26 @@ public:
         cout << "< : " << ((myHour<myHour1) ? "true" : "false") << endl;
         cout << ">= : " << ((myHour>=myHour1) ? "true" : "false") << endl;
         cout << "<= : " << ((myHour<=myHour1) ? "true" : "false") << endl;
+    }
+    
+    //*! Test for saving and loading the hour to file*/
+    static void saveAndLoadTest(){
+        cout << "Saving hour1 to file and loading it to hour2:" << endl;
+        ofstream file("Hour.dat", ios::out | ios::binary);
+        if(!file){
+            throw invalid_argument("Couldn't open file");
+        }
+        MyHour hour1 = MyHour(10, 15);
+        hour1.save(file);
+        file.close();
+
+        ifstream in("Hour.dat", ios::in | ios::binary);
+        if(!in){
+            throw invalid_argument("Couldn't open file");
+        }
+        MyHour hour2 = MyHour();
+        hour2.load(in);
+        in.close();
+        hour2.print();
     }
 };
