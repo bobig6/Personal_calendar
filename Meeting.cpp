@@ -60,7 +60,7 @@ public:
     //! Destructor for the Meeting class
     ~Meeting() {
         delete [] name;
-        delete description;
+        delete [] description;
     }
 
 
@@ -152,8 +152,8 @@ public:
     /*! Equality operator for the Meeting class.
      * Compares two meetings by all arguments. */
     bool operator==(const Meeting &rhs) const {
-        return name == rhs.getName() &&
-               description == rhs.getDescription() &&
+        return strcmp(name, rhs.getName()) == 0 &&
+               strcmp(description, rhs.getDescription()) == 0 &&
                date == rhs.getDate() &&
                startHour == rhs.getStartHour() &&
                endHour == rhs.getEndHour();

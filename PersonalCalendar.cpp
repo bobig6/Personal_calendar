@@ -146,6 +146,31 @@ public:
         current++;
     }
 
+    //! This function removes given element from the array
+    bool removeMeeting(const Meeting& meeting){
+        // Going through the whole array
+        for (int i = 0; i < current; i++)
+        {
+
+            // Checking if the elements match
+            if (meetingList[i] == meeting)
+            {
+                // Going through remaining elements
+                for ( ; i < current - 1; i++)
+                {
+                    // Assign the next element to current location.
+                    meetingList[i] = meetingList[i + 1];
+                }
+
+                // Remove the last element as it has been moved to previous index.
+                meetingList[current - 1] = Meeting();
+                current = current - 1;
+                return true;
+            }
+        }
+            return false;
+    }
+
     //! A function to print the class
     void print(){
         cout << "Personal calendar: " << endl << endl;
@@ -153,6 +178,39 @@ public:
             meetingList[i].print();
             cout << endl;
         }
+    }
+
+
+    // SECTION: BUSINESS LOGIC------------------------------------------------
+
+    //! Books a meeting with given name, description, date, startHour and endHour
+    void bookMeeting(char* new_name, char* new_description, const MyDate& new_date, const MyHour& new_start, const MyHour& new_end){
+        addMeeting(Meeting(new_name, new_description, new_date, new_start, new_end));
+    }
+
+    //! Removes the first meeting that it finds with the given name
+    void removeMeetingByName(char* name){
+        removeMeeting(getByName(name));
+    }
+
+    //! Removes the first meeting that it finds on a given date
+    void removeMeetingByDate(MyDate date){
+        removeMeeting(getByDate(date));
+    }
+
+    //! Removes the first meeting that it finds which has a certain word in it's description
+    void removeMeetingByFirstMatchInDescription(char* word){
+        removeMeeting(getFirstByWordInDescription(word));
+    }
+
+    //! Removes all meetings that have a certain word in their description
+    void removeAllMeetingsWithWordInDescription(char* word){
+        Meeting* buffer = new Meeting[current];
+        int buff_size = getAllByWordInDescription(buffer, word);
+        for (int i = 0; i < buff_size; ++i) {
+            removeMeeting(buffer[i]);
+        }
+        delete [] buffer;
     }
 
     // SECTION: TESTS---------------------------------------------------------
@@ -224,9 +282,80 @@ public:
         personalCalendar1.setCurrent(cur);
         personalCalendar1.print();
     }
+
+    //*! Test for adding and removing elements:
+    //     - Creating personal calendar and two meetings: meeting1 and meeting2
+    //     - Adding meeting1 and meeting2
+    //     - Removing meeting1 and print
+    //     - Removing meeting2 and print
+    //     - Booking new meeting and adding meeting2 with different date
+    //     - Remove meeting2 by date
+    //     - Booking 2 more new meetings with same descriptions
+    //     - Removing the first match by word in description
+    //     - Adding meeting2 and removing all meetings with a match in description */
+    static void addingAndRemovingElementsTest(){
+        cout << "#Creating personal calendar and adding meeting1 and meeting2 to it: " << endl;
+        PersonalCalendar personalCalendar = PersonalCalendar();
+        Meeting meeting1 = Meeting();
+        Meeting meeting2 = Meeting();
+        meeting1.setName((char*)"meeting1");
+        meeting2.setName((char*)"meeting2");
+
+        personalCalendar.addMeeting(meeting1);
+        personalCalendar.addMeeting(meeting2);
+
+        personalCalendar.print();
+
+        cout << "#Removing meeting1: " << endl;
+        personalCalendar.removeMeetingByName((char*)"meeting1");
+        personalCalendar.print();
+
+        cout << "#Removing meeting2: " << endl;
+        personalCalendar.removeMeetingByName((char*)"meeting2");
+        personalCalendar.print();
+
+        cout << "#Adding and changing meeting2 date to 2022-12-12" << endl;
+        meeting2.setDate(MyDate(12, 12, 2022));
+        personalCalendar.addMeeting(meeting2);
+        cout << "#Book a new meeting by name, description, date, startHour and endHour" << endl;
+        personalCalendar.bookMeeting((char*) "Anime Convention",
+                                     (char*)"Going to anime convention",
+                                     MyDate(21, 10, 2022),
+                                     MyHour(12, 0),
+                                     MyHour(15, 0)
+                                     );
+        personalCalendar.print();
+
+        cout << "#Removing meeting2 by date: " << endl;
+        personalCalendar.removeMeetingByDate(MyDate(12, 12, 2022));
+        personalCalendar.print();
+
+        cout << "#Adding 2 more meetings with word anime in description" << endl;
+        personalCalendar.bookMeeting((char*) "Anime Convention 2",
+                                     (char*)"Going to anime convention",
+                                     MyDate(22, 10, 2022),
+                                     MyHour(12, 0),
+                                     MyHour(15, 0)
+        );
+        personalCalendar.bookMeeting((char*) "Anime Convention 3",
+                                     (char*)"Going to anime convention",
+                                     MyDate(23, 10, 2022),
+                                     MyHour(12, 0),
+                                     MyHour(15, 0)
+        );
+        personalCalendar.print();
+
+        cout << "#Removing first meeting that contains word anime: " << endl;
+        personalCalendar.removeMeetingByFirstMatchInDescription((char*)"anime");
+        personalCalendar.print();
+
+        cout << "#Adding meeting2 and removing all other meetings that contain word anime" << endl;
+        personalCalendar.addMeeting(meeting2);
+        personalCalendar.removeAllMeetingsWithWordInDescription((char*)"anime");
+        personalCalendar.print();
+    }
 };
 
 int main(){
-
 
 }
