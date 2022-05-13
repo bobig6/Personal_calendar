@@ -131,6 +131,17 @@ public:
         return j;
     }
 
+    int getAllByDate(Meeting* newMeetingList, const MyDate& date){
+        int j = 0;
+        for (int i = 0; i < current; ++i) {
+            if(meetingList[i].getDate() == date){
+                newMeetingList[j] = meetingList[i];
+                j++;
+            }
+        }
+        return j;
+    }
+
     //! Setter for the meeting list
     void setMeetingList(Meeting *newMeetingList, int new_current, int new_size) {
         delete [] this->meetingList;
@@ -279,6 +290,22 @@ public:
 
         return result;
 
+    }
+
+    void updateAllWithName(char* new_name, Meeting new_meeting){
+        for (int i = 0; i < current; ++i) {
+            if(strcmp(meetingList[i].getName(), new_name) == 0){
+                meetingList[i].setMeeting(new_meeting.getName(), new_meeting.getDescription(), new_meeting.getDate(), new_meeting.getStartHour(), new_meeting.getEndHour());
+            }
+        }
+    }
+
+    void updateAllByDateAndHour(const MyDate& new_date, const MyHour& new_start, const Meeting& new_meeting){
+        for (int i = 0; i < current; ++i) {
+            if(meetingList[i].getDate() == new_date && meetingList[i].getStartHour() == new_start){
+                meetingList[i].setMeeting(new_meeting.getName(), new_meeting.getDescription(), new_meeting.getDate(), new_meeting.getStartHour(), new_meeting.getEndHour());
+            }
+        }
     }
 
     // SECTION: TESTS---------------------------------------------------------
@@ -513,10 +540,49 @@ public:
         cout << "New calendar: -----------------------------------------------" << endl;
         personalCalendar1.print();
     }
+
+    static void updateTest(){
+        cout << "#Adding 2 meetings and then updating them: " << endl;
+        PersonalCalendar personalCalendar = PersonalCalendar();
+        personalCalendar.bookMeeting((char*) "Anime Convention 2",
+                                     (char*)"Going to anime convention",
+                                     MyDate(23, 10, 2022),
+                                     MyHour(12, 0),
+                                     MyHour(15, 0)
+        );
+        personalCalendar.bookMeeting((char*) "Anime Convention 3",
+                                     (char*)"Going to anime convention",
+                                     MyDate(22, 10, 2022),
+                                     MyHour(12, 0),
+                                     MyHour(15, 0)
+        );
+        personalCalendar.print();
+
+        personalCalendar.updateAllWithName((char*) "Anime Convention 2",
+                                           Meeting(
+                                                   (char*) "Regular Convention 2",
+                                                   (char*)"Going to regular convention",
+                                                   MyDate(23, 10, 2022),
+                                                   MyHour(12, 15),
+                                                   MyHour(15, 15)
+                                           )
+        );
+
+        personalCalendar.updateAllByDateAndHour(MyDate(22, 10, 2022),
+                                                MyHour(12, 0),
+                                                Meeting(
+                                                        (char*) "Regular",
+                                                        (char*)"Going to regular convention",
+                                                        MyDate(23, 10, 2022),
+                                                        MyHour(12, 15),
+                                                        MyHour(15, 15)
+                                                )
+        );
+        personalCalendar.print();
+    }
 };
 
 
 int main(){
-
 
 }
