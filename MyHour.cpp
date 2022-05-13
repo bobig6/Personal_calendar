@@ -212,7 +212,7 @@ public:
         cout << "<= : " << ((myHour<=myHour1) ? "true" : "false") << endl;
     }
     
-    //*! Test for saving and loading the hour to file*/
+    /*! Test for saving and loading the hour to file*/
     static void saveAndLoadTest(){
         cout << "Saving hour1 to file and loading it to hour2:" << endl;
         ofstream file("Hour.dat", ios::out | ios::binary);

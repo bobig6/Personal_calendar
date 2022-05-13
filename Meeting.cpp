@@ -65,30 +65,40 @@ public:
 
     // SECTION: HELPER FUNCTIONS------------------------------------------
 
+    /*! A function to save the class into a binary file*/
     void save(ofstream& file){
-
-
+        // Getting the size of the name string
         size_t nameSize = strlen(name);
+        // Saving the size before the name string so we can then use it to load that string
         file.write(reinterpret_cast<char *>(&nameSize), sizeof(nameSize));
+        // Saving the name
         file.write(reinterpret_cast<char *>(name), nameSize);
 
+        // Saving the description size and the description
         size_t descSize = strlen(description);
         file.write(reinterpret_cast<char *>(&descSize), sizeof(descSize));
         file.write(reinterpret_cast<char *>(description), descSize);
 
+        // Saving the other info from the class
         date.save(file);
         startHour.save(file);
         endHour.save(file);
     }
 
+    /*! A function to load the class from a binary file*/
     void load(ifstream& file){
+        // Getting the size of the array first
         size_t nameSize = 0;
         file.read(reinterpret_cast<char *>(&nameSize), sizeof(nameSize));
+        // Creating a new string to hold the information
         char* new_name = new char[nameSize+1];
+        // Reading nameSize bytes from the file and saving them to the new string
         file.read(reinterpret_cast<char *>(new_name), nameSize);
+        // Setting new_name as the current's class name and deleting it afterwards
         setName(new_name);
         delete [] new_name;
 
+        // Doing the same thing for the description
         size_t descSize = 0;
         file.read(reinterpret_cast<char *>(&descSize), sizeof(descSize));
 
@@ -98,6 +108,7 @@ public:
         delete [] new_desc;
 
 
+        // Reading the rest of the data
         date.load(file);
         startHour.load(file);
         endHour.load(file);
@@ -274,5 +285,25 @@ public:
         cout << "< : " << ((meeting1<meeting2) ? "true" : "false") << endl;
         cout << ">= : " << ((meeting1>=meeting2) ? "true" : "false") << endl;
         cout << "<= : " << ((meeting1<=meeting2) ? "true" : "false") << endl;
+    }
+
+    static void saveAndLoadTest(){
+        cout << "Saving meeting1 to file and loading it to meeting2:" << endl;
+        ofstream file("Meeting.dat", ios::out | ios::binary);
+        if(!file){
+            throw invalid_argument("Couldn't open file");
+        }
+        Meeting m = Meeting((char*)"pin", (char*)"go now", MyDate(12, 10, 2021), MyHour(14, 20), MyHour(13, 2));
+        m.save(file);
+        file.close();
+
+        ifstream in("Meeting.dat", ios::in | ios::binary);
+        if(!in){
+            throw invalid_argument("Couldn't open file");
+        }
+        Meeting meeting2 = Meeting();
+        meeting2.load(in);
+        in.close();
+        meeting2.print();
     }
 };

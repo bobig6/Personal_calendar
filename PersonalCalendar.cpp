@@ -197,6 +197,29 @@ public:
             return false;
     }
 
+    /*! A function to save the class into a binary file*/
+    void save(ofstream& file){
+        // Saving the size of the array, so we can later read it
+        file.write((char *)&current, sizeof(int));
+
+        for (int i = 0; i < current; ++i) {
+            meetingList[i].save(file);
+        }
+    }
+
+    /*! A function to load the class from a binary file*/
+    void load(ifstream& file){
+        // Getting the size of the array first
+        int new_current = 0;
+        file.read((char *)&new_current, sizeof(int));
+        current = new_current;
+        Meeting* buffer = new Meeting[current+1];
+        for (int i = 0; i < current; ++i) {
+            buffer[i].load(file);
+        }
+        setMeetingList(buffer, current, current*2);
+        delete [] buffer;
+    }
 
     //! A function to print the class
     void print(){
@@ -339,7 +362,7 @@ public:
         personalCalendar1.print();
     }
 
-    //*! Test for adding and removing elements:
+    /*! Test for adding and removing elements:
     //     - Creating personal calendar and two meetings: meeting1 and meeting2
     //     - Adding meeting1 and meeting2
     //     - Removing meeting1 and print
@@ -411,7 +434,7 @@ public:
         personalCalendar.print();
     }
 
-    //*! Test for getting the first meeting in a list and getting the program for a specific date*/
+    /*! Test for getting the first meeting in a list and getting the program for a specific date*/
     static void getDailyProgramTest(){
         cout << "#Adding 3 meetings and returning the earliest of them: " << endl;
         PersonalCalendar personalCalendar = PersonalCalendar();
@@ -445,24 +468,55 @@ public:
         PersonalCalendar calendarForTheDay = personalCalendar.getDailyProgram(MyDate(22, 10, 2022));
         calendarForTheDay.print();
     }
+
+    static void saveAndLoadTest(){
+        cout << "Saving personalCalendar to file and loading it to personalCalendar1:" << endl;
+        ofstream file("PersonalCalendar.dat", ios::out | ios::binary);
+        if(!file){
+            throw invalid_argument("Couldn't open file");
+        }
+
+        cout << "#Adding 3 meetings and returning the earliest of them: " << endl;
+        PersonalCalendar personalCalendar = PersonalCalendar();
+        personalCalendar.bookMeeting((char*) "Anime Convention 2",
+                                     (char*)"Going to anime convention",
+                                     MyDate(23, 10, 2022),
+                                     MyHour(12, 0),
+                                     MyHour(15, 0)
+        );
+        personalCalendar.bookMeeting((char*) "Anime Convention 3",
+                                     (char*)"Going to anime convention",
+                                     MyDate(22, 10, 2022),
+                                     MyHour(12, 0),
+                                     MyHour(15, 0)
+        );
+
+        personalCalendar.bookMeeting((char*) "Anime Convention 4",
+                                     (char*)"Going to anime convention",
+                                     MyDate(22, 10, 2022),
+                                     MyHour(10, 0),
+                                     MyHour(15, 0)
+        );
+        personalCalendar.print();
+
+        personalCalendar.save(file);
+
+        file.close();
+
+        ifstream in("PersonalCalendar.dat", ios::in | ios::binary);
+        if(!in){
+            throw invalid_argument("Couldn't open file");
+        }
+        PersonalCalendar personalCalendar1 = PersonalCalendar();
+        personalCalendar1.load(in);
+        in.close();
+        cout << "New calendar: -----------------------------------------------" << endl;
+        personalCalendar1.print();
+    }
 };
 
-int main(){
-    cout << "Saving meeting1 to file and loading it to meeting2:" << endl;
-    ofstream file("Meeting.dat", ios::out | ios::binary);
-    if(!file){
-        throw invalid_argument("Couldn't open file");
-    }
-    Meeting m = Meeting((char*)"pin", (char*)"go now", MyDate(12, 10, 2021), MyHour(14, 20), MyHour(13, 2));
-    m.save(file);
-    file.close();
 
-    ifstream in("Meeting.dat", ios::in | ios::binary);
-    if(!in){
-        throw invalid_argument("Couldn't open file");
-    }
-    Meeting meeting2 = Meeting();
-    meeting2.load(in);
-    in.close();
-    meeting2.print();
+int main(){
+
+
 }
