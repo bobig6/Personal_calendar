@@ -1,0 +1,768 @@
+\hypertarget{classMyDate}{}\doxysection{My\+Date Class Reference}
+\label{classMyDate}\index{MyDate@{MyDate}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMyDate_a8913c04e023d221254af584dbd85e2f0}{My\+Date}} (int day, int month, int year)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classMyDate}{My\+Date}} class with day, month and year as input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMyDate_a2fea7026a6217c29423990b9797f50f3}{My\+Date}} ()
+\item 
+\mbox{\hyperlink{classMyDate_ad9f8d5ccbf57279bfc2dce22c86cc6d4}{My\+Date}} (\mbox{\hyperlink{classMyDate}{My\+Date}} const \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor for \mbox{\hyperlink{classMyDate}{My\+Date}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyDate_ae7344852ab9b09b9ad8c0aa26411366b}{save}} (ofstream \&file)
+\item 
+void \mbox{\hyperlink{classMyDate_abbad70d4218befe0509e57ff7c2c10f5}{load}} (ifstream \&file)
+\item 
+void \mbox{\hyperlink{classMyDate_a67254ea1dd4f8032066a1f4996d8e75e}{add\+Day}} ()
+\item 
+int \mbox{\hyperlink{classMyDate_ad0944217f40118f49a77b4638cdc325b}{get\+Day}} () const
+\begin{DoxyCompactList}\small\item\em Getter for the day. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMyDate_aef5900378c43e326ffa1d39b3683e761}{get\+Month}} () const
+\begin{DoxyCompactList}\small\item\em Getter for the month. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMyDate_a85b4638d83b01548f3d62d1644449a6c}{get\+Year}} () const
+\begin{DoxyCompactList}\small\item\em Getter for the year. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyDate_a858937a63a185232cb1061deebe80763}{set\+Day}} (int new\+\_\+day)
+\begin{DoxyCompactList}\small\item\em Setter for the day with validation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyDate_a1e89f8ef4f72a89b7a0e1e6cb2f2edb3}{set\+Month}} (int new\+\_\+month)
+\begin{DoxyCompactList}\small\item\em Setter for the month with validation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyDate_a1873d9e33b26e1d5bb901915cbf88618}{set\+Year}} (int new\+\_\+year)
+\begin{DoxyCompactList}\small\item\em Setter for the year with validation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyDate_a43906af4dc7468bedfa781cc5ff78013}{set\+Date}} (int new\+\_\+day, int new\+\_\+month, int new\+\_\+year)
+\begin{DoxyCompactList}\small\item\em Setter for day, month and year with validation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMyDate_af7f91fb64bb61fe7902c78202d184466}{get\+Day\+Of\+Week}} ()
+\item 
+char $\ast$ \mbox{\hyperlink{classMyDate_ab6b9c50b8bc7972168cb77ab66f66e9e}{get\+Date\+As\+String}} () const
+\item 
+void \mbox{\hyperlink{classMyDate_a4a68e343d8fd865f719a93a67e00c8e3}{print}} () const
+\item 
+void \mbox{\hyperlink{classMyDate_aafd7d026fdb1e4e1644718608924ff41}{operator=}} (const \mbox{\hyperlink{classMyDate}{My\+Date}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Overloading of the = operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyDate_ab2f078e7c3947c1c159d9b07ee1730c9}{operator==}} (const \mbox{\hyperlink{classMyDate}{My\+Date}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Overloading of the == operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyDate_a0004b76f0691415a2eb3b92ee9fc4a4b}{operator!=}} (const \mbox{\hyperlink{classMyDate}{My\+Date}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Overloading of the != operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyDate_a086844f2d546d309ff2326e0363c7213}{operator$<$}} (const \mbox{\hyperlink{classMyDate}{My\+Date}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Overloading of the \texorpdfstring{$<$}{<} operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyDate_af2b7ce0860f9f7f054a9475cd25f8cbd}{operator$>$}} (const \mbox{\hyperlink{classMyDate}{My\+Date}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Overloading of the \texorpdfstring{$>$}{>} operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyDate_a381588365e28db8961bca63ce1b8695c}{operator$<$=}} (const \mbox{\hyperlink{classMyDate}{My\+Date}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Overloading of the \texorpdfstring{$<$}{<}= operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyDate_ad533c2530dacbab5e6e6b9b336c6fd17}{operator$>$=}} (const \mbox{\hyperlink{classMyDate}{My\+Date}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Overloading of the \texorpdfstring{$>$}{>}= operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classMyDate_a1a93d85761e81ba187e923a5a6c7627f}{initialization\+And\+Validation\+Test}} ()
+\item 
+static void \mbox{\hyperlink{classMyDate_a4460d896e22b7bd8ccbda2d251d979a9}{operators\+Test}} (const \mbox{\hyperlink{classMyDate}{My\+Date}} \&date1, \mbox{\hyperlink{classMyDate}{My\+Date}} date2)
+\item 
+static void \mbox{\hyperlink{classMyDate_aa882f63063ef411c22b5bbd795bd6681}{save\+And\+Load\+Test}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a custom class created to hold the information about the date 
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMyDate_a8913c04e023d221254af584dbd85e2f0}\label{classMyDate_a8913c04e023d221254af584dbd85e2f0}} 
+\index{MyDate@{MyDate}!MyDate@{MyDate}}
+\index{MyDate@{MyDate}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{MyDate()}{MyDate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily My\+Date\+::\+My\+Date (\begin{DoxyParamCaption}\item[{int}]{day,  }\item[{int}]{month,  }\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for \mbox{\hyperlink{classMyDate}{My\+Date}} class with day, month and year as input. 
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00054}{54}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00054                                         \{}
+\DoxyCodeLine{00055         \mbox{\hyperlink{classMyDate_a43906af4dc7468bedfa781cc5ff78013}{setDate}}(day, month, year);}
+\DoxyCodeLine{00056     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_a2fea7026a6217c29423990b9797f50f3}\label{classMyDate_a2fea7026a6217c29423990b9797f50f3}} 
+\index{MyDate@{MyDate}!MyDate@{MyDate}}
+\index{MyDate@{MyDate}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{MyDate()}{MyDate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily My\+Date\+::\+My\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor for \mbox{\hyperlink{classMyDate}{My\+Date}} class
+\begin{DoxyItemize}
+\item Sets the date to 2001-\/01-\/01 
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00060}{60}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00060             \{}
+\DoxyCodeLine{00061         \mbox{\hyperlink{classMyDate_a43906af4dc7468bedfa781cc5ff78013}{setDate}}(1, 1, 2001);}
+\DoxyCodeLine{00062     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_ad9f8d5ccbf57279bfc2dce22c86cc6d4}\label{classMyDate_ad9f8d5ccbf57279bfc2dce22c86cc6d4}} 
+\index{MyDate@{MyDate}!MyDate@{MyDate}}
+\index{MyDate@{MyDate}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{MyDate()}{MyDate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily My\+Date\+::\+My\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMyDate}{My\+Date}} const \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor for \mbox{\hyperlink{classMyDate}{My\+Date}} class. 
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00065}{65}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00065                                \{}
+\DoxyCodeLine{00066         \mbox{\hyperlink{classMyDate_a43906af4dc7468bedfa781cc5ff78013}{setDate}}(other.getDay(), other.getMonth(), other.getYear());}
+\DoxyCodeLine{00067     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMyDate_a67254ea1dd4f8032066a1f4996d8e75e}\label{classMyDate_a67254ea1dd4f8032066a1f4996d8e75e}} 
+\index{MyDate@{MyDate}!addDay@{addDay}}
+\index{addDay@{addDay}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{addDay()}{addDay()}}
+{\footnotesize\ttfamily void My\+Date\+::add\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A function to add a day to current date. Includes validation 
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00087}{87}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00087                  \{}
+\DoxyCodeLine{00088         \textcolor{comment}{// Adds a day}}
+\DoxyCodeLine{00089         day++;}
+\DoxyCodeLine{00090 }
+\DoxyCodeLine{00091         \textcolor{comment}{// Checks if the month is over and if yes it increments the month}}
+\DoxyCodeLine{00092         \textcolor{keywordflow}{switch} (month) \{}
+\DoxyCodeLine{00093             \textcolor{comment}{// Months with 31 days}}
+\DoxyCodeLine{00094             \textcolor{keywordflow}{case} 1: \textcolor{keywordflow}{case} 3: \textcolor{keywordflow}{case} 5: \textcolor{keywordflow}{case} 7: \textcolor{keywordflow}{case} 8: \textcolor{keywordflow}{case} 10: \textcolor{keywordflow}{case} 12:}
+\DoxyCodeLine{00095                 \textcolor{keywordflow}{if}(day > 31)\{}
+\DoxyCodeLine{00096                     day-\/=31;}
+\DoxyCodeLine{00097                     month++;}
+\DoxyCodeLine{00098                 \}}
+\DoxyCodeLine{00099                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00100                 \textcolor{comment}{// Months with 30 days}}
+\DoxyCodeLine{00101             \textcolor{keywordflow}{case} 4: \textcolor{keywordflow}{case} 6: \textcolor{keywordflow}{case} 9: \textcolor{keywordflow}{case} 11:}
+\DoxyCodeLine{00102                 \textcolor{keywordflow}{if}(day > 30)\{}
+\DoxyCodeLine{00103                     day-\/=30;}
+\DoxyCodeLine{00104                     month++;}
+\DoxyCodeLine{00105                 \}}
+\DoxyCodeLine{00106                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00107                 \textcolor{comment}{// February}}
+\DoxyCodeLine{00108             \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{00109                 \textcolor{comment}{// Leap year -\/ there are 29 days in February}}
+\DoxyCodeLine{00110                 \textcolor{keywordflow}{if}((year \% 4 == 0 \&\& year \% 100 != 0) || year \% 400 == 0)\{}
+\DoxyCodeLine{00111                     \textcolor{keywordflow}{if}(day > 29)\{}
+\DoxyCodeLine{00112                         day-\/=29;}
+\DoxyCodeLine{00113                         month++;}
+\DoxyCodeLine{00114                     \}}
+\DoxyCodeLine{00115                 \}}
+\DoxyCodeLine{00116                     \textcolor{comment}{// Not a leap year -\/ 28 days in February}}
+\DoxyCodeLine{00117                 \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00118                     \textcolor{keywordflow}{if}(day > 28)\{}
+\DoxyCodeLine{00119                         day-\/=28;}
+\DoxyCodeLine{00120                         month++;}
+\DoxyCodeLine{00121                     \}}
+\DoxyCodeLine{00122                 \}}
+\DoxyCodeLine{00123                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00124         \}}
+\DoxyCodeLine{00125 }
+\DoxyCodeLine{00126         \textcolor{comment}{// If the year is over it resets the months and increments the year}}
+\DoxyCodeLine{00127         \textcolor{keywordflow}{if}(month>12)\{}
+\DoxyCodeLine{00128             month-\/=12;}
+\DoxyCodeLine{00129             year++;}
+\DoxyCodeLine{00130         \}}
+\DoxyCodeLine{00131 }
+\DoxyCodeLine{00132         \textcolor{comment}{// Checks the date for problems}}
+\DoxyCodeLine{00133         \textcolor{keywordflow}{if}(!validateDate(day, month, year))\{}
+\DoxyCodeLine{00134             cout << \textcolor{stringliteral}{"{}Something went wrong. Date is: "{}};}
+\DoxyCodeLine{00135             \mbox{\hyperlink{classMyDate_a4a68e343d8fd865f719a93a67e00c8e3}{print}}();}
+\DoxyCodeLine{00136         \}}
+\DoxyCodeLine{00137     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_ab6b9c50b8bc7972168cb77ab66f66e9e}\label{classMyDate_ab6b9c50b8bc7972168cb77ab66f66e9e}} 
+\index{MyDate@{MyDate}!getDateAsString@{getDateAsString}}
+\index{getDateAsString@{getDateAsString}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{getDateAsString()}{getDateAsString()}}
+{\footnotesize\ttfamily char $\ast$ My\+Date\+::get\+Date\+As\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+A function for getting the date in YYYY-\/\+MM-\/\+DD format as char$\ast$
+\begin{DoxyItemize}
+\item NOTE\+: The string has to be freed after use 
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00204}{204}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00204                                    \{}
+\DoxyCodeLine{00205         \textcolor{comment}{// Allocating new memory for the string}}
+\DoxyCodeLine{00206         \textcolor{keywordtype}{char}* str = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[11];}
+\DoxyCodeLine{00207 }
+\DoxyCodeLine{00208         \textcolor{comment}{// Turning hours and minutes variables into strings}}
+\DoxyCodeLine{00209         \textcolor{keywordtype}{char} day\_string[3];}
+\DoxyCodeLine{00210         \textcolor{keywordtype}{char} month\_string[3];}
+\DoxyCodeLine{00211         \textcolor{keywordtype}{char} year\_string[5];}
+\DoxyCodeLine{00212 }
+\DoxyCodeLine{00213         sprintf(day\_string, \textcolor{stringliteral}{"{}\%d"{}}, day);}
+\DoxyCodeLine{00214         sprintf(month\_string, \textcolor{stringliteral}{"{}\%d"{}}, month);}
+\DoxyCodeLine{00215         sprintf(year\_string, \textcolor{stringliteral}{"{}\%d"{}}, year);}
+\DoxyCodeLine{00216 }
+\DoxyCodeLine{00217         \textcolor{comment}{// Formatting of the string}}
+\DoxyCodeLine{00218         strcpy(str, year\_string);}
+\DoxyCodeLine{00219         strcat(str, \textcolor{stringliteral}{"{}-\/"{}});}
+\DoxyCodeLine{00220 }
+\DoxyCodeLine{00221         \textcolor{keywordflow}{if}(month < 10)\{}
+\DoxyCodeLine{00222             strcat(str, \textcolor{stringliteral}{"{}0"{}});}
+\DoxyCodeLine{00223         \}}
+\DoxyCodeLine{00224         strcat(str, month\_string);}
+\DoxyCodeLine{00225         strcat(str, \textcolor{stringliteral}{"{}-\/"{}});}
+\DoxyCodeLine{00226 }
+\DoxyCodeLine{00227         \textcolor{keywordflow}{if}(day < 10)\{}
+\DoxyCodeLine{00228             strcat(str, \textcolor{stringliteral}{"{}0"{}});}
+\DoxyCodeLine{00229         \}}
+\DoxyCodeLine{00230         strcat(str, day\_string);}
+\DoxyCodeLine{00231 }
+\DoxyCodeLine{00232         \textcolor{keywordflow}{return} str;}
+\DoxyCodeLine{00233     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_ad0944217f40118f49a77b4638cdc325b}\label{classMyDate_ad0944217f40118f49a77b4638cdc325b}} 
+\index{MyDate@{MyDate}!getDay@{getDay}}
+\index{getDay@{getDay}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{getDay()}{getDay()}}
+{\footnotesize\ttfamily int My\+Date\+::get\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for the day. 
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00142}{142}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00142                        \{}
+\DoxyCodeLine{00143         \textcolor{keywordflow}{return} day;}
+\DoxyCodeLine{00144     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_af7f91fb64bb61fe7902c78202d184466}\label{classMyDate_af7f91fb64bb61fe7902c78202d184466}} 
+\index{MyDate@{MyDate}!getDayOfWeek@{getDayOfWeek}}
+\index{getDayOfWeek@{getDayOfWeek}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{getDayOfWeek()}{getDayOfWeek()}}
+{\footnotesize\ttfamily int My\+Date\+::get\+Day\+Of\+Week (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function returns the day of the week in a number form 0-\/Sunday, 1-\/Monday... etc. The logic for the function is from this article \href{https://www.codespeedy.com/how-to-find-day-from-date-in-cpp/}{\texttt{ https\+://www.\+codespeedy.\+com/how-\/to-\/find-\/day-\/from-\/date-\/in-\/cpp/}} 
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00193}{193}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00194     \{}
+\DoxyCodeLine{00195         \textcolor{keyword}{static} \textcolor{keywordtype}{int} t[] = \{0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4\};}
+\DoxyCodeLine{00196         year -\/= month < 3;}
+\DoxyCodeLine{00197         \textcolor{keywordflow}{return} (year + year/4 -\/ year/100 + year/400 + t[month-\/1] + day) \% 7;}
+\DoxyCodeLine{00198     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_aef5900378c43e326ffa1d39b3683e761}\label{classMyDate_aef5900378c43e326ffa1d39b3683e761}} 
+\index{MyDate@{MyDate}!getMonth@{getMonth}}
+\index{getMonth@{getMonth}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{getMonth()}{getMonth()}}
+{\footnotesize\ttfamily int My\+Date\+::get\+Month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for the month. 
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00147}{147}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00147                          \{}
+\DoxyCodeLine{00148         \textcolor{keywordflow}{return} month;}
+\DoxyCodeLine{00149     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_a85b4638d83b01548f3d62d1644449a6c}\label{classMyDate_a85b4638d83b01548f3d62d1644449a6c}} 
+\index{MyDate@{MyDate}!getYear@{getYear}}
+\index{getYear@{getYear}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{getYear()}{getYear()}}
+{\footnotesize\ttfamily int My\+Date\+::get\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for the year. 
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00152}{152}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00152                         \{}
+\DoxyCodeLine{00153         \textcolor{keywordflow}{return} year;}
+\DoxyCodeLine{00154     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_a1a93d85761e81ba187e923a5a6c7627f}\label{classMyDate_a1a93d85761e81ba187e923a5a6c7627f}} 
+\index{MyDate@{MyDate}!initializationAndValidationTest@{initializationAndValidationTest}}
+\index{initializationAndValidationTest@{initializationAndValidationTest}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{initializationAndValidationTest()}{initializationAndValidationTest()}}
+{\footnotesize\ttfamily static void My\+Date\+::initialization\+And\+Validation\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Initializes date1. Then it initializes date2 by copying day1. Then it runs the following tests\+:
+\begin{DoxyItemize}
+\item Date change
+\item Leap year check
+\item Not a leap year check
+\item Wrong date check 
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00298}{298}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00298                                                  \{}
+\DoxyCodeLine{00299         \mbox{\hyperlink{classMyDate}{MyDate}} date1 = \mbox{\hyperlink{classMyDate_a2fea7026a6217c29423990b9797f50f3}{MyDate}}(31, 10, 2022);}
+\DoxyCodeLine{00300         cout << \textcolor{stringliteral}{"{}date1: "{}};}
+\DoxyCodeLine{00301         date1.\mbox{\hyperlink{classMyDate_a4a68e343d8fd865f719a93a67e00c8e3}{print}}();}
+\DoxyCodeLine{00302 }
+\DoxyCodeLine{00303         \mbox{\hyperlink{classMyDate}{MyDate}} date2 = \mbox{\hyperlink{classMyDate_a2fea7026a6217c29423990b9797f50f3}{MyDate}}(date1);}
+\DoxyCodeLine{00304         cout << \textcolor{stringliteral}{"{}date2 is copied from date1 and it's value is: "{}};}
+\DoxyCodeLine{00305         date2.\mbox{\hyperlink{classMyDate_a4a68e343d8fd865f719a93a67e00c8e3}{print}}();}
+\DoxyCodeLine{00306         cout << endl;}
+\DoxyCodeLine{00307 }
+\DoxyCodeLine{00308         cout << \textcolor{stringliteral}{"{}Changing date to 2022-\/05-\/06"{}} << endl;}
+\DoxyCodeLine{00309         date2.\mbox{\hyperlink{classMyDate_a43906af4dc7468bedfa781cc5ff78013}{setDate}}(6, 5, 2022);}
+\DoxyCodeLine{00310         cout << \textcolor{stringliteral}{"{}date2: "{}};}
+\DoxyCodeLine{00311         date2.\mbox{\hyperlink{classMyDate_a4a68e343d8fd865f719a93a67e00c8e3}{print}}();}
+\DoxyCodeLine{00312         cout << endl;}
+\DoxyCodeLine{00313 }
+\DoxyCodeLine{00314         cout << \textcolor{stringliteral}{"{}Leap year check 2024-\/02-\/29"{}} << endl;}
+\DoxyCodeLine{00315         date2.\mbox{\hyperlink{classMyDate_a43906af4dc7468bedfa781cc5ff78013}{setDate}}(29, 2, 2024);}
+\DoxyCodeLine{00316         cout << \textcolor{stringliteral}{"{}date2: "{}};}
+\DoxyCodeLine{00317         date2.\mbox{\hyperlink{classMyDate_a4a68e343d8fd865f719a93a67e00c8e3}{print}}();}
+\DoxyCodeLine{00318         cout << endl;}
+\DoxyCodeLine{00319 }
+\DoxyCodeLine{00320         cout << \textcolor{stringliteral}{"{}Changing the year to 2023. Should throw an error!!!"{}} << endl;}
+\DoxyCodeLine{00321         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00322             date2.\mbox{\hyperlink{classMyDate_a1873d9e33b26e1d5bb901915cbf88618}{setYear}}(2023);}
+\DoxyCodeLine{00323         \} \textcolor{keywordflow}{catch} (std::invalid\_argument \textcolor{keyword}{const}\& ex) \{}
+\DoxyCodeLine{00324             cout << \textcolor{stringliteral}{"{}Exception caught: "{}} << ex.what() << endl;}
+\DoxyCodeLine{00325         \}}
+\DoxyCodeLine{00326         cout << \textcolor{stringliteral}{"{}date2: "{}};}
+\DoxyCodeLine{00327         date2.\mbox{\hyperlink{classMyDate_a4a68e343d8fd865f719a93a67e00c8e3}{print}}();}
+\DoxyCodeLine{00328         cout << endl;}
+\DoxyCodeLine{00329 }
+\DoxyCodeLine{00330         cout << \textcolor{stringliteral}{"{}Changing date to 10000-\/13-\/42. Should throw an error!!!"{}} << endl;}
+\DoxyCodeLine{00331         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00332             date2.\mbox{\hyperlink{classMyDate_a43906af4dc7468bedfa781cc5ff78013}{setDate}}(42, 13, 10000);}
+\DoxyCodeLine{00333         \} \textcolor{keywordflow}{catch} (std::invalid\_argument \textcolor{keyword}{const}\& ex) \{}
+\DoxyCodeLine{00334             cout << \textcolor{stringliteral}{"{}Exception caught: "{}} << ex.what() << endl;}
+\DoxyCodeLine{00335         \}}
+\DoxyCodeLine{00336         cout << \textcolor{stringliteral}{"{}date2: "{}};}
+\DoxyCodeLine{00337         date2.\mbox{\hyperlink{classMyDate_a4a68e343d8fd865f719a93a67e00c8e3}{print}}();}
+\DoxyCodeLine{00338         cout << endl;}
+\DoxyCodeLine{00339     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_abbad70d4218befe0509e57ff7c2c10f5}\label{classMyDate_abbad70d4218befe0509e57ff7c2c10f5}} 
+\index{MyDate@{MyDate}!load@{load}}
+\index{load@{load}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void My\+Date\+::load (\begin{DoxyParamCaption}\item[{ifstream \&}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A function to load the date from file 
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00080}{80}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00080                              \{}
+\DoxyCodeLine{00081         file.read((\textcolor{keywordtype}{char}*)\&day, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));}
+\DoxyCodeLine{00082         file.read((\textcolor{keywordtype}{char}*)\&month, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));}
+\DoxyCodeLine{00083         file.read((\textcolor{keywordtype}{char}*)\&year, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));}
+\DoxyCodeLine{00084     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_a0004b76f0691415a2eb3b92ee9fc4a4b}\label{classMyDate_a0004b76f0691415a2eb3b92ee9fc4a4b}} 
+\index{MyDate@{MyDate}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool My\+Date\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyDate}{My\+Date}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloading of the != operator. 
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00259}{259}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00259                                              \{}
+\DoxyCodeLine{00260         \textcolor{keywordflow}{return} !(rhs == *\textcolor{keyword}{this});}
+\DoxyCodeLine{00261     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_a086844f2d546d309ff2326e0363c7213}\label{classMyDate_a086844f2d546d309ff2326e0363c7213}} 
+\index{MyDate@{MyDate}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool My\+Date\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyDate}{My\+Date}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloading of the \texorpdfstring{$<$}{<} operator. 
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00264}{264}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00264                                             \{}
+\DoxyCodeLine{00265         \textcolor{keywordflow}{if} (year < rhs.\mbox{\hyperlink{classMyDate_a85b4638d83b01548f3d62d1644449a6c}{getYear}}())}
+\DoxyCodeLine{00266             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00267         \textcolor{keywordflow}{if} (rhs.\mbox{\hyperlink{classMyDate_a85b4638d83b01548f3d62d1644449a6c}{getYear}}() < year)}
+\DoxyCodeLine{00268             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00269         \textcolor{keywordflow}{if} (month < rhs.\mbox{\hyperlink{classMyDate_aef5900378c43e326ffa1d39b3683e761}{getMonth}}())}
+\DoxyCodeLine{00270             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00271         \textcolor{keywordflow}{if} (rhs.month < \mbox{\hyperlink{classMyDate_aef5900378c43e326ffa1d39b3683e761}{getMonth}}())}
+\DoxyCodeLine{00272             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00273         \textcolor{keywordflow}{return} day < rhs.\mbox{\hyperlink{classMyDate_ad0944217f40118f49a77b4638cdc325b}{getDay}}();}
+\DoxyCodeLine{00274     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_a381588365e28db8961bca63ce1b8695c}\label{classMyDate_a381588365e28db8961bca63ce1b8695c}} 
+\index{MyDate@{MyDate}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool My\+Date\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyDate}{My\+Date}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloading of the \texorpdfstring{$<$}{<}= operator. 
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00282}{282}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00282                                              \{}
+\DoxyCodeLine{00283         \textcolor{keywordflow}{return} !(rhs < *\textcolor{keyword}{this});}
+\DoxyCodeLine{00284     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_aafd7d026fdb1e4e1644718608924ff41}\label{classMyDate_aafd7d026fdb1e4e1644718608924ff41}} 
+\index{MyDate@{MyDate}!operator=@{operator=}}
+\index{operator=@{operator=}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void My\+Date\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyDate}{My\+Date}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloading of the = operator. 
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00247}{247}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00247                                        \{}
+\DoxyCodeLine{00248         \mbox{\hyperlink{classMyDate_a43906af4dc7468bedfa781cc5ff78013}{setDate}}(rhs.\mbox{\hyperlink{classMyDate_ad0944217f40118f49a77b4638cdc325b}{getDay}}(), rhs.\mbox{\hyperlink{classMyDate_aef5900378c43e326ffa1d39b3683e761}{getMonth}}(), rhs.\mbox{\hyperlink{classMyDate_a85b4638d83b01548f3d62d1644449a6c}{getYear}}());}
+\DoxyCodeLine{00249     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_ab2f078e7c3947c1c159d9b07ee1730c9}\label{classMyDate_ab2f078e7c3947c1c159d9b07ee1730c9}} 
+\index{MyDate@{MyDate}!operator==@{operator==}}
+\index{operator==@{operator==}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool My\+Date\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyDate}{My\+Date}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloading of the == operator. 
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00252}{252}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00252                                              \{}
+\DoxyCodeLine{00253         \textcolor{keywordflow}{return} day == rhs.\mbox{\hyperlink{classMyDate_ad0944217f40118f49a77b4638cdc325b}{getDay}}() \&\&}
+\DoxyCodeLine{00254                month == rhs.\mbox{\hyperlink{classMyDate_aef5900378c43e326ffa1d39b3683e761}{getMonth}}() \&\&}
+\DoxyCodeLine{00255                year == rhs.\mbox{\hyperlink{classMyDate_a85b4638d83b01548f3d62d1644449a6c}{getYear}}();}
+\DoxyCodeLine{00256     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_af2b7ce0860f9f7f054a9475cd25f8cbd}\label{classMyDate_af2b7ce0860f9f7f054a9475cd25f8cbd}} 
+\index{MyDate@{MyDate}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool My\+Date\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyDate}{My\+Date}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloading of the \texorpdfstring{$>$}{>} operator. 
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00277}{277}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00277                                             \{}
+\DoxyCodeLine{00278         \textcolor{keywordflow}{return} rhs < *\textcolor{keyword}{this};}
+\DoxyCodeLine{00279     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_ad533c2530dacbab5e6e6b9b336c6fd17}\label{classMyDate_ad533c2530dacbab5e6e6b9b336c6fd17}} 
+\index{MyDate@{MyDate}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool My\+Date\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyDate}{My\+Date}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloading of the \texorpdfstring{$>$}{>}= operator. 
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00287}{287}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00287                                              \{}
+\DoxyCodeLine{00288         \textcolor{keywordflow}{return} !(*\textcolor{keyword}{this} < rhs);}
+\DoxyCodeLine{00289     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_a4460d896e22b7bd8ccbda2d251d979a9}\label{classMyDate_a4460d896e22b7bd8ccbda2d251d979a9}} 
+\index{MyDate@{MyDate}!operatorsTest@{operatorsTest}}
+\index{operatorsTest@{operatorsTest}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{operatorsTest()}{operatorsTest()}}
+{\footnotesize\ttfamily static void My\+Date\+::operators\+Test (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyDate}{My\+Date}} \&}]{date1,  }\item[{\mbox{\hyperlink{classMyDate}{My\+Date}}}]{date2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Test for all operators. The function accepts two dates and runs tests on the operators of the class. 
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00342}{342}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00342                                                                 \{}
+\DoxyCodeLine{00343         cout << \textcolor{stringliteral}{"{}== : "{}} << ((date1==date2) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00344         cout << \textcolor{stringliteral}{"{}!= : "{}} << ((date1!=date2) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00345         cout << \textcolor{stringliteral}{"{}> : "{}} << ((date1>date2) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00346         cout << \textcolor{stringliteral}{"{}< : "{}} << ((date1<date2) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00347         cout << \textcolor{stringliteral}{"{}>= : "{}} << ((date1>=date2) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00348         cout << \textcolor{stringliteral}{"{}<= : "{}} << ((date1<=date2) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00349 }
+\DoxyCodeLine{00350         cout << \textcolor{stringliteral}{"{}Adding a day to date2: "{}};}
+\DoxyCodeLine{00351         date2.\mbox{\hyperlink{classMyDate_a67254ea1dd4f8032066a1f4996d8e75e}{addDay}}();}
+\DoxyCodeLine{00352         date2.\mbox{\hyperlink{classMyDate_a4a68e343d8fd865f719a93a67e00c8e3}{print}}();}
+\DoxyCodeLine{00353     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_a4a68e343d8fd865f719a93a67e00c8e3}\label{classMyDate_a4a68e343d8fd865f719a93a67e00c8e3}} 
+\index{MyDate@{MyDate}!print@{print}}
+\index{print@{print}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void My\+Date\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+A function to print date into the console with YYYY-\/\+MM-\/\+DD formatting 
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00236}{236}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00236                        \{}
+\DoxyCodeLine{00237         \textcolor{keywordtype}{char}* string\_date = \mbox{\hyperlink{classMyDate_ab6b9c50b8bc7972168cb77ab66f66e9e}{getDateAsString}}();}
+\DoxyCodeLine{00238         cout <<  string\_date << endl;}
+\DoxyCodeLine{00239         \textcolor{keyword}{delete} [] string\_date;}
+\DoxyCodeLine{00240     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_ae7344852ab9b09b9ad8c0aa26411366b}\label{classMyDate_ae7344852ab9b09b9ad8c0aa26411366b}} 
+\index{MyDate@{MyDate}!save@{save}}
+\index{save@{save}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void My\+Date\+::save (\begin{DoxyParamCaption}\item[{ofstream \&}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A function to save the date into a file 
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00072                              \{}
+\DoxyCodeLine{00073         file.write((\textcolor{keywordtype}{char}*)\&day, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));}
+\DoxyCodeLine{00074         file.write((\textcolor{keywordtype}{char}*)\&month, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));}
+\DoxyCodeLine{00075         file.write((\textcolor{keywordtype}{char}*)\&year, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));}
+\DoxyCodeLine{00076 }
+\DoxyCodeLine{00077     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_aa882f63063ef411c22b5bbd795bd6681}\label{classMyDate_aa882f63063ef411c22b5bbd795bd6681}} 
+\index{MyDate@{MyDate}!saveAndLoadTest@{saveAndLoadTest}}
+\index{saveAndLoadTest@{saveAndLoadTest}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{saveAndLoadTest()}{saveAndLoadTest()}}
+{\footnotesize\ttfamily static void My\+Date\+::save\+And\+Load\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00355}{355}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00355                                  \{}
+\DoxyCodeLine{00356         cout << \textcolor{stringliteral}{"{}Saving date1 to file and loading it to date2:"{}} << endl;}
+\DoxyCodeLine{00357         ofstream file(\textcolor{stringliteral}{"{}Date.dat"{}}, ios::out | ios::binary);}
+\DoxyCodeLine{00358         \textcolor{keywordflow}{if}(!file)\{}
+\DoxyCodeLine{00359             \textcolor{keywordflow}{throw} invalid\_argument(\textcolor{stringliteral}{"{}Couldn't open file"{}});}
+\DoxyCodeLine{00360         \}}
+\DoxyCodeLine{00361         \mbox{\hyperlink{classMyDate}{MyDate}} date1 = \mbox{\hyperlink{classMyDate_a2fea7026a6217c29423990b9797f50f3}{MyDate}}(10, 12, 2021);}
+\DoxyCodeLine{00362         date1.\mbox{\hyperlink{classMyDate_ae7344852ab9b09b9ad8c0aa26411366b}{save}}(file);}
+\DoxyCodeLine{00363         file.close();}
+\DoxyCodeLine{00364 }
+\DoxyCodeLine{00365         ifstream in(\textcolor{stringliteral}{"{}Date.dat"{}}, ios::in | ios::binary);}
+\DoxyCodeLine{00366         \textcolor{keywordflow}{if}(!in)\{}
+\DoxyCodeLine{00367             \textcolor{keywordflow}{throw} invalid\_argument(\textcolor{stringliteral}{"{}Couldn't open file"{}});}
+\DoxyCodeLine{00368         \}}
+\DoxyCodeLine{00369         \mbox{\hyperlink{classMyDate}{MyDate}} date2 = \mbox{\hyperlink{classMyDate_a2fea7026a6217c29423990b9797f50f3}{MyDate}}();}
+\DoxyCodeLine{00370         date2.\mbox{\hyperlink{classMyDate_abbad70d4218befe0509e57ff7c2c10f5}{load}}(in);}
+\DoxyCodeLine{00371         in.close();}
+\DoxyCodeLine{00372         date2.\mbox{\hyperlink{classMyDate_a4a68e343d8fd865f719a93a67e00c8e3}{print}}();}
+\DoxyCodeLine{00373     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_a43906af4dc7468bedfa781cc5ff78013}\label{classMyDate_a43906af4dc7468bedfa781cc5ff78013}} 
+\index{MyDate@{MyDate}!setDate@{setDate}}
+\index{setDate@{setDate}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{setDate()}{setDate()}}
+{\footnotesize\ttfamily void My\+Date\+::set\+Date (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+day,  }\item[{int}]{new\+\_\+month,  }\item[{int}]{new\+\_\+year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter for day, month and year with validation. 
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00181}{181}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00181                                                           \{}
+\DoxyCodeLine{00182         \textcolor{keywordflow}{if}(!validateDate(new\_day, new\_month, new\_year))\{}
+\DoxyCodeLine{00183             \textcolor{keywordflow}{throw} std::invalid\_argument( \textcolor{stringliteral}{"{}The given date is invalid"{}} );}
+\DoxyCodeLine{00184         \}}
+\DoxyCodeLine{00185         this-\/>day = new\_day;}
+\DoxyCodeLine{00186         this-\/>month = new\_month;}
+\DoxyCodeLine{00187         this-\/>year = new\_year;}
+\DoxyCodeLine{00188     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_a858937a63a185232cb1061deebe80763}\label{classMyDate_a858937a63a185232cb1061deebe80763}} 
+\index{MyDate@{MyDate}!setDay@{setDay}}
+\index{setDay@{setDay}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{setDay()}{setDay()}}
+{\footnotesize\ttfamily void My\+Date\+::set\+Day (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+day }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter for the day with validation. 
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00157}{157}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00157                              \{}
+\DoxyCodeLine{00158         \textcolor{keywordflow}{if}(!validateDate(new\_day, month, year))\{}
+\DoxyCodeLine{00159             \textcolor{keywordflow}{throw} std::invalid\_argument( \textcolor{stringliteral}{"{}The day is invalid or not compatible with other arguments"{}} );}
+\DoxyCodeLine{00160         \}}
+\DoxyCodeLine{00161         this-\/>day = new\_day;}
+\DoxyCodeLine{00162     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_a1e89f8ef4f72a89b7a0e1e6cb2f2edb3}\label{classMyDate_a1e89f8ef4f72a89b7a0e1e6cb2f2edb3}} 
+\index{MyDate@{MyDate}!setMonth@{setMonth}}
+\index{setMonth@{setMonth}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{setMonth()}{setMonth()}}
+{\footnotesize\ttfamily void My\+Date\+::set\+Month (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+month }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter for the month with validation. 
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00165}{165}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00165                                  \{}
+\DoxyCodeLine{00166         \textcolor{keywordflow}{if}(!validateDate(day, new\_month, year))\{}
+\DoxyCodeLine{00167             \textcolor{keywordflow}{throw} std::invalid\_argument( \textcolor{stringliteral}{"{}The month is invalid or not compatible with other arguments"{}} );}
+\DoxyCodeLine{00168         \}}
+\DoxyCodeLine{00169         this-\/>month = new\_month;}
+\DoxyCodeLine{00170     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyDate_a1873d9e33b26e1d5bb901915cbf88618}\label{classMyDate_a1873d9e33b26e1d5bb901915cbf88618}} 
+\index{MyDate@{MyDate}!setYear@{setYear}}
+\index{setYear@{setYear}!MyDate@{MyDate}}
+\doxysubsubsection{\texorpdfstring{setYear()}{setYear()}}
+{\footnotesize\ttfamily void My\+Date\+::set\+Year (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter for the year with validation. 
+
+
+
+Definition at line \mbox{\hyperlink{MyDate_8cpp_source_l00173}{173}} of file \mbox{\hyperlink{MyDate_8cpp_source}{My\+Date.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00173                                \{}
+\DoxyCodeLine{00174         \textcolor{keywordflow}{if}(!validateDate(day, month, new\_year))\{}
+\DoxyCodeLine{00175             \textcolor{keywordflow}{throw} std::invalid\_argument( \textcolor{stringliteral}{"{}The year is invalid or not compatible with other arguments"{}} );}
+\DoxyCodeLine{00176         \}}
+\DoxyCodeLine{00177         this-\/>year = new\_year;}
+\DoxyCodeLine{00178     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+My\+Date.\+cpp\end{DoxyCompactItemize}

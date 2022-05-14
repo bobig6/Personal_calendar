@@ -1,0 +1,705 @@
+\hypertarget{classMyHour}{}\doxysection{My\+Hour Class Reference}
+\label{classMyHour}\index{MyHour@{MyHour}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMyHour_a4bae6dfe326b41113b7e3fe61594ea27}{My\+Hour}} (int hours, int minutes)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classMyHour}{My\+Hour}} class with hour and minutes as input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMyHour_aa5f1caa1e9539ddb8a862307ab6365e8}{My\+Hour}} (int hours)
+\item 
+\mbox{\hyperlink{classMyHour_ad47dc9d46931477f62a29d4a87c2e054}{My\+Hour}} ()
+\item 
+\mbox{\hyperlink{classMyHour_a39b2ea8da176b28aad4ddc5e2a1aa62e}{My\+Hour}} (\mbox{\hyperlink{classMyHour}{My\+Hour}} const \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor for \mbox{\hyperlink{classMyHour}{My\+Hour}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyHour_a8ec74ab99da5fd35f354ac2818df9e64}{save}} (ofstream \&file)
+\item 
+void \mbox{\hyperlink{classMyHour_a5496f6bbe86d1abf8c59785597861247}{load}} (ifstream \&file)
+\item 
+int \mbox{\hyperlink{classMyHour_a5386a4615ab45dcdfdd40121e07a452c}{get\+Hours}} () const
+\begin{DoxyCompactList}\small\item\em Getter for hours field. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMyHour_a662dfa2d7eebe1038c121905b3511e1a}{get\+Minutes}} () const
+\begin{DoxyCompactList}\small\item\em Getter for minutes field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyHour_a6bf67471db89552c2dcf0781e7f4322b}{set\+Hours}} (int new\+\_\+hours)
+\item 
+void \mbox{\hyperlink{classMyHour_a7732515255c138f95c27658459cf2f32}{set\+Minutes}} (int new\+\_\+minutes)
+\item 
+char $\ast$ \mbox{\hyperlink{classMyHour_aae782531212b27ebc29723b3c83c0150}{get\+Hour\+As\+String}} () const
+\item 
+void \mbox{\hyperlink{classMyHour_a1a2ad47d392b1cf902bc7b122e163b16}{print}} () const
+\item 
+\mbox{\hyperlink{classMyHour}{My\+Hour}} \mbox{\hyperlink{classMyHour_a00f23b148da5c770d8a8a60c2f136277}{operator+}} (\mbox{\hyperlink{classMyHour}{My\+Hour}} const \&obj) const
+\begin{DoxyCompactList}\small\item\em Overloading of the + operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMyHour}{My\+Hour}} \mbox{\hyperlink{classMyHour_a088637e775306ff83ec301522e0b335d}{operator-\/}} (\mbox{\hyperlink{classMyHour}{My\+Hour}} const \&obj) const
+\begin{DoxyCompactList}\small\item\em Overloading of the -\/ operator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMyHour_a7f772d51f118769acb5ea1ad72c1105e}{operator=}} (const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Overloading of the = operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyHour_aa14928d26862bb27d5e424abd6332784}{operator$<$}} (const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Overloading of the \texorpdfstring{$<$}{<} operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyHour_a342f34b7b148060e61f8a02044458879}{operator$>$}} (const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Overloading of the \texorpdfstring{$>$}{>} operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyHour_a11bad0c8d7eee9d0140ed41ea09b518c}{operator$<$=}} (const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Overloading of the \texorpdfstring{$<$}{<}= operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyHour_ab9f1e03b9ca4934af9646ab8f2016866}{operator$>$=}} (const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Overloading of the \texorpdfstring{$>$}{>}= operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyHour_a50ed1140f459b24decfddec2d3dedb40}{operator==}} (const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Overloading of the == operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMyHour_a344d7504924b5875d860c5ec5397d696}{operator!=}} (const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Overloading of the != operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classMyHour_a70233e4128d3681849b14886b1695eb2}{initialization\+Test\+Positive}} ()
+\begin{DoxyCompactList}\small\item\em Test of initialization with input 20\+:59. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classMyHour_a12ec31c4260f3398af29c4918b50b495}{initialization\+Test\+Negative}} ()
+\begin{DoxyCompactList}\small\item\em Test of initialization with input 30\+:59. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classMyHour_ad44ea102f5ae1fdcb41ee2d9d533ab81}{assignment\+Operator\+Test}} ()
+\item 
+static void \mbox{\hyperlink{classMyHour_a15843d2f4a6220aead95ed18590f84ff}{operators\+Test}} (int hour1, int minutes1, int hour2, int minutes2)
+\item 
+static void \mbox{\hyperlink{classMyHour_aafab6701ca94d5d2a0faa95cd487a1b7}{save\+And\+Load\+Test}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a custom class created to hold the information about the hour 
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMyHour_a4bae6dfe326b41113b7e3fe61594ea27}\label{classMyHour_a4bae6dfe326b41113b7e3fe61594ea27}} 
+\index{MyHour@{MyHour}!MyHour@{MyHour}}
+\index{MyHour@{MyHour}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{MyHour()}{MyHour()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily My\+Hour\+::\+My\+Hour (\begin{DoxyParamCaption}\item[{int}]{hours,  }\item[{int}]{minutes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for \mbox{\hyperlink{classMyHour}{My\+Hour}} class with hour and minutes as input. 
+
+
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029                                   \{}
+\DoxyCodeLine{00030         \mbox{\hyperlink{classMyHour_a6bf67471db89552c2dcf0781e7f4322b}{setHours}}(hours);}
+\DoxyCodeLine{00031         \mbox{\hyperlink{classMyHour_a7732515255c138f95c27658459cf2f32}{setMinutes}}(minutes);}
+\DoxyCodeLine{00032     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_aa5f1caa1e9539ddb8a862307ab6365e8}\label{classMyHour_aa5f1caa1e9539ddb8a862307ab6365e8}} 
+\index{MyHour@{MyHour}!MyHour@{MyHour}}
+\index{MyHour@{MyHour}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{MyHour()}{MyHour()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily My\+Hour\+::\+My\+Hour (\begin{DoxyParamCaption}\item[{int}]{hours }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for \mbox{\hyperlink{classMyHour}{My\+Hour}} class only with hour as input
+\begin{DoxyItemize}
+\item Sets minutes to \+:00 
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036                      \{}
+\DoxyCodeLine{00037         \mbox{\hyperlink{classMyHour_a6bf67471db89552c2dcf0781e7f4322b}{setHours}}(hours);}
+\DoxyCodeLine{00038         \mbox{\hyperlink{classMyHour_a7732515255c138f95c27658459cf2f32}{setMinutes}}(0);}
+\DoxyCodeLine{00039     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_ad47dc9d46931477f62a29d4a87c2e054}\label{classMyHour_ad47dc9d46931477f62a29d4a87c2e054}} 
+\index{MyHour@{MyHour}!MyHour@{MyHour}}
+\index{MyHour@{MyHour}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{MyHour()}{MyHour()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily My\+Hour\+::\+My\+Hour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor for \mbox{\hyperlink{classMyHour}{My\+Hour}} class
+\begin{DoxyItemize}
+\item Sets the hour to 00\+:00 
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00043}{43}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00043             \{}
+\DoxyCodeLine{00044         \mbox{\hyperlink{classMyHour_a6bf67471db89552c2dcf0781e7f4322b}{setHours}}(0);}
+\DoxyCodeLine{00045         \mbox{\hyperlink{classMyHour_a7732515255c138f95c27658459cf2f32}{setMinutes}}(0);}
+\DoxyCodeLine{00046     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a39b2ea8da176b28aad4ddc5e2a1aa62e}\label{classMyHour_a39b2ea8da176b28aad4ddc5e2a1aa62e}} 
+\index{MyHour@{MyHour}!MyHour@{MyHour}}
+\index{MyHour@{MyHour}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{MyHour()}{MyHour()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily My\+Hour\+::\+My\+Hour (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMyHour}{My\+Hour}} const \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor for \mbox{\hyperlink{classMyHour}{My\+Hour}} class. 
+
+
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00049}{49}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00049                                \{}
+\DoxyCodeLine{00050         \mbox{\hyperlink{classMyHour_a7732515255c138f95c27658459cf2f32}{setMinutes}}(other.getMinutes());}
+\DoxyCodeLine{00051         \mbox{\hyperlink{classMyHour_a6bf67471db89552c2dcf0781e7f4322b}{setHours}}(other.getHours());}
+\DoxyCodeLine{00052     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMyHour_ad44ea102f5ae1fdcb41ee2d9d533ab81}\label{classMyHour_ad44ea102f5ae1fdcb41ee2d9d533ab81}} 
+\index{MyHour@{MyHour}!assignmentOperatorTest@{assignmentOperatorTest}}
+\index{assignmentOperatorTest@{assignmentOperatorTest}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{assignmentOperatorTest()}{assignmentOperatorTest()}}
+{\footnotesize\ttfamily static void My\+Hour\+::assignment\+Operator\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Test of assignment operator. It creates two \mbox{\hyperlink{classMyHour}{My\+Hour}} objects, first is empty and the second one is with 01\+:03 value. Then it assigns the second to the first and prints the first one. 
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00234}{234}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00234                                         \{}
+\DoxyCodeLine{00235         \mbox{\hyperlink{classMyHour}{MyHour}} myHour = \mbox{\hyperlink{classMyHour_ad47dc9d46931477f62a29d4a87c2e054}{MyHour}}();}
+\DoxyCodeLine{00236         \mbox{\hyperlink{classMyHour}{MyHour}} myHour1 = \mbox{\hyperlink{classMyHour_ad47dc9d46931477f62a29d4a87c2e054}{MyHour}}(1, 3);}
+\DoxyCodeLine{00237         myHour = myHour1;}
+\DoxyCodeLine{00238         myHour.\mbox{\hyperlink{classMyHour_a1a2ad47d392b1cf902bc7b122e163b16}{print}}();}
+\DoxyCodeLine{00239     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_aae782531212b27ebc29723b3c83c0150}\label{classMyHour_aae782531212b27ebc29723b3c83c0150}} 
+\index{MyHour@{MyHour}!getHourAsString@{getHourAsString}}
+\index{getHourAsString@{getHourAsString}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{getHourAsString()}{getHourAsString()}}
+{\footnotesize\ttfamily char $\ast$ My\+Hour\+::get\+Hour\+As\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+A function for getting the hour in HH\+:MM format as char$\ast$
+\begin{DoxyItemize}
+\item NOTE\+: The string has to be freed after use 
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00103}{103}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00103                                    \{}
+\DoxyCodeLine{00104         \textcolor{comment}{// Allocating new memory for the string}}
+\DoxyCodeLine{00105         \textcolor{keywordtype}{char}* str = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[6];}
+\DoxyCodeLine{00106 }
+\DoxyCodeLine{00107         \textcolor{comment}{// Turning hours and minutes variables into strings}}
+\DoxyCodeLine{00108         \textcolor{keywordtype}{char} hours\_string[3];}
+\DoxyCodeLine{00109         \textcolor{keywordtype}{char} minutes\_string[3];}
+\DoxyCodeLine{00110 }
+\DoxyCodeLine{00111         sprintf(hours\_string, \textcolor{stringliteral}{"{}\%d"{}}, hours);}
+\DoxyCodeLine{00112         sprintf(minutes\_string, \textcolor{stringliteral}{"{}\%d"{}}, minutes);}
+\DoxyCodeLine{00113 }
+\DoxyCodeLine{00114         strcpy(str, \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00115         \textcolor{comment}{// Formatting of the string}}
+\DoxyCodeLine{00116         \textcolor{keywordflow}{if}(hours<10)\{}
+\DoxyCodeLine{00117             strcat(str, \textcolor{stringliteral}{"{}0"{}});}
+\DoxyCodeLine{00118         \}}
+\DoxyCodeLine{00119         strcat(str, hours\_string);}
+\DoxyCodeLine{00120 }
+\DoxyCodeLine{00121         strcat(str, \textcolor{stringliteral}{"{}:"{}});}
+\DoxyCodeLine{00122 }
+\DoxyCodeLine{00123         \textcolor{keywordflow}{if}(minutes<10)\{}
+\DoxyCodeLine{00124             strcat(str, \textcolor{stringliteral}{"{}0"{}});}
+\DoxyCodeLine{00125         \}}
+\DoxyCodeLine{00126         strcat(str, minutes\_string);}
+\DoxyCodeLine{00127 }
+\DoxyCodeLine{00128         \textcolor{keywordflow}{return} str;}
+\DoxyCodeLine{00129     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a5386a4615ab45dcdfdd40121e07a452c}\label{classMyHour_a5386a4615ab45dcdfdd40121e07a452c}} 
+\index{MyHour@{MyHour}!getHours@{getHours}}
+\index{getHours@{getHours}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{getHours()}{getHours()}}
+{\footnotesize\ttfamily int My\+Hour\+::get\+Hours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for hours field. 
+
+
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00072                          \{}
+\DoxyCodeLine{00073         \textcolor{keywordflow}{return} hours;}
+\DoxyCodeLine{00074     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a662dfa2d7eebe1038c121905b3511e1a}\label{classMyHour_a662dfa2d7eebe1038c121905b3511e1a}} 
+\index{MyHour@{MyHour}!getMinutes@{getMinutes}}
+\index{getMinutes@{getMinutes}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{getMinutes()}{getMinutes()}}
+{\footnotesize\ttfamily int My\+Hour\+::get\+Minutes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for minutes field. 
+
+
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00077}{77}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00077                            \{}
+\DoxyCodeLine{00078         \textcolor{keywordflow}{return} minutes;}
+\DoxyCodeLine{00079     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a12ec31c4260f3398af29c4918b50b495}\label{classMyHour_a12ec31c4260f3398af29c4918b50b495}} 
+\index{MyHour@{MyHour}!initializationTestNegative@{initializationTestNegative}}
+\index{initializationTestNegative@{initializationTestNegative}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{initializationTestNegative()}{initializationTestNegative()}}
+{\footnotesize\ttfamily static void My\+Hour\+::initialization\+Test\+Negative (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Test of initialization with input 30\+:59. 
+
+
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00227}{227}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00227                                             \{}
+\DoxyCodeLine{00228         \mbox{\hyperlink{classMyHour}{MyHour}} hour = \mbox{\hyperlink{classMyHour_ad47dc9d46931477f62a29d4a87c2e054}{MyHour}}(30, 59);}
+\DoxyCodeLine{00229         hour.\mbox{\hyperlink{classMyHour_a1a2ad47d392b1cf902bc7b122e163b16}{print}}();}
+\DoxyCodeLine{00230     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a70233e4128d3681849b14886b1695eb2}\label{classMyHour_a70233e4128d3681849b14886b1695eb2}} 
+\index{MyHour@{MyHour}!initializationTestPositive@{initializationTestPositive}}
+\index{initializationTestPositive@{initializationTestPositive}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{initializationTestPositive()}{initializationTestPositive()}}
+{\footnotesize\ttfamily static void My\+Hour\+::initialization\+Test\+Positive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Test of initialization with input 20\+:59. 
+
+
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00221}{221}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00221                                             \{}
+\DoxyCodeLine{00222         \mbox{\hyperlink{classMyHour}{MyHour}} hour = \mbox{\hyperlink{classMyHour_ad47dc9d46931477f62a29d4a87c2e054}{MyHour}}(20, 59);}
+\DoxyCodeLine{00223         hour.\mbox{\hyperlink{classMyHour_a1a2ad47d392b1cf902bc7b122e163b16}{print}}();}
+\DoxyCodeLine{00224     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a5496f6bbe86d1abf8c59785597861247}\label{classMyHour_a5496f6bbe86d1abf8c59785597861247}} 
+\index{MyHour@{MyHour}!load@{load}}
+\index{load@{load}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void My\+Hour\+::load (\begin{DoxyParamCaption}\item[{ifstream \&}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Loads the hour from a file 
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00063}{63}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00063                              \{}
+\DoxyCodeLine{00064         file.read((\textcolor{keywordtype}{char}*)\&hours, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));}
+\DoxyCodeLine{00065         file.read((\textcolor{keywordtype}{char}*)\&minutes, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));}
+\DoxyCodeLine{00066     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a344d7504924b5875d860c5ec5397d696}\label{classMyHour_a344d7504924b5875d860c5ec5397d696}} 
+\index{MyHour@{MyHour}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool My\+Hour\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloading of the != operator. 
+
+
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00215}{215}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00215                                              \{}
+\DoxyCodeLine{00216         \textcolor{keywordflow}{return} !(rhs == *\textcolor{keyword}{this});}
+\DoxyCodeLine{00217     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a00f23b148da5c770d8a8a60c2f136277}\label{classMyHour_a00f23b148da5c770d8a8a60c2f136277}} 
+\index{MyHour@{MyHour}!operator+@{operator+}}
+\index{operator+@{operator+}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMyHour}{My\+Hour}} My\+Hour\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMyHour}{My\+Hour}} const \&}]{obj }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloading of the + operator. 
+
+
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00141}{141}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00141                                                 \{}
+\DoxyCodeLine{00142         \mbox{\hyperlink{classMyHour}{MyHour}} res;}
+\DoxyCodeLine{00143         res.hours = this-\/>hours + obj.hours;}
+\DoxyCodeLine{00144         res.minutes = this-\/>minutes + obj.minutes;}
+\DoxyCodeLine{00145 }
+\DoxyCodeLine{00146         \textcolor{keywordflow}{if}(res.minutes >= 60)\{}
+\DoxyCodeLine{00147             res.minutes -\/= 60;}
+\DoxyCodeLine{00148             res.hours++;}
+\DoxyCodeLine{00149         \}}
+\DoxyCodeLine{00150 }
+\DoxyCodeLine{00151         \textcolor{keywordflow}{if}(res.hours >= 24)\{}
+\DoxyCodeLine{00152             res.hours-\/=24;}
+\DoxyCodeLine{00153         \}}
+\DoxyCodeLine{00154         \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{00155     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a088637e775306ff83ec301522e0b335d}\label{classMyHour_a088637e775306ff83ec301522e0b335d}} 
+\index{MyHour@{MyHour}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMyHour}{My\+Hour}} My\+Hour\+::operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMyHour}{My\+Hour}} const \&}]{obj }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloading of the -\/ operator. 
+
+
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00158}{158}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00158                                                 \{}
+\DoxyCodeLine{00159         \textcolor{keywordflow}{if}(obj >= *\textcolor{keyword}{this})\{}
+\DoxyCodeLine{00160             \textcolor{keywordflow}{return} \{\};}
+\DoxyCodeLine{00161         \}}
+\DoxyCodeLine{00162 }
+\DoxyCodeLine{00163         \mbox{\hyperlink{classMyHour}{MyHour}} res;}
+\DoxyCodeLine{00164         res.hours = this-\/>hours -\/ obj.hours;}
+\DoxyCodeLine{00165         res.minutes = this-\/>minutes -\/ obj.minutes;}
+\DoxyCodeLine{00166 }
+\DoxyCodeLine{00167         \textcolor{keywordflow}{if}(res.minutes < 0)\{}
+\DoxyCodeLine{00168             res.minutes += 60;}
+\DoxyCodeLine{00169             res.hours-\/-\/;}
+\DoxyCodeLine{00170         \}}
+\DoxyCodeLine{00171 }
+\DoxyCodeLine{00172         \textcolor{keywordflow}{if}(res.hours < 0)\{}
+\DoxyCodeLine{00173             \textcolor{keywordflow}{return} \{\};}
+\DoxyCodeLine{00174         \}}
+\DoxyCodeLine{00175         \textcolor{keywordflow}{return} res;}
+\DoxyCodeLine{00176     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_aa14928d26862bb27d5e424abd6332784}\label{classMyHour_aa14928d26862bb27d5e424abd6332784}} 
+\index{MyHour@{MyHour}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool My\+Hour\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloading of the \texorpdfstring{$<$}{<} operator. 
+
+
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00185}{185}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00185                                             \{}
+\DoxyCodeLine{00186         \textcolor{keywordflow}{if} (hours < rhs.\mbox{\hyperlink{classMyHour_a5386a4615ab45dcdfdd40121e07a452c}{getHours}}())}
+\DoxyCodeLine{00187             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00188         \textcolor{keywordflow}{if} (rhs.\mbox{\hyperlink{classMyHour_a5386a4615ab45dcdfdd40121e07a452c}{getHours}}() < hours)}
+\DoxyCodeLine{00189             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00190         \textcolor{keywordflow}{return} minutes < rhs.\mbox{\hyperlink{classMyHour_a662dfa2d7eebe1038c121905b3511e1a}{getMinutes}}();}
+\DoxyCodeLine{00191     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a11bad0c8d7eee9d0140ed41ea09b518c}\label{classMyHour_a11bad0c8d7eee9d0140ed41ea09b518c}} 
+\index{MyHour@{MyHour}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool My\+Hour\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloading of the \texorpdfstring{$<$}{<}= operator. 
+
+
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00199}{199}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00199                                              \{}
+\DoxyCodeLine{00200         \textcolor{keywordflow}{return} !(rhs < *\textcolor{keyword}{this});}
+\DoxyCodeLine{00201     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a7f772d51f118769acb5ea1ad72c1105e}\label{classMyHour_a7f772d51f118769acb5ea1ad72c1105e}} 
+\index{MyHour@{MyHour}!operator=@{operator=}}
+\index{operator=@{operator=}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void My\+Hour\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloading of the = operator. 
+
+
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00179}{179}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00179                                        \{}
+\DoxyCodeLine{00180         this-\/>hours = rhs.\mbox{\hyperlink{classMyHour_a5386a4615ab45dcdfdd40121e07a452c}{getHours}}();}
+\DoxyCodeLine{00181         this-\/>minutes = rhs.\mbox{\hyperlink{classMyHour_a662dfa2d7eebe1038c121905b3511e1a}{getMinutes}}();}
+\DoxyCodeLine{00182     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a50ed1140f459b24decfddec2d3dedb40}\label{classMyHour_a50ed1140f459b24decfddec2d3dedb40}} 
+\index{MyHour@{MyHour}!operator==@{operator==}}
+\index{operator==@{operator==}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool My\+Hour\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloading of the == operator. 
+
+
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00209}{209}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00209                                              \{}
+\DoxyCodeLine{00210         \textcolor{keywordflow}{return} hours == rhs.\mbox{\hyperlink{classMyHour_a5386a4615ab45dcdfdd40121e07a452c}{getHours}}() \&\&}
+\DoxyCodeLine{00211                minutes == rhs.\mbox{\hyperlink{classMyHour_a662dfa2d7eebe1038c121905b3511e1a}{getMinutes}}();}
+\DoxyCodeLine{00212     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a342f34b7b148060e61f8a02044458879}\label{classMyHour_a342f34b7b148060e61f8a02044458879}} 
+\index{MyHour@{MyHour}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool My\+Hour\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloading of the \texorpdfstring{$>$}{>} operator. 
+
+
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00194}{194}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00194                                             \{}
+\DoxyCodeLine{00195         \textcolor{keywordflow}{return} rhs < *\textcolor{keyword}{this};}
+\DoxyCodeLine{00196     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_ab9f1e03b9ca4934af9646ab8f2016866}\label{classMyHour_ab9f1e03b9ca4934af9646ab8f2016866}} 
+\index{MyHour@{MyHour}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool My\+Hour\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overloading of the \texorpdfstring{$>$}{>}= operator. 
+
+
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00204}{204}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00204                                              \{}
+\DoxyCodeLine{00205         \textcolor{keywordflow}{return} !(*\textcolor{keyword}{this} < rhs);}
+\DoxyCodeLine{00206     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a15843d2f4a6220aead95ed18590f84ff}\label{classMyHour_a15843d2f4a6220aead95ed18590f84ff}} 
+\index{MyHour@{MyHour}!operatorsTest@{operatorsTest}}
+\index{operatorsTest@{operatorsTest}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{operatorsTest()}{operatorsTest()}}
+{\footnotesize\ttfamily static void My\+Hour\+::operators\+Test (\begin{DoxyParamCaption}\item[{int}]{hour1,  }\item[{int}]{minutes1,  }\item[{int}]{hour2,  }\item[{int}]{minutes2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Test for all operators. The function accepts four numbers and runs tests on the operators of the class. hour1 and minutes1 define the first hour. hour2 and minutes2 define the second hour 
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00244}{244}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00244                                                                                \{}
+\DoxyCodeLine{00245         \mbox{\hyperlink{classMyHour}{MyHour}} myHour = \mbox{\hyperlink{classMyHour_ad47dc9d46931477f62a29d4a87c2e054}{MyHour}}(hour1, minutes1);}
+\DoxyCodeLine{00246         \mbox{\hyperlink{classMyHour}{MyHour}} myHour1 = \mbox{\hyperlink{classMyHour_ad47dc9d46931477f62a29d4a87c2e054}{MyHour}}(hour2, minutes2);}
+\DoxyCodeLine{00247 }
+\DoxyCodeLine{00248         cout << \textcolor{stringliteral}{"{}== : "{}} << ((myHour==myHour1) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00249         cout << \textcolor{stringliteral}{"{}!= : "{}} << ((myHour!=myHour1) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00250         cout << \textcolor{stringliteral}{"{}> : "{}} << ((myHour>myHour1) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00251         cout << \textcolor{stringliteral}{"{}< : "{}} << ((myHour<myHour1) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00252         cout << \textcolor{stringliteral}{"{}>= : "{}} << ((myHour>=myHour1) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00253         cout << \textcolor{stringliteral}{"{}<= : "{}} << ((myHour<=myHour1) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00254 }
+\DoxyCodeLine{00255         cout << \textcolor{stringliteral}{"{}10:35 + 9:30 = "{}};}
+\DoxyCodeLine{00256         \mbox{\hyperlink{classMyHour}{MyHour}} res = \mbox{\hyperlink{classMyHour_ad47dc9d46931477f62a29d4a87c2e054}{MyHour}}(10, 35) + \mbox{\hyperlink{classMyHour_ad47dc9d46931477f62a29d4a87c2e054}{MyHour}}(9, 30);}
+\DoxyCodeLine{00257         res.\mbox{\hyperlink{classMyHour_a1a2ad47d392b1cf902bc7b122e163b16}{print}}();}
+\DoxyCodeLine{00258 }
+\DoxyCodeLine{00259         cout << \textcolor{stringliteral}{"{}11:30 -\/ 10:31 = "{}};}
+\DoxyCodeLine{00260         \mbox{\hyperlink{classMyHour}{MyHour}} res2 = \mbox{\hyperlink{classMyHour_ad47dc9d46931477f62a29d4a87c2e054}{MyHour}}(11, 30) -\/ \mbox{\hyperlink{classMyHour_ad47dc9d46931477f62a29d4a87c2e054}{MyHour}}(10, 31);}
+\DoxyCodeLine{00261         res2.\mbox{\hyperlink{classMyHour_a1a2ad47d392b1cf902bc7b122e163b16}{print}}();}
+\DoxyCodeLine{00262     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a1a2ad47d392b1cf902bc7b122e163b16}\label{classMyHour_a1a2ad47d392b1cf902bc7b122e163b16}} 
+\index{MyHour@{MyHour}!print@{print}}
+\index{print@{print}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void My\+Hour\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Prints the hour into a correct HH\+:MM format 
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00132}{132}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00132                        \{}
+\DoxyCodeLine{00133         \textcolor{keywordtype}{char}* string\_hour = \mbox{\hyperlink{classMyHour_aae782531212b27ebc29723b3c83c0150}{getHourAsString}}();}
+\DoxyCodeLine{00134         cout <<  string\_hour << endl;}
+\DoxyCodeLine{00135         \textcolor{keyword}{delete} [] string\_hour;}
+\DoxyCodeLine{00136     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a8ec74ab99da5fd35f354ac2818df9e64}\label{classMyHour_a8ec74ab99da5fd35f354ac2818df9e64}} 
+\index{MyHour@{MyHour}!save@{save}}
+\index{save@{save}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void My\+Hour\+::save (\begin{DoxyParamCaption}\item[{ofstream \&}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Saves the hour into a file 
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00056}{56}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00056                              \{}
+\DoxyCodeLine{00057         file.write((\textcolor{keywordtype}{char}*)\&hours, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));}
+\DoxyCodeLine{00058         file.write((\textcolor{keywordtype}{char}*)\&minutes, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));}
+\DoxyCodeLine{00059 }
+\DoxyCodeLine{00060     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_aafab6701ca94d5d2a0faa95cd487a1b7}\label{classMyHour_aafab6701ca94d5d2a0faa95cd487a1b7}} 
+\index{MyHour@{MyHour}!saveAndLoadTest@{saveAndLoadTest}}
+\index{saveAndLoadTest@{saveAndLoadTest}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{saveAndLoadTest()}{saveAndLoadTest()}}
+{\footnotesize\ttfamily static void My\+Hour\+::save\+And\+Load\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Test for saving and loading the hour to file 
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00265}{265}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00265                                  \{}
+\DoxyCodeLine{00266         cout << \textcolor{stringliteral}{"{}Saving hour1 to file and loading it to hour2:"{}} << endl;}
+\DoxyCodeLine{00267         ofstream file(\textcolor{stringliteral}{"{}Hour.dat"{}}, ios::out | ios::binary);}
+\DoxyCodeLine{00268         \textcolor{keywordflow}{if}(!file)\{}
+\DoxyCodeLine{00269             \textcolor{keywordflow}{throw} invalid\_argument(\textcolor{stringliteral}{"{}Couldn't open file"{}});}
+\DoxyCodeLine{00270         \}}
+\DoxyCodeLine{00271         \mbox{\hyperlink{classMyHour}{MyHour}} hour1 = \mbox{\hyperlink{classMyHour_ad47dc9d46931477f62a29d4a87c2e054}{MyHour}}(10, 15);}
+\DoxyCodeLine{00272         hour1.\mbox{\hyperlink{classMyHour_a8ec74ab99da5fd35f354ac2818df9e64}{save}}(file);}
+\DoxyCodeLine{00273         file.close();}
+\DoxyCodeLine{00274 }
+\DoxyCodeLine{00275         ifstream in(\textcolor{stringliteral}{"{}Hour.dat"{}}, ios::in | ios::binary);}
+\DoxyCodeLine{00276         \textcolor{keywordflow}{if}(!in)\{}
+\DoxyCodeLine{00277             \textcolor{keywordflow}{throw} invalid\_argument(\textcolor{stringliteral}{"{}Couldn't open file"{}});}
+\DoxyCodeLine{00278         \}}
+\DoxyCodeLine{00279         \mbox{\hyperlink{classMyHour}{MyHour}} hour2 = \mbox{\hyperlink{classMyHour_ad47dc9d46931477f62a29d4a87c2e054}{MyHour}}();}
+\DoxyCodeLine{00280         hour2.\mbox{\hyperlink{classMyHour_a5496f6bbe86d1abf8c59785597861247}{load}}(in);}
+\DoxyCodeLine{00281         in.close();}
+\DoxyCodeLine{00282         hour2.\mbox{\hyperlink{classMyHour_a1a2ad47d392b1cf902bc7b122e163b16}{print}}();}
+\DoxyCodeLine{00283     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a6bf67471db89552c2dcf0781e7f4322b}\label{classMyHour_a6bf67471db89552c2dcf0781e7f4322b}} 
+\index{MyHour@{MyHour}!setHours@{setHours}}
+\index{setHours@{setHours}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{setHours()}{setHours()}}
+{\footnotesize\ttfamily void My\+Hour\+::set\+Hours (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+hours }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Setter for hours field
+\begin{DoxyItemize}
+\item Also validates field to be in the 0-\/23 range 
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00083}{83}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00083                                  \{}
+\DoxyCodeLine{00084         \textcolor{keywordflow}{if}(!validateHours(new\_hours))\{}
+\DoxyCodeLine{00085             \textcolor{keywordflow}{throw} std::invalid\_argument( \textcolor{stringliteral}{"{}Hour is not in 0-\/23 range"{}} );}
+\DoxyCodeLine{00086         \}}
+\DoxyCodeLine{00087         this-\/>hours = new\_hours;}
+\DoxyCodeLine{00088     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMyHour_a7732515255c138f95c27658459cf2f32}\label{classMyHour_a7732515255c138f95c27658459cf2f32}} 
+\index{MyHour@{MyHour}!setMinutes@{setMinutes}}
+\index{setMinutes@{setMinutes}!MyHour@{MyHour}}
+\doxysubsubsection{\texorpdfstring{setMinutes()}{setMinutes()}}
+{\footnotesize\ttfamily void My\+Hour\+::set\+Minutes (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+minutes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Setter for minutes field
+\begin{DoxyItemize}
+\item Also validates field to be in the 0-\/59 range 
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{MyHour_8cpp_source_l00093}{93}} of file \mbox{\hyperlink{MyHour_8cpp_source}{My\+Hour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00093                                      \{}
+\DoxyCodeLine{00094         \textcolor{keywordflow}{if}(!validateMinutes(new\_minutes))\{}
+\DoxyCodeLine{00095             \textcolor{keywordflow}{throw} std::invalid\_argument( \textcolor{stringliteral}{"{}Minutes are not in 0-\/59 range"{}} );}
+\DoxyCodeLine{00096         \}}
+\DoxyCodeLine{00097         this-\/>minutes = new\_minutes;}
+\DoxyCodeLine{00098     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+My\+Hour.\+cpp\end{DoxyCompactItemize}

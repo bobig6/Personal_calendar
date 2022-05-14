@@ -1,0 +1,761 @@
+\hypertarget{classMeeting}{}\doxysection{Meeting Class Reference}
+\label{classMeeting}\index{Meeting@{Meeting}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMeeting_a4c7eefdcd5a1b8a24b8b4f348c80f992}{Meeting}} (char $\ast$name, char $\ast$description, const \mbox{\hyperlink{classMyDate}{My\+Date}} \&date, const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&start\+Hour, const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&end\+Hour)
+\begin{DoxyCompactList}\small\item\em TIME\+: A \mbox{\hyperlink{classMyHour}{My\+Hour}} object containing the ending hour. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMeeting_a6b300316120aa287400af34bcad1781b}{Meeting}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor creates empty meeting object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMeeting_a25d1c68626937ed29905f75fa0e1c6ff}{Meeting}} (const \mbox{\hyperlink{classMeeting}{Meeting}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the \mbox{\hyperlink{classMeeting}{Meeting}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMeeting_aee544738c7584331ceed39e6bc1a9a1a}{$\sim$\+Meeting}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classMeeting}{Meeting}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMeeting_a4ba766215f8932b69932dd442438f455}{save}} (ofstream \&file)
+\item 
+void \mbox{\hyperlink{classMeeting_a439bdd485ef6b0551fefc548438446df}{load}} (ifstream \&file)
+\item 
+char $\ast$ \mbox{\hyperlink{classMeeting_ac57e889f3d00628a79a889d681fe520c}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Getter for name field. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{classMeeting_a7c87cab6910ab1bc0e0278b61ffcf6e2}{get\+Description}} () const
+\begin{DoxyCompactList}\small\item\em Getter for description field. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classMyDate}{My\+Date}} \& \mbox{\hyperlink{classMeeting_a5cd0547da990cc6cdd5caae61ab0d559}{get\+Date}} () const
+\begin{DoxyCompactList}\small\item\em Getter for date field. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classMyHour}{My\+Hour}} \& \mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{get\+Start\+Hour}} () const
+\begin{DoxyCompactList}\small\item\em Getter for start\+Hour field. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classMyHour}{My\+Hour}} \& \mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{get\+End\+Hour}} () const
+\begin{DoxyCompactList}\small\item\em Getter for end\+Hour field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMeeting_a197df9113bedefe06f59196670765ef6}{set\+Name}} (char $\ast$new\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Setter for the name with memory handling. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMeeting_a5fe1d7c410753080085d513f7c6b2065}{set\+Description}} (char $\ast$new\+\_\+description)
+\begin{DoxyCompactList}\small\item\em Setter for the description with memory handling. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMeeting_ac636364cd62cadb3948465956b703517}{set\+Date}} (const \mbox{\hyperlink{classMyDate}{My\+Date}} \&new\+\_\+date)
+\begin{DoxyCompactList}\small\item\em Setter for the date. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMeeting_aeac8233eb3a1306f1c0179ffdec61581}{set\+Start\+Hour}} (const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&new\+\_\+start\+Hour)
+\begin{DoxyCompactList}\small\item\em Setter for the start\+Hour. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMeeting_a05436acb7cffee770d1b118e6ba8b2df}{set\+End\+Hour}} (const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&new\+\_\+end\+Hour)
+\begin{DoxyCompactList}\small\item\em Setter for the end\+Hour. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMeeting_a7e5c23e7937a995043acb0846832fe53}{set\+Meeting}} (char $\ast$new\+\_\+name, char $\ast$new\+\_\+description, const \mbox{\hyperlink{classMyDate}{My\+Date}} \&new\+\_\+date, const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&new\+\_\+start\+Hour, const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&new\+\_\+end\+Hour)
+\begin{DoxyCompactList}\small\item\em Setter for the meeting object. It gets all the arguments and sets them to the current object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}} ()
+\item 
+void \mbox{\hyperlink{classMeeting_a68a9815de28051c31726944e83ec8707}{operator=}} (const \mbox{\hyperlink{classMeeting}{Meeting}} \&rhs)
+\item 
+bool \mbox{\hyperlink{classMeeting_a1a710d57a2184d5572d759175e7e336e}{operator==}} (const \mbox{\hyperlink{classMeeting}{Meeting}} \&rhs) const
+\item 
+bool \mbox{\hyperlink{classMeeting_aa587b5908f72b56f26e98617c4eeeeaa}{operator$<$}} (const \mbox{\hyperlink{classMeeting}{Meeting}} \&rhs) const
+\item 
+bool \mbox{\hyperlink{classMeeting_ad567ad1ae61dcb7de4a2d45b54d85fb0}{operator$>$}} (const \mbox{\hyperlink{classMeeting}{Meeting}} \&rhs) const
+\item 
+bool \mbox{\hyperlink{classMeeting_a22f435443b0857dfb4f841bd0b4f0dfc}{operator$<$=}} (const \mbox{\hyperlink{classMeeting}{Meeting}} \&rhs) const
+\item 
+bool \mbox{\hyperlink{classMeeting_a7b06e86a709e69c999513333f0b1f944}{operator$>$=}} (const \mbox{\hyperlink{classMeeting}{Meeting}} \&rhs) const
+\item 
+bool \mbox{\hyperlink{classMeeting_ae537894342379c59d36d7f68a4692191}{operator!=}} (const \mbox{\hyperlink{classMeeting}{Meeting}} \&rhs) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classMeeting_ae3db24b981232d49e783b253a179c8f7}{initialization\+Test}} ()
+\item 
+static void \mbox{\hyperlink{classMeeting_a1b5f2e42e62ee880a81dd0a8b5a8865d}{operators\+Test}} (const \mbox{\hyperlink{classMeeting}{Meeting}} \&meeting1, const \mbox{\hyperlink{classMeeting}{Meeting}} \&meeting2)
+\item 
+static void \mbox{\hyperlink{classMeeting_ab30acee0ddbd246d1cf0971e4c3498cb}{save\+And\+Load\+Test}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMeeting_a4c7eefdcd5a1b8a24b8b4f348c80f992}\label{classMeeting_a4c7eefdcd5a1b8a24b8b4f348c80f992}} 
+\index{Meeting@{Meeting}!Meeting@{Meeting}}
+\index{Meeting@{Meeting}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{Meeting()}{Meeting()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Meeting\+::\+Meeting (\begin{DoxyParamCaption}\item[{char $\ast$}]{name,  }\item[{char $\ast$}]{description,  }\item[{const \mbox{\hyperlink{classMyDate}{My\+Date}} \&}]{date,  }\item[{const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&}]{start\+Hour,  }\item[{const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&}]{end\+Hour }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+TIME\+: A \mbox{\hyperlink{classMyHour}{My\+Hour}} object containing the ending hour. 
+
+Constructor for \mbox{\hyperlink{classMeeting}{Meeting}} class with name, description, date, start\+Hour and end\+Hour as input 
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017                                                                                                               \{}
+\DoxyCodeLine{00018         this-\/>name = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[strlen(name)];}
+\DoxyCodeLine{00019         this-\/>description = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[strlen(description)];}
+\DoxyCodeLine{00020         \mbox{\hyperlink{classMeeting_a197df9113bedefe06f59196670765ef6}{setName}}(name);}
+\DoxyCodeLine{00021         \mbox{\hyperlink{classMeeting_a5fe1d7c410753080085d513f7c6b2065}{setDescription}}(description);}
+\DoxyCodeLine{00022         \mbox{\hyperlink{classMeeting_ac636364cd62cadb3948465956b703517}{setDate}}(date);}
+\DoxyCodeLine{00023         \mbox{\hyperlink{classMeeting_aeac8233eb3a1306f1c0179ffdec61581}{setStartHour}}(startHour);}
+\DoxyCodeLine{00024         \mbox{\hyperlink{classMeeting_a05436acb7cffee770d1b118e6ba8b2df}{setEndHour}}(endHour);}
+\DoxyCodeLine{00025     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_a6b300316120aa287400af34bcad1781b}\label{classMeeting_a6b300316120aa287400af34bcad1781b}} 
+\index{Meeting@{Meeting}!Meeting@{Meeting}}
+\index{Meeting@{Meeting}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{Meeting()}{Meeting()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Meeting\+::\+Meeting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor creates empty meeting object. 
+
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00028              \{}
+\DoxyCodeLine{00029 }
+\DoxyCodeLine{00030         \textcolor{comment}{// Creating sample name and description to give to the set function}}
+\DoxyCodeLine{00031         \textcolor{keywordtype}{char}* new\_name = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[20];}
+\DoxyCodeLine{00032         \textcolor{keywordtype}{char}* new\_description = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[100];}
+\DoxyCodeLine{00033 }
+\DoxyCodeLine{00034         strcpy(new\_name, \textcolor{stringliteral}{"{}Empty"{}});}
+\DoxyCodeLine{00035         strcpy(new\_description, \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00036 }
+\DoxyCodeLine{00037         this-\/>name = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[strlen(new\_name)];}
+\DoxyCodeLine{00038         this-\/>description = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[strlen(new\_description)];}
+\DoxyCodeLine{00039 }
+\DoxyCodeLine{00040         \textcolor{comment}{// Setting the sample meeting parameters}}
+\DoxyCodeLine{00041         \mbox{\hyperlink{classMeeting_a7e5c23e7937a995043acb0846832fe53}{setMeeting}}(new\_name,}
+\DoxyCodeLine{00042                    new\_description,}
+\DoxyCodeLine{00043                   \mbox{\hyperlink{classMyDate}{MyDate}}(),}
+\DoxyCodeLine{00044                   \mbox{\hyperlink{classMyHour}{MyHour}}(),}
+\DoxyCodeLine{00045                   \mbox{\hyperlink{classMyHour}{MyHour}}());}
+\DoxyCodeLine{00046 }
+\DoxyCodeLine{00047         \textcolor{comment}{// Deleting the sample name and description}}
+\DoxyCodeLine{00048         \textcolor{keyword}{delete}[] new\_name;}
+\DoxyCodeLine{00049         \textcolor{keyword}{delete}[] new\_description;}
+\DoxyCodeLine{00050     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_a25d1c68626937ed29905f75fa0e1c6ff}\label{classMeeting_a25d1c68626937ed29905f75fa0e1c6ff}} 
+\index{Meeting@{Meeting}!Meeting@{Meeting}}
+\index{Meeting@{Meeting}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{Meeting()}{Meeting()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Meeting\+::\+Meeting (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMeeting}{Meeting}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor for the \mbox{\hyperlink{classMeeting}{Meeting}} class. 
+
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00053}{53}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00053                                  \{}
+\DoxyCodeLine{00054         this-\/>name = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[strlen(other.\mbox{\hyperlink{classMeeting_ac57e889f3d00628a79a889d681fe520c}{getName}}())];}
+\DoxyCodeLine{00055         this-\/>description = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[strlen(other.\mbox{\hyperlink{classMeeting_a7c87cab6910ab1bc0e0278b61ffcf6e2}{getDescription}}())];}
+\DoxyCodeLine{00056         \mbox{\hyperlink{classMeeting_a7e5c23e7937a995043acb0846832fe53}{setMeeting}}(other.\mbox{\hyperlink{classMeeting_ac57e889f3d00628a79a889d681fe520c}{getName}}(), other.\mbox{\hyperlink{classMeeting_a7c87cab6910ab1bc0e0278b61ffcf6e2}{getDescription}}(), other.\mbox{\hyperlink{classMeeting_a5cd0547da990cc6cdd5caae61ab0d559}{getDate}}(), other.\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}(), other.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}());}
+\DoxyCodeLine{00057     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_aee544738c7584331ceed39e6bc1a9a1a}\label{classMeeting_aee544738c7584331ceed39e6bc1a9a1a}} 
+\index{Meeting@{Meeting}!````~Meeting@{$\sim$Meeting}}
+\index{````~Meeting@{$\sim$Meeting}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{$\sim$Meeting()}{~Meeting()}}
+{\footnotesize\ttfamily Meeting\+::$\sim$\+Meeting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor for the \mbox{\hyperlink{classMeeting}{Meeting}} class. 
+
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00061                \{}
+\DoxyCodeLine{00062         \textcolor{keyword}{delete} [] name;}
+\DoxyCodeLine{00063         \textcolor{keyword}{delete} [] description;}
+\DoxyCodeLine{00064     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMeeting_a5cd0547da990cc6cdd5caae61ab0d559}\label{classMeeting_a5cd0547da990cc6cdd5caae61ab0d559}} 
+\index{Meeting@{Meeting}!getDate@{getDate}}
+\index{getDate@{getDate}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{getDate()}{getDate()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classMyDate}{My\+Date}} \& Meeting\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for date field. 
+
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00129}{129}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00129                                   \{}
+\DoxyCodeLine{00130         \textcolor{keywordflow}{return} date;}
+\DoxyCodeLine{00131     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_a7c87cab6910ab1bc0e0278b61ffcf6e2}\label{classMeeting_a7c87cab6910ab1bc0e0278b61ffcf6e2}} 
+\index{Meeting@{Meeting}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily char $\ast$ Meeting\+::get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for description field. 
+
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00124}{124}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00124                                  \{}
+\DoxyCodeLine{00125         \textcolor{keywordflow}{return} description;}
+\DoxyCodeLine{00126     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_ac36ebbda78049e6756d3e600e52f65be}\label{classMeeting_ac36ebbda78049e6756d3e600e52f65be}} 
+\index{Meeting@{Meeting}!getEndHour@{getEndHour}}
+\index{getEndHour@{getEndHour}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{getEndHour()}{getEndHour()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classMyHour}{My\+Hour}} \& Meeting\+::get\+End\+Hour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for end\+Hour field. 
+
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00139}{139}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00139                                      \{}
+\DoxyCodeLine{00140         \textcolor{keywordflow}{return} endHour;}
+\DoxyCodeLine{00141     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_ac57e889f3d00628a79a889d681fe520c}\label{classMeeting_ac57e889f3d00628a79a889d681fe520c}} 
+\index{Meeting@{Meeting}!getName@{getName}}
+\index{getName@{getName}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily char $\ast$ Meeting\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for name field. 
+
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00119}{119}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00119                           \{}
+\DoxyCodeLine{00120         \textcolor{keywordflow}{return} name;}
+\DoxyCodeLine{00121     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_ad34dadb63bc5a943c8524959b2a67249}\label{classMeeting_ad34dadb63bc5a943c8524959b2a67249}} 
+\index{Meeting@{Meeting}!getStartHour@{getStartHour}}
+\index{getStartHour@{getStartHour}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{getStartHour()}{getStartHour()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classMyHour}{My\+Hour}} \& Meeting\+::get\+Start\+Hour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for start\+Hour field. 
+
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00134}{134}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00134                                        \{}
+\DoxyCodeLine{00135         \textcolor{keywordflow}{return} startHour;}
+\DoxyCodeLine{00136     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_ae3db24b981232d49e783b253a179c8f7}\label{classMeeting_ae3db24b981232d49e783b253a179c8f7}} 
+\index{Meeting@{Meeting}!initializationTest@{initializationTest}}
+\index{initializationTest@{initializationTest}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{initializationTest()}{initializationTest()}}
+{\footnotesize\ttfamily static void Meeting\+::initialization\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Test of initialization with correct values 
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00252}{252}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00252                                     \{}
+\DoxyCodeLine{00253         \textcolor{keywordtype}{char}* test\_name = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[20];}
+\DoxyCodeLine{00254         \textcolor{keywordtype}{char}* test\_description = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[100];}
+\DoxyCodeLine{00255 }
+\DoxyCodeLine{00256         strcpy(test\_name, \textcolor{stringliteral}{"{}Appointment"{}});}
+\DoxyCodeLine{00257         strcpy(test\_description, \textcolor{stringliteral}{"{}Appointment with the doctor"{}});}
+\DoxyCodeLine{00258 }
+\DoxyCodeLine{00259         \mbox{\hyperlink{classMeeting}{Meeting}} meeting = \mbox{\hyperlink{classMeeting_a6b300316120aa287400af34bcad1781b}{Meeting}}(test\_name,}
+\DoxyCodeLine{00260                                   test\_description,}
+\DoxyCodeLine{00261                                   \mbox{\hyperlink{classMyDate}{MyDate}}(24, 10, 2022),}
+\DoxyCodeLine{00262                                   \mbox{\hyperlink{classMyHour}{MyHour}}(10, 15),}
+\DoxyCodeLine{00263                                   \mbox{\hyperlink{classMyHour}{MyHour}}(12, 15));}
+\DoxyCodeLine{00264 }
+\DoxyCodeLine{00265         \textcolor{keyword}{delete}[] test\_name;}
+\DoxyCodeLine{00266         \textcolor{keyword}{delete}[] test\_description;}
+\DoxyCodeLine{00267 }
+\DoxyCodeLine{00268         meeting.\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
+\DoxyCodeLine{00269 }
+\DoxyCodeLine{00270         cout << endl << \textcolor{stringliteral}{"{}Testing constructors. Empty meeting: "{}} << endl;}
+\DoxyCodeLine{00271         \mbox{\hyperlink{classMeeting}{Meeting}} empty = \mbox{\hyperlink{classMeeting_a6b300316120aa287400af34bcad1781b}{Meeting}}();}
+\DoxyCodeLine{00272         empty.\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
+\DoxyCodeLine{00273         cout << endl << \textcolor{stringliteral}{"{}Copying the meeting to new one and changing the date: New meeting: "{}} << endl;}
+\DoxyCodeLine{00274         \mbox{\hyperlink{classMeeting}{Meeting}} empty1 = \mbox{\hyperlink{classMeeting_a6b300316120aa287400af34bcad1781b}{Meeting}}(empty);}
+\DoxyCodeLine{00275         empty1.\mbox{\hyperlink{classMeeting_ac636364cd62cadb3948465956b703517}{setDate}}(\mbox{\hyperlink{classMyDate}{MyDate}}(23, 4, 2024));}
+\DoxyCodeLine{00276         empty1.\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
+\DoxyCodeLine{00277 }
+\DoxyCodeLine{00278     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_a439bdd485ef6b0551fefc548438446df}\label{classMeeting_a439bdd485ef6b0551fefc548438446df}} 
+\index{Meeting@{Meeting}!load@{load}}
+\index{load@{load}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void Meeting\+::load (\begin{DoxyParamCaption}\item[{ifstream \&}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A function to load the class from a binary file 
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00089}{89}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00089                              \{}
+\DoxyCodeLine{00090         \textcolor{comment}{// Getting the size of the array first}}
+\DoxyCodeLine{00091         \textcolor{keywordtype}{size\_t} nameSize = 0;}
+\DoxyCodeLine{00092         file.read(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{char} *\textcolor{keyword}{>}(\&nameSize), \textcolor{keyword}{sizeof}(nameSize));}
+\DoxyCodeLine{00093         \textcolor{comment}{// Creating a new string to hold the information}}
+\DoxyCodeLine{00094         \textcolor{keywordtype}{char}* new\_name = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[nameSize+1];}
+\DoxyCodeLine{00095         \textcolor{comment}{// Reading nameSize bytes from the file and saving them to the new string}}
+\DoxyCodeLine{00096         file.read(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{char} *\textcolor{keyword}{>}(new\_name), nameSize);}
+\DoxyCodeLine{00097         \textcolor{comment}{// Setting new\_name as the current's class name and deleting it afterwards}}
+\DoxyCodeLine{00098         \mbox{\hyperlink{classMeeting_a197df9113bedefe06f59196670765ef6}{setName}}(new\_name);}
+\DoxyCodeLine{00099         \textcolor{keyword}{delete} [] new\_name;}
+\DoxyCodeLine{00100 }
+\DoxyCodeLine{00101         \textcolor{comment}{// Doing the same thing for the description}}
+\DoxyCodeLine{00102         \textcolor{keywordtype}{size\_t} descSize = 0;}
+\DoxyCodeLine{00103         file.read(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{char} *\textcolor{keyword}{>}(\&descSize), \textcolor{keyword}{sizeof}(descSize));}
+\DoxyCodeLine{00104 }
+\DoxyCodeLine{00105         \textcolor{keywordtype}{char}* new\_desc = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[descSize + 1];}
+\DoxyCodeLine{00106         file.read(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{char} *\textcolor{keyword}{>}(new\_desc), descSize);}
+\DoxyCodeLine{00107         \mbox{\hyperlink{classMeeting_a5fe1d7c410753080085d513f7c6b2065}{setDescription}}(new\_desc);}
+\DoxyCodeLine{00108         \textcolor{keyword}{delete} [] new\_desc;}
+\DoxyCodeLine{00109 }
+\DoxyCodeLine{00110 }
+\DoxyCodeLine{00111         \textcolor{comment}{// Reading the rest of the data}}
+\DoxyCodeLine{00112         date.\mbox{\hyperlink{classMyDate_abbad70d4218befe0509e57ff7c2c10f5}{load}}(file);}
+\DoxyCodeLine{00113         startHour.\mbox{\hyperlink{classMyHour_a5496f6bbe86d1abf8c59785597861247}{load}}(file);}
+\DoxyCodeLine{00114         endHour.\mbox{\hyperlink{classMyHour_a5496f6bbe86d1abf8c59785597861247}{load}}(file);}
+\DoxyCodeLine{00115     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_ae537894342379c59d36d7f68a4692191}\label{classMeeting_ae537894342379c59d36d7f68a4692191}} 
+\index{Meeting@{Meeting}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Meeting\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMeeting}{Meeting}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Overloading of the != operator. 
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00243}{243}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00243                                               \{}
+\DoxyCodeLine{00244         \textcolor{keywordflow}{return} !(rhs == *\textcolor{keyword}{this});}
+\DoxyCodeLine{00245     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_aa587b5908f72b56f26e98617c4eeeeaa}\label{classMeeting_aa587b5908f72b56f26e98617c4eeeeaa}} 
+\index{Meeting@{Meeting}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Meeting\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMeeting}{Meeting}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Overloading of the \texorpdfstring{$<$}{<} operator. It compares on date, start\+Hour and end\+Hour in this order 
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00214}{214}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00214                                              \{}
+\DoxyCodeLine{00215         \textcolor{keywordflow}{if} (date < rhs.\mbox{\hyperlink{classMeeting_a5cd0547da990cc6cdd5caae61ab0d559}{getDate}}())}
+\DoxyCodeLine{00216             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00217         \textcolor{keywordflow}{if} (rhs.\mbox{\hyperlink{classMeeting_a5cd0547da990cc6cdd5caae61ab0d559}{getDate}}() < date)}
+\DoxyCodeLine{00218             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00219         \textcolor{keywordflow}{if} (startHour < rhs.\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}())}
+\DoxyCodeLine{00220             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00221         \textcolor{keywordflow}{if} (rhs.\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}() < startHour)}
+\DoxyCodeLine{00222             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00223         \textcolor{keywordflow}{return} endHour < rhs.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}();}
+\DoxyCodeLine{00224 }
+\DoxyCodeLine{00225     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_a22f435443b0857dfb4f841bd0b4f0dfc}\label{classMeeting_a22f435443b0857dfb4f841bd0b4f0dfc}} 
+\index{Meeting@{Meeting}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool Meeting\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMeeting}{Meeting}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Overloading of the \texorpdfstring{$<$}{<}= operator. 
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00233}{233}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00233                                               \{}
+\DoxyCodeLine{00234         \textcolor{keywordflow}{return} !(rhs < *\textcolor{keyword}{this});}
+\DoxyCodeLine{00235     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_a68a9815de28051c31726944e83ec8707}\label{classMeeting_a68a9815de28051c31726944e83ec8707}} 
+\index{Meeting@{Meeting}!operator=@{operator=}}
+\index{operator=@{operator=}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void Meeting\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMeeting}{Meeting}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00198}{198}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00198                                         \{}
+\DoxyCodeLine{00199         \mbox{\hyperlink{classMeeting_a7e5c23e7937a995043acb0846832fe53}{setMeeting}}(rhs.\mbox{\hyperlink{classMeeting_ac57e889f3d00628a79a889d681fe520c}{getName}}(), rhs.\mbox{\hyperlink{classMeeting_a7c87cab6910ab1bc0e0278b61ffcf6e2}{getDescription}}(), rhs.\mbox{\hyperlink{classMeeting_a5cd0547da990cc6cdd5caae61ab0d559}{getDate}}(), rhs.\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}(), rhs.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}());}
+\DoxyCodeLine{00200     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_a1a710d57a2184d5572d759175e7e336e}\label{classMeeting_a1a710d57a2184d5572d759175e7e336e}} 
+\index{Meeting@{Meeting}!operator==@{operator==}}
+\index{operator==@{operator==}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Meeting\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMeeting}{Meeting}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Equality operator for the \mbox{\hyperlink{classMeeting}{Meeting}} class. Compares two meetings by all arguments. 
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00204}{204}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00204                                               \{}
+\DoxyCodeLine{00205         \textcolor{keywordflow}{return} strcmp(name, rhs.\mbox{\hyperlink{classMeeting_ac57e889f3d00628a79a889d681fe520c}{getName}}()) == 0 \&\&}
+\DoxyCodeLine{00206                strcmp(description, rhs.\mbox{\hyperlink{classMeeting_a7c87cab6910ab1bc0e0278b61ffcf6e2}{getDescription}}()) == 0 \&\&}
+\DoxyCodeLine{00207                date == rhs.\mbox{\hyperlink{classMeeting_a5cd0547da990cc6cdd5caae61ab0d559}{getDate}}() \&\&}
+\DoxyCodeLine{00208                startHour == rhs.\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}() \&\&}
+\DoxyCodeLine{00209                endHour == rhs.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}();}
+\DoxyCodeLine{00210     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_ad567ad1ae61dcb7de4a2d45b54d85fb0}\label{classMeeting_ad567ad1ae61dcb7de4a2d45b54d85fb0}} 
+\index{Meeting@{Meeting}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Meeting\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMeeting}{Meeting}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Overloading of the \texorpdfstring{$>$}{>} operator. 
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00228}{228}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00228                                              \{}
+\DoxyCodeLine{00229         \textcolor{keywordflow}{return} rhs < *\textcolor{keyword}{this};}
+\DoxyCodeLine{00230     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_a7b06e86a709e69c999513333f0b1f944}\label{classMeeting_a7b06e86a709e69c999513333f0b1f944}} 
+\index{Meeting@{Meeting}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool Meeting\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMeeting}{Meeting}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Overloading of the \texorpdfstring{$>$}{>}= operator. 
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00238}{238}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00238                                               \{}
+\DoxyCodeLine{00239         \textcolor{keywordflow}{return} !(*\textcolor{keyword}{this} < rhs);}
+\DoxyCodeLine{00240     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_a1b5f2e42e62ee880a81dd0a8b5a8865d}\label{classMeeting_a1b5f2e42e62ee880a81dd0a8b5a8865d}} 
+\index{Meeting@{Meeting}!operatorsTest@{operatorsTest}}
+\index{operatorsTest@{operatorsTest}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{operatorsTest()}{operatorsTest()}}
+{\footnotesize\ttfamily static void Meeting\+::operators\+Test (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMeeting}{Meeting}} \&}]{meeting1,  }\item[{const \mbox{\hyperlink{classMeeting}{Meeting}} \&}]{meeting2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Test for all operators. The function accepts two meetings and runs tests on the operators of the class. 
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00281}{281}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00281                                                                                \{}
+\DoxyCodeLine{00282         cout << \textcolor{stringliteral}{"{}== : "{}} << ((meeting1==meeting2) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00283         cout << \textcolor{stringliteral}{"{}!= : "{}} << ((meeting1!=meeting2) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00284         cout << \textcolor{stringliteral}{"{}> : "{}} << ((meeting1>meeting2) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00285         cout << \textcolor{stringliteral}{"{}< : "{}} << ((meeting1<meeting2) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00286         cout << \textcolor{stringliteral}{"{}>= : "{}} << ((meeting1>=meeting2) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00287         cout << \textcolor{stringliteral}{"{}<= : "{}} << ((meeting1<=meeting2) ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}}) << endl;}
+\DoxyCodeLine{00288     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}\label{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}} 
+\index{Meeting@{Meeting}!print@{print}}
+\index{print@{print}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Meeting\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A print function for the \mbox{\hyperlink{classMeeting}{Meeting}} class. Includes memory handling for the strings of date, start\+Hour and end\+Hour 
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00185}{185}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00185                 \{}
+\DoxyCodeLine{00186         cout << \textcolor{stringliteral}{"{}Meeting \(\backslash\)"{}"{}} << name << \textcolor{stringliteral}{"{}\(\backslash\)"{}: "{}} << endl;}
+\DoxyCodeLine{00187         cout << \textcolor{stringliteral}{"{}Description: "{}} << description << endl;}
+\DoxyCodeLine{00188         cout << \textcolor{stringliteral}{"{}Date: "{}};}
+\DoxyCodeLine{00189         date.\mbox{\hyperlink{classMyDate_a4a68e343d8fd865f719a93a67e00c8e3}{print}}();}
+\DoxyCodeLine{00190         cout << \textcolor{stringliteral}{"{}Starting hour: "{}};}
+\DoxyCodeLine{00191         startHour.\mbox{\hyperlink{classMyHour_a1a2ad47d392b1cf902bc7b122e163b16}{print}}();}
+\DoxyCodeLine{00192         cout << \textcolor{stringliteral}{"{}Ending hour: "{}};}
+\DoxyCodeLine{00193         endHour.\mbox{\hyperlink{classMyHour_a1a2ad47d392b1cf902bc7b122e163b16}{print}}();}
+\DoxyCodeLine{00194     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_a4ba766215f8932b69932dd442438f455}\label{classMeeting_a4ba766215f8932b69932dd442438f455}} 
+\index{Meeting@{Meeting}!save@{save}}
+\index{save@{save}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Meeting\+::save (\begin{DoxyParamCaption}\item[{ofstream \&}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A function to save the class into a binary file 
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00069}{69}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00069                              \{}
+\DoxyCodeLine{00070         \textcolor{comment}{// Getting the size of the name string}}
+\DoxyCodeLine{00071         \textcolor{keywordtype}{size\_t} nameSize = strlen(name);}
+\DoxyCodeLine{00072         \textcolor{comment}{// Saving the size before the name string so we can then use it to load that string}}
+\DoxyCodeLine{00073         file.write(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{char} *\textcolor{keyword}{>}(\&nameSize), \textcolor{keyword}{sizeof}(nameSize));}
+\DoxyCodeLine{00074         \textcolor{comment}{// Saving the name}}
+\DoxyCodeLine{00075         file.write(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{char} *\textcolor{keyword}{>}(name), nameSize);}
+\DoxyCodeLine{00076 }
+\DoxyCodeLine{00077         \textcolor{comment}{// Saving the description size and the description}}
+\DoxyCodeLine{00078         \textcolor{keywordtype}{size\_t} descSize = strlen(description);}
+\DoxyCodeLine{00079         file.write(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{char} *\textcolor{keyword}{>}(\&descSize), \textcolor{keyword}{sizeof}(descSize));}
+\DoxyCodeLine{00080         file.write(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{char} *\textcolor{keyword}{>}(description), descSize);}
+\DoxyCodeLine{00081 }
+\DoxyCodeLine{00082         \textcolor{comment}{// Saving the other info from the class}}
+\DoxyCodeLine{00083         date.\mbox{\hyperlink{classMyDate_ae7344852ab9b09b9ad8c0aa26411366b}{save}}(file);}
+\DoxyCodeLine{00084         startHour.\mbox{\hyperlink{classMyHour_a8ec74ab99da5fd35f354ac2818df9e64}{save}}(file);}
+\DoxyCodeLine{00085         endHour.\mbox{\hyperlink{classMyHour_a8ec74ab99da5fd35f354ac2818df9e64}{save}}(file);}
+\DoxyCodeLine{00086     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_ab30acee0ddbd246d1cf0971e4c3498cb}\label{classMeeting_ab30acee0ddbd246d1cf0971e4c3498cb}} 
+\index{Meeting@{Meeting}!saveAndLoadTest@{saveAndLoadTest}}
+\index{saveAndLoadTest@{saveAndLoadTest}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{saveAndLoadTest()}{saveAndLoadTest()}}
+{\footnotesize\ttfamily static void Meeting\+::save\+And\+Load\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00290}{290}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00290                                  \{}
+\DoxyCodeLine{00291         cout << \textcolor{stringliteral}{"{}Saving meeting1 to file and loading it to meeting2:"{}} << endl;}
+\DoxyCodeLine{00292         ofstream file(\textcolor{stringliteral}{"{}Meeting.dat"{}}, ios::out | ios::binary);}
+\DoxyCodeLine{00293         \textcolor{keywordflow}{if}(!file)\{}
+\DoxyCodeLine{00294             \textcolor{keywordflow}{throw} invalid\_argument(\textcolor{stringliteral}{"{}Couldn't open file"{}});}
+\DoxyCodeLine{00295         \}}
+\DoxyCodeLine{00296         \mbox{\hyperlink{classMeeting}{Meeting}} m = \mbox{\hyperlink{classMeeting_a6b300316120aa287400af34bcad1781b}{Meeting}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}pin"{}}, (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}go now"{}}, \mbox{\hyperlink{classMyDate}{MyDate}}(12, 10, 2021), \mbox{\hyperlink{classMyHour}{MyHour}}(14, 20), \mbox{\hyperlink{classMyHour}{MyHour}}(13, 2));}
+\DoxyCodeLine{00297         m.\mbox{\hyperlink{classMeeting_a4ba766215f8932b69932dd442438f455}{save}}(file);}
+\DoxyCodeLine{00298         file.close();}
+\DoxyCodeLine{00299 }
+\DoxyCodeLine{00300         ifstream in(\textcolor{stringliteral}{"{}Meeting.dat"{}}, ios::in | ios::binary);}
+\DoxyCodeLine{00301         \textcolor{keywordflow}{if}(!in)\{}
+\DoxyCodeLine{00302             \textcolor{keywordflow}{throw} invalid\_argument(\textcolor{stringliteral}{"{}Couldn't open file"{}});}
+\DoxyCodeLine{00303         \}}
+\DoxyCodeLine{00304         \mbox{\hyperlink{classMeeting}{Meeting}} meeting2 = \mbox{\hyperlink{classMeeting_a6b300316120aa287400af34bcad1781b}{Meeting}}();}
+\DoxyCodeLine{00305         meeting2.\mbox{\hyperlink{classMeeting_a439bdd485ef6b0551fefc548438446df}{load}}(in);}
+\DoxyCodeLine{00306         in.close();}
+\DoxyCodeLine{00307         meeting2.\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
+\DoxyCodeLine{00308     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_ac636364cd62cadb3948465956b703517}\label{classMeeting_ac636364cd62cadb3948465956b703517}} 
+\index{Meeting@{Meeting}!setDate@{setDate}}
+\index{setDate@{setDate}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{setDate()}{setDate()}}
+{\footnotesize\ttfamily void Meeting\+::set\+Date (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyDate}{My\+Date}} \&}]{new\+\_\+date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter for the date. 
+
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00160}{160}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00160                                          \{}
+\DoxyCodeLine{00161         this-\/>date = new\_date;}
+\DoxyCodeLine{00162     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_a5fe1d7c410753080085d513f7c6b2065}\label{classMeeting_a5fe1d7c410753080085d513f7c6b2065}} 
+\index{Meeting@{Meeting}!setDescription@{setDescription}}
+\index{setDescription@{setDescription}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{setDescription()}{setDescription()}}
+{\footnotesize\ttfamily void Meeting\+::set\+Description (\begin{DoxyParamCaption}\item[{char $\ast$}]{new\+\_\+description }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter for the description with memory handling. 
+
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00152}{152}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00152                                                \{}
+\DoxyCodeLine{00153         \textcolor{keyword}{delete} [] description;}
+\DoxyCodeLine{00154         \textcolor{keywordtype}{int} size = strlen(new\_description);}
+\DoxyCodeLine{00155         description = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[size + 1];}
+\DoxyCodeLine{00156         strcpy(description, new\_description);}
+\DoxyCodeLine{00157     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_a05436acb7cffee770d1b118e6ba8b2df}\label{classMeeting_a05436acb7cffee770d1b118e6ba8b2df}} 
+\index{Meeting@{Meeting}!setEndHour@{setEndHour}}
+\index{setEndHour@{setEndHour}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{setEndHour()}{setEndHour()}}
+{\footnotesize\ttfamily void Meeting\+::set\+End\+Hour (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&}]{new\+\_\+end\+Hour }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter for the end\+Hour. 
+
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00170}{170}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00170                                                \{}
+\DoxyCodeLine{00171         this-\/>endHour = new\_endHour;}
+\DoxyCodeLine{00172     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_a7e5c23e7937a995043acb0846832fe53}\label{classMeeting_a7e5c23e7937a995043acb0846832fe53}} 
+\index{Meeting@{Meeting}!setMeeting@{setMeeting}}
+\index{setMeeting@{setMeeting}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{setMeeting()}{setMeeting()}}
+{\footnotesize\ttfamily void Meeting\+::set\+Meeting (\begin{DoxyParamCaption}\item[{char $\ast$}]{new\+\_\+name,  }\item[{char $\ast$}]{new\+\_\+description,  }\item[{const \mbox{\hyperlink{classMyDate}{My\+Date}} \&}]{new\+\_\+date,  }\item[{const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&}]{new\+\_\+start\+Hour,  }\item[{const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&}]{new\+\_\+end\+Hour }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter for the meeting object. It gets all the arguments and sets them to the current object. 
+
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00175}{175}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00175                                                                                                                                           \{}
+\DoxyCodeLine{00176         \mbox{\hyperlink{classMeeting_a197df9113bedefe06f59196670765ef6}{setName}}(new\_name);}
+\DoxyCodeLine{00177         \mbox{\hyperlink{classMeeting_a5fe1d7c410753080085d513f7c6b2065}{setDescription}}(new\_description);}
+\DoxyCodeLine{00178         \mbox{\hyperlink{classMeeting_ac636364cd62cadb3948465956b703517}{setDate}}(new\_date);}
+\DoxyCodeLine{00179         \mbox{\hyperlink{classMeeting_aeac8233eb3a1306f1c0179ffdec61581}{setStartHour}}(new\_startHour);}
+\DoxyCodeLine{00180         \mbox{\hyperlink{classMeeting_a05436acb7cffee770d1b118e6ba8b2df}{setEndHour}}(new\_endHour);}
+\DoxyCodeLine{00181     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_a197df9113bedefe06f59196670765ef6}\label{classMeeting_a197df9113bedefe06f59196670765ef6}} 
+\index{Meeting@{Meeting}!setName@{setName}}
+\index{setName@{setName}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Meeting\+::set\+Name (\begin{DoxyParamCaption}\item[{char $\ast$}]{new\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter for the name with memory handling. 
+
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00144}{144}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00144                                  \{}
+\DoxyCodeLine{00145         \textcolor{keyword}{delete} [] name;}
+\DoxyCodeLine{00146         \textcolor{keywordtype}{int} size = strlen(new\_name);}
+\DoxyCodeLine{00147         name = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[size + 1];}
+\DoxyCodeLine{00148         strcpy(name, new\_name);}
+\DoxyCodeLine{00149     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classMeeting_aeac8233eb3a1306f1c0179ffdec61581}\label{classMeeting_aeac8233eb3a1306f1c0179ffdec61581}} 
+\index{Meeting@{Meeting}!setStartHour@{setStartHour}}
+\index{setStartHour@{setStartHour}!Meeting@{Meeting}}
+\doxysubsubsection{\texorpdfstring{setStartHour()}{setStartHour()}}
+{\footnotesize\ttfamily void Meeting\+::set\+Start\+Hour (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyHour}{My\+Hour}} \&}]{new\+\_\+start\+Hour }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter for the start\+Hour. 
+
+
+
+Definition at line \mbox{\hyperlink{Meeting_8cpp_source_l00165}{165}} of file \mbox{\hyperlink{Meeting_8cpp_source}{Meeting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00165                                                    \{}
+\DoxyCodeLine{00166         this-\/>startHour = new\_startHour;}
+\DoxyCodeLine{00167     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Meeting.\+cpp\end{DoxyCompactItemize}
