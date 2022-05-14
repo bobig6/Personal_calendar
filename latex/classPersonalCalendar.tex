@@ -106,14 +106,14 @@ Constructor with all parameters for \mbox{\hyperlink{classPersonalCalendar}{Pers
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00035}{35}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00038}{38}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00035                                                                   :current(current), size(size) \{}
-\DoxyCodeLine{00036         this-\/>meetingList = \textcolor{keyword}{new} \mbox{\hyperlink{classMeeting}{Meeting}}[size];}
-\DoxyCodeLine{00037         \mbox{\hyperlink{classPersonalCalendar_a0063ceb2d3e7726f10f161c587a26aff}{setMeetingList}}(meetingList, current, size);}
-\DoxyCodeLine{00038     \}}
+\DoxyCodeLine{00038                                                                   :current(current), size(size) \{}
+\DoxyCodeLine{00039         this-\/>meetingList = \textcolor{keyword}{new} \mbox{\hyperlink{classMeeting}{Meeting}}[size];}
+\DoxyCodeLine{00040         \mbox{\hyperlink{classPersonalCalendar_a0063ceb2d3e7726f10f161c587a26aff}{setMeetingList}}(meetingList, current, size);}
+\DoxyCodeLine{00041     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}\label{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}} 
@@ -128,15 +128,15 @@ Default constructor for \mbox{\hyperlink{classPersonalCalendar}{Personal\+Calend
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00041}{41}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00044}{44}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00041                       \{}
-\DoxyCodeLine{00042         this-\/>size = 10;}
-\DoxyCodeLine{00043         this-\/>current = 0;}
-\DoxyCodeLine{00044         this-\/>meetingList = \textcolor{keyword}{new} \mbox{\hyperlink{classMeeting}{Meeting}}[this-\/>size];}
-\DoxyCodeLine{00045     \}}
+\DoxyCodeLine{00044                       \{}
+\DoxyCodeLine{00045         this-\/>size = 10;}
+\DoxyCodeLine{00046         this-\/>current = 0;}
+\DoxyCodeLine{00047         this-\/>meetingList = \textcolor{keyword}{new} \mbox{\hyperlink{classMeeting}{Meeting}}[this-\/>size];}
+\DoxyCodeLine{00048     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_ad5e263d0f20ca626873989745ad92c11}\label{classPersonalCalendar_ad5e263d0f20ca626873989745ad92c11}} 
@@ -151,16 +151,16 @@ Copy constructor for the \mbox{\hyperlink{classPersonalCalendar}{Personal\+Calen
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00048}{48}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00051}{51}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00048                                                    \{}
-\DoxyCodeLine{00049         \mbox{\hyperlink{classPersonalCalendar_ae2f2a38460b8abb6d71e05a3839eb5c8}{setSize}}(other.size);}
-\DoxyCodeLine{00050         \mbox{\hyperlink{classPersonalCalendar_ac8e968d25fa20906f0c747e295597640}{setCurrent}}(other.current);}
-\DoxyCodeLine{00051         meetingList = \textcolor{keyword}{new} \mbox{\hyperlink{classMeeting}{Meeting}}[other.size];}
-\DoxyCodeLine{00052         \mbox{\hyperlink{classPersonalCalendar_a0063ceb2d3e7726f10f161c587a26aff}{setMeetingList}}(other.meetingList, other.current, other.size);}
-\DoxyCodeLine{00053     \}}
+\DoxyCodeLine{00051                                                    \{}
+\DoxyCodeLine{00052         \mbox{\hyperlink{classPersonalCalendar_ae2f2a38460b8abb6d71e05a3839eb5c8}{setSize}}(other.size);}
+\DoxyCodeLine{00053         \mbox{\hyperlink{classPersonalCalendar_ac8e968d25fa20906f0c747e295597640}{setCurrent}}(other.current);}
+\DoxyCodeLine{00054         meetingList = \textcolor{keyword}{new} \mbox{\hyperlink{classMeeting}{Meeting}}[other.size];}
+\DoxyCodeLine{00055         \mbox{\hyperlink{classPersonalCalendar_a0063ceb2d3e7726f10f161c587a26aff}{setMeetingList}}(other.meetingList, other.current, other.size);}
+\DoxyCodeLine{00056     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a398793f3642e794dae5152a4d5ee5410}\label{classPersonalCalendar_a398793f3642e794dae5152a4d5ee5410}} 
@@ -175,13 +175,13 @@ Destructor for \mbox{\hyperlink{classPersonalCalendar}{Personal\+Calendar}} clas
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00056}{56}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00059}{59}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00056                         \{}
-\DoxyCodeLine{00057         \textcolor{keyword}{delete} [] meetingList;}
-\DoxyCodeLine{00058     \}}
+\DoxyCodeLine{00059                         \{}
+\DoxyCodeLine{00060         \textcolor{keyword}{delete} [] meetingList;}
+\DoxyCodeLine{00061     \}}
 
 \end{DoxyCode}
 
@@ -206,71 +206,71 @@ Test for adding and removing elements\+:
 \item Adding meeting2 and removing all meetings with a match in description 
 \end{DoxyItemize}
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00565}{565}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00568}{568}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00565                                                \{}
-\DoxyCodeLine{00566         cout << \textcolor{stringliteral}{"{}\#Creating personal calendar and adding meeting1 and meeting2 to it: "{}} << endl;}
-\DoxyCodeLine{00567         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
-\DoxyCodeLine{00568         \mbox{\hyperlink{classMeeting}{Meeting}} meeting1 = \mbox{\hyperlink{classMeeting}{Meeting}}();}
-\DoxyCodeLine{00569         \mbox{\hyperlink{classMeeting}{Meeting}} meeting2 = \mbox{\hyperlink{classMeeting}{Meeting}}();}
-\DoxyCodeLine{00570         meeting1.\mbox{\hyperlink{classMeeting_a197df9113bedefe06f59196670765ef6}{setName}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}meeting1"{}});}
-\DoxyCodeLine{00571         meeting2.\mbox{\hyperlink{classMeeting_a197df9113bedefe06f59196670765ef6}{setName}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}meeting2"{}});}
-\DoxyCodeLine{00572 }
-\DoxyCodeLine{00573         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(meeting1);}
-\DoxyCodeLine{00574         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(meeting2);}
+\DoxyCodeLine{00568                                                \{}
+\DoxyCodeLine{00569         cout << \textcolor{stringliteral}{"{}\#Creating personal calendar and adding meeting1 and meeting2 to it: "{}} << endl;}
+\DoxyCodeLine{00570         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
+\DoxyCodeLine{00571         \mbox{\hyperlink{classMeeting}{Meeting}} meeting1 = \mbox{\hyperlink{classMeeting}{Meeting}}();}
+\DoxyCodeLine{00572         \mbox{\hyperlink{classMeeting}{Meeting}} meeting2 = \mbox{\hyperlink{classMeeting}{Meeting}}();}
+\DoxyCodeLine{00573         meeting1.\mbox{\hyperlink{classMeeting_a197df9113bedefe06f59196670765ef6}{setName}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}meeting1"{}});}
+\DoxyCodeLine{00574         meeting2.\mbox{\hyperlink{classMeeting_a197df9113bedefe06f59196670765ef6}{setName}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}meeting2"{}});}
 \DoxyCodeLine{00575 }
-\DoxyCodeLine{00576         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00577 }
-\DoxyCodeLine{00578         cout << \textcolor{stringliteral}{"{}\#Removing meeting1: "{}} << endl;}
-\DoxyCodeLine{00579         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a75829f9558eba9abf9e8ca35497d079f}{removeMeetingByName}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}meeting1"{}});}
-\DoxyCodeLine{00580         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00581 }
-\DoxyCodeLine{00582         cout << \textcolor{stringliteral}{"{}\#Removing meeting2: "{}} << endl;}
-\DoxyCodeLine{00583         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a75829f9558eba9abf9e8ca35497d079f}{removeMeetingByName}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}meeting2"{}});}
-\DoxyCodeLine{00584         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00585 }
-\DoxyCodeLine{00586         cout << \textcolor{stringliteral}{"{}\#Adding and changing meeting2 date to 2022-\/12-\/12"{}} << endl;}
-\DoxyCodeLine{00587         meeting2.\mbox{\hyperlink{classMeeting_ac636364cd62cadb3948465956b703517}{setDate}}(\mbox{\hyperlink{classMyDate}{MyDate}}(12, 12, 2022));}
-\DoxyCodeLine{00588         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(meeting2);}
-\DoxyCodeLine{00589         cout << \textcolor{stringliteral}{"{}\#Book a new meeting by name, description, date, startHour and endHour"{}} << endl;}
-\DoxyCodeLine{00590         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention"{}},}
-\DoxyCodeLine{00591                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00592                                      \mbox{\hyperlink{classMyDate}{MyDate}}(21, 10, 2022),}
-\DoxyCodeLine{00593                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
-\DoxyCodeLine{00594                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
-\DoxyCodeLine{00595                                      );}
-\DoxyCodeLine{00596         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00597 }
-\DoxyCodeLine{00598         cout << \textcolor{stringliteral}{"{}\#Removing meeting2 by date: "{}} << endl;}
-\DoxyCodeLine{00599         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6f8816a91ff6c30374d8596cc3855f17}{removeMeetingByDate}}(\mbox{\hyperlink{classMyDate}{MyDate}}(12, 12, 2022));}
-\DoxyCodeLine{00600         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00601 }
-\DoxyCodeLine{00602         cout << \textcolor{stringliteral}{"{}\#Adding 2 more meetings with word anime in description"{}} << endl;}
-\DoxyCodeLine{00603         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 2"{}},}
-\DoxyCodeLine{00604                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00605                                      \mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
-\DoxyCodeLine{00606                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
-\DoxyCodeLine{00607                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
-\DoxyCodeLine{00608         );}
-\DoxyCodeLine{00609         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 3"{}},}
-\DoxyCodeLine{00610                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00611                                      \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
-\DoxyCodeLine{00612                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
-\DoxyCodeLine{00613                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
-\DoxyCodeLine{00614         );}
-\DoxyCodeLine{00615         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00616 }
-\DoxyCodeLine{00617         cout << \textcolor{stringliteral}{"{}\#Removing first meeting that contains word anime: "{}} << endl;}
-\DoxyCodeLine{00618         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aae559dd897969894ac60bcdedc65fecd}{removeMeetingByFirstMatchInDescription}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}anime"{}});}
-\DoxyCodeLine{00619         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00620 }
-\DoxyCodeLine{00621         cout << \textcolor{stringliteral}{"{}\#Adding meeting2 and removing all other meetings that contain word anime"{}} << endl;}
-\DoxyCodeLine{00622         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(meeting2);}
-\DoxyCodeLine{00623         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a017b65a84399be7b7ed896a278a4be4c}{removeAllMeetingsWithWordInDescription}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}anime"{}});}
-\DoxyCodeLine{00624         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00625     \}}
+\DoxyCodeLine{00576         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(meeting1);}
+\DoxyCodeLine{00577         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(meeting2);}
+\DoxyCodeLine{00578 }
+\DoxyCodeLine{00579         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00580 }
+\DoxyCodeLine{00581         cout << \textcolor{stringliteral}{"{}\#Removing meeting1: "{}} << endl;}
+\DoxyCodeLine{00582         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a75829f9558eba9abf9e8ca35497d079f}{removeMeetingByName}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}meeting1"{}});}
+\DoxyCodeLine{00583         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00584 }
+\DoxyCodeLine{00585         cout << \textcolor{stringliteral}{"{}\#Removing meeting2: "{}} << endl;}
+\DoxyCodeLine{00586         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a75829f9558eba9abf9e8ca35497d079f}{removeMeetingByName}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}meeting2"{}});}
+\DoxyCodeLine{00587         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00588 }
+\DoxyCodeLine{00589         cout << \textcolor{stringliteral}{"{}\#Adding and changing meeting2 date to 2022-\/12-\/12"{}} << endl;}
+\DoxyCodeLine{00590         meeting2.\mbox{\hyperlink{classMeeting_ac636364cd62cadb3948465956b703517}{setDate}}(\mbox{\hyperlink{classMyDate}{MyDate}}(12, 12, 2022));}
+\DoxyCodeLine{00591         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(meeting2);}
+\DoxyCodeLine{00592         cout << \textcolor{stringliteral}{"{}\#Book a new meeting by name, description, date, startHour and endHour"{}} << endl;}
+\DoxyCodeLine{00593         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention"{}},}
+\DoxyCodeLine{00594                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00595                                      \mbox{\hyperlink{classMyDate}{MyDate}}(21, 10, 2022),}
+\DoxyCodeLine{00596                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
+\DoxyCodeLine{00597                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
+\DoxyCodeLine{00598                                      );}
+\DoxyCodeLine{00599         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00600 }
+\DoxyCodeLine{00601         cout << \textcolor{stringliteral}{"{}\#Removing meeting2 by date: "{}} << endl;}
+\DoxyCodeLine{00602         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6f8816a91ff6c30374d8596cc3855f17}{removeMeetingByDate}}(\mbox{\hyperlink{classMyDate}{MyDate}}(12, 12, 2022));}
+\DoxyCodeLine{00603         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00604 }
+\DoxyCodeLine{00605         cout << \textcolor{stringliteral}{"{}\#Adding 2 more meetings with word anime in description"{}} << endl;}
+\DoxyCodeLine{00606         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 2"{}},}
+\DoxyCodeLine{00607                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00608                                      \mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
+\DoxyCodeLine{00609                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
+\DoxyCodeLine{00610                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
+\DoxyCodeLine{00611         );}
+\DoxyCodeLine{00612         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 3"{}},}
+\DoxyCodeLine{00613                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00614                                      \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
+\DoxyCodeLine{00615                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
+\DoxyCodeLine{00616                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
+\DoxyCodeLine{00617         );}
+\DoxyCodeLine{00618         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00619 }
+\DoxyCodeLine{00620         cout << \textcolor{stringliteral}{"{}\#Removing first meeting that contains word anime: "{}} << endl;}
+\DoxyCodeLine{00621         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aae559dd897969894ac60bcdedc65fecd}{removeMeetingByFirstMatchInDescription}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}anime"{}});}
+\DoxyCodeLine{00622         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00623 }
+\DoxyCodeLine{00624         cout << \textcolor{stringliteral}{"{}\#Adding meeting2 and removing all other meetings that contain word anime"{}} << endl;}
+\DoxyCodeLine{00625         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(meeting2);}
+\DoxyCodeLine{00626         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a017b65a84399be7b7ed896a278a4be4c}{removeAllMeetingsWithWordInDescription}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}anime"{}});}
+\DoxyCodeLine{00627         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00628     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}\label{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}} 
@@ -285,15 +285,15 @@ A function to add a new meeting to the meeting list. Resizes the list if necessa
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00180}{180}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00183}{183}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00180                                            \{}
-\DoxyCodeLine{00181         \textcolor{keywordflow}{if}(current >= size) resizeMeetingList();}
-\DoxyCodeLine{00182         meetingList[current] = meeting;}
-\DoxyCodeLine{00183         current++;}
-\DoxyCodeLine{00184     \}}
+\DoxyCodeLine{00183                                            \{}
+\DoxyCodeLine{00184         \textcolor{keywordflow}{if}(current >= size) resizeMeetingList();}
+\DoxyCodeLine{00185         meetingList[current] = meeting;}
+\DoxyCodeLine{00186         current++;}
+\DoxyCodeLine{00187     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}\label{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}} 
@@ -308,13 +308,13 @@ Books a meeting with given name, description, date, start\+Hour and end\+Hour.
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00248}{248}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00251}{251}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00248                                                                                                                                    \{}
-\DoxyCodeLine{00249         \mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(\mbox{\hyperlink{classMeeting}{Meeting}}(new\_name, new\_description, new\_date, new\_start, new\_end));}
-\DoxyCodeLine{00250     \}}
+\DoxyCodeLine{00251                                                                                                                                    \{}
+\DoxyCodeLine{00252         \mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(\mbox{\hyperlink{classMeeting}{Meeting}}(new\_name, new\_description, new\_date, new\_start, new\_end));}
+\DoxyCodeLine{00253     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a71f13f5ca89c83ef19844ac0f2f3a1b5}\label{classPersonalCalendar_a71f13f5ca89c83ef19844ac0f2f3a1b5}} 
@@ -325,81 +325,81 @@ Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00248}{248}} o
 
 This function finds a free hour in a given time period and duration 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00314}{314}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00317}{317}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00314                                                                                                                                 \{}
-\DoxyCodeLine{00315         \textcolor{keywordflow}{if}(s\_date > e\_date || s\_hour > e\_hour) \textcolor{keywordflow}{throw} invalid\_argument(\textcolor{stringliteral}{"{}The time range given to findFreeHour() is invalid"{}});}
-\DoxyCodeLine{00316 }
-\DoxyCodeLine{00317         \textcolor{keywordflow}{while} (s\_date <= e\_date)\{}
-\DoxyCodeLine{00318             \textcolor{comment}{// Creating a new personal calendar containing only the meetings from the current date sorted}}
-\DoxyCodeLine{00319             \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} daily = getDailyProgram(s\_date);}
-\DoxyCodeLine{00320 }
-\DoxyCodeLine{00321             \textcolor{comment}{// If the daily is empty that means the whole day is free, so we return the first free hour}}
-\DoxyCodeLine{00322             \textcolor{keywordflow}{if}(daily.current == 0)\{}
-\DoxyCodeLine{00323                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classMeeting}{Meeting}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Free Hour"{}},}
-\DoxyCodeLine{00324                                (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}This meeting contains free hour"{}},}
-\DoxyCodeLine{00325                                s\_date,}
-\DoxyCodeLine{00326                                s\_hour,}
-\DoxyCodeLine{00327                                s\_hour + duration}
-\DoxyCodeLine{00328                 );}
-\DoxyCodeLine{00329             \}}
-\DoxyCodeLine{00330 }
-\DoxyCodeLine{00331             \textcolor{comment}{// Removing all the meetings that aren't in the hours' interval specified}}
-\DoxyCodeLine{00332             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < daily.current; ++i) \{}
-\DoxyCodeLine{00333                 \textcolor{keywordflow}{if}(daily.meetingList[i].\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}() < s\_hour || daily.meetingList[i].\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}() > e\_hour)\{}
-\DoxyCodeLine{00334                     daily.\mbox{\hyperlink{classPersonalCalendar_acefcc6e6364f856e876f46a59ae02728}{removeMeeting}}(daily.meetingList[i]);}
-\DoxyCodeLine{00335                 \}}
-\DoxyCodeLine{00336             \}}
-\DoxyCodeLine{00337 }
-\DoxyCodeLine{00338             \textcolor{comment}{// Getting the first meeting for the day}}
-\DoxyCodeLine{00339             \mbox{\hyperlink{classMeeting}{Meeting}} previous = daily.meetingList[0];}
+\DoxyCodeLine{00317                                                                                                                                 \{}
+\DoxyCodeLine{00318         \textcolor{keywordflow}{if}(s\_date > e\_date || s\_hour > e\_hour) \textcolor{keywordflow}{throw} invalid\_argument(\textcolor{stringliteral}{"{}The time range given to findFreeHour() is invalid"{}});}
+\DoxyCodeLine{00319 }
+\DoxyCodeLine{00320         \textcolor{keywordflow}{while} (s\_date <= e\_date)\{}
+\DoxyCodeLine{00321             \textcolor{comment}{// Creating a new personal calendar containing only the meetings from the current date sorted}}
+\DoxyCodeLine{00322             \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} daily = getDailyProgram(s\_date);}
+\DoxyCodeLine{00323 }
+\DoxyCodeLine{00324             \textcolor{comment}{// If the daily is empty that means the whole day is free, so we return the first free hour}}
+\DoxyCodeLine{00325             \textcolor{keywordflow}{if}(daily.current == 0)\{}
+\DoxyCodeLine{00326                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classMeeting}{Meeting}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Free Hour"{}},}
+\DoxyCodeLine{00327                                (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}This meeting contains free hour"{}},}
+\DoxyCodeLine{00328                                s\_date,}
+\DoxyCodeLine{00329                                s\_hour,}
+\DoxyCodeLine{00330                                s\_hour + duration}
+\DoxyCodeLine{00331                 );}
+\DoxyCodeLine{00332             \}}
+\DoxyCodeLine{00333 }
+\DoxyCodeLine{00334             \textcolor{comment}{// Removing all the meetings that aren't in the hours' interval specified}}
+\DoxyCodeLine{00335             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < daily.current; ++i) \{}
+\DoxyCodeLine{00336                 \textcolor{keywordflow}{if}(daily.meetingList[i].\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}() < s\_hour || daily.meetingList[i].\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}() > e\_hour)\{}
+\DoxyCodeLine{00337                     daily.\mbox{\hyperlink{classPersonalCalendar_acefcc6e6364f856e876f46a59ae02728}{removeMeeting}}(daily.meetingList[i]);}
+\DoxyCodeLine{00338                 \}}
+\DoxyCodeLine{00339             \}}
 \DoxyCodeLine{00340 }
-\DoxyCodeLine{00341             \textcolor{comment}{// Checking if there is a free hour between s\_hour and first meeting}}
-\DoxyCodeLine{00342             \textcolor{keywordflow}{if}((previous.\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}() -\/ s\_hour) >= duration)\{}
-\DoxyCodeLine{00343                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classMeeting}{Meeting}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Free Hour"{}},}
-\DoxyCodeLine{00344                                (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}This meeting contains free hour"{}},}
-\DoxyCodeLine{00345                                s\_date,}
-\DoxyCodeLine{00346                                s\_hour,}
-\DoxyCodeLine{00347                                s\_hour + duration}
-\DoxyCodeLine{00348                 );}
-\DoxyCodeLine{00349             \}}
-\DoxyCodeLine{00350 }
-\DoxyCodeLine{00351             \textcolor{comment}{// Checking if there are free hours between meetings}}
-\DoxyCodeLine{00352             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < daily.current; ++i) \{}
-\DoxyCodeLine{00353                 \textcolor{keywordflow}{if}((daily.\mbox{\hyperlink{classPersonalCalendar_a6aa92290164262a7ca65233d8d989785}{getMeetingList}}()[i].\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}() -\/ previous.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}()) >= duration)\{}
-\DoxyCodeLine{00354                     \textcolor{keywordflow}{return} \mbox{\hyperlink{classMeeting}{Meeting}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Free Hour"{}},}
-\DoxyCodeLine{00355                                    (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}This meeting contains free hour"{}},}
-\DoxyCodeLine{00356                                    s\_date,}
-\DoxyCodeLine{00357                                    previous.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}(),}
-\DoxyCodeLine{00358                                    previous.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}() + duration}
-\DoxyCodeLine{00359                                    );}
-\DoxyCodeLine{00360                 \}}
-\DoxyCodeLine{00361                 previous = daily.\mbox{\hyperlink{classPersonalCalendar_a6aa92290164262a7ca65233d8d989785}{getMeetingList}}()[i];}
-\DoxyCodeLine{00362             \}}
-\DoxyCodeLine{00363 }
-\DoxyCodeLine{00364             \textcolor{comment}{// Checking if there is a free hour between last meeting and e\_hour}}
-\DoxyCodeLine{00365             \textcolor{keywordflow}{if}((e\_hour -\/ previous.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}()) >= duration)\{}
-\DoxyCodeLine{00366                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classMeeting}{Meeting}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Free Hour"{}},}
-\DoxyCodeLine{00367                                (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}This meeting contains free hour"{}},}
-\DoxyCodeLine{00368                                s\_date,}
-\DoxyCodeLine{00369                                previous.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}(),}
-\DoxyCodeLine{00370                                previous.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}() + duration}
-\DoxyCodeLine{00371                 );}
-\DoxyCodeLine{00372             \}}
-\DoxyCodeLine{00373 }
-\DoxyCodeLine{00374             \textcolor{comment}{// If no free hour is found we go to the next date}}
-\DoxyCodeLine{00375             s\_date.\mbox{\hyperlink{classMyDate_a67254ea1dd4f8032066a1f4996d8e75e}{addDay}}();}
-\DoxyCodeLine{00376         \}}
-\DoxyCodeLine{00377 }
-\DoxyCodeLine{00378         \textcolor{keywordflow}{return} \{(\textcolor{keywordtype}{char} *) \textcolor{stringliteral}{"{}No free hour"{}},}
-\DoxyCodeLine{00379                 (\textcolor{keywordtype}{char} *) \textcolor{stringliteral}{"{}There is no free hour in this time period"{}},}
-\DoxyCodeLine{00380                 \mbox{\hyperlink{classMyDate}{MyDate}}(),}
-\DoxyCodeLine{00381                 \mbox{\hyperlink{classMyHour}{MyHour}}(),}
-\DoxyCodeLine{00382                 \mbox{\hyperlink{classMyHour}{MyHour}}()}
-\DoxyCodeLine{00383         \};}
-\DoxyCodeLine{00384     \}}
+\DoxyCodeLine{00341             \textcolor{comment}{// Getting the first meeting for the day}}
+\DoxyCodeLine{00342             \mbox{\hyperlink{classMeeting}{Meeting}} previous = daily.meetingList[0];}
+\DoxyCodeLine{00343 }
+\DoxyCodeLine{00344             \textcolor{comment}{// Checking if there is a free hour between s\_hour and first meeting}}
+\DoxyCodeLine{00345             \textcolor{keywordflow}{if}((previous.\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}() -\/ s\_hour) >= duration)\{}
+\DoxyCodeLine{00346                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classMeeting}{Meeting}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Free Hour"{}},}
+\DoxyCodeLine{00347                                (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}This meeting contains free hour"{}},}
+\DoxyCodeLine{00348                                s\_date,}
+\DoxyCodeLine{00349                                s\_hour,}
+\DoxyCodeLine{00350                                s\_hour + duration}
+\DoxyCodeLine{00351                 );}
+\DoxyCodeLine{00352             \}}
+\DoxyCodeLine{00353 }
+\DoxyCodeLine{00354             \textcolor{comment}{// Checking if there are free hours between meetings}}
+\DoxyCodeLine{00355             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < daily.current; ++i) \{}
+\DoxyCodeLine{00356                 \textcolor{keywordflow}{if}((daily.\mbox{\hyperlink{classPersonalCalendar_a6aa92290164262a7ca65233d8d989785}{getMeetingList}}()[i].\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}() -\/ previous.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}()) >= duration)\{}
+\DoxyCodeLine{00357                     \textcolor{keywordflow}{return} \mbox{\hyperlink{classMeeting}{Meeting}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Free Hour"{}},}
+\DoxyCodeLine{00358                                    (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}This meeting contains free hour"{}},}
+\DoxyCodeLine{00359                                    s\_date,}
+\DoxyCodeLine{00360                                    previous.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}(),}
+\DoxyCodeLine{00361                                    previous.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}() + duration}
+\DoxyCodeLine{00362                                    );}
+\DoxyCodeLine{00363                 \}}
+\DoxyCodeLine{00364                 previous = daily.\mbox{\hyperlink{classPersonalCalendar_a6aa92290164262a7ca65233d8d989785}{getMeetingList}}()[i];}
+\DoxyCodeLine{00365             \}}
+\DoxyCodeLine{00366 }
+\DoxyCodeLine{00367             \textcolor{comment}{// Checking if there is a free hour between last meeting and e\_hour}}
+\DoxyCodeLine{00368             \textcolor{keywordflow}{if}((e\_hour -\/ previous.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}()) >= duration)\{}
+\DoxyCodeLine{00369                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classMeeting}{Meeting}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Free Hour"{}},}
+\DoxyCodeLine{00370                                (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}This meeting contains free hour"{}},}
+\DoxyCodeLine{00371                                s\_date,}
+\DoxyCodeLine{00372                                previous.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}(),}
+\DoxyCodeLine{00373                                previous.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}() + duration}
+\DoxyCodeLine{00374                 );}
+\DoxyCodeLine{00375             \}}
+\DoxyCodeLine{00376 }
+\DoxyCodeLine{00377             \textcolor{comment}{// If no free hour is found we go to the next date}}
+\DoxyCodeLine{00378             s\_date.\mbox{\hyperlink{classMyDate_a67254ea1dd4f8032066a1f4996d8e75e}{addDay}}();}
+\DoxyCodeLine{00379         \}}
+\DoxyCodeLine{00380 }
+\DoxyCodeLine{00381         \textcolor{keywordflow}{return} \{(\textcolor{keywordtype}{char} *) \textcolor{stringliteral}{"{}No free hour"{}},}
+\DoxyCodeLine{00382                 (\textcolor{keywordtype}{char} *) \textcolor{stringliteral}{"{}There is no free hour in this time period"{}},}
+\DoxyCodeLine{00383                 \mbox{\hyperlink{classMyDate}{MyDate}}(),}
+\DoxyCodeLine{00384                 \mbox{\hyperlink{classMyHour}{MyHour}}(),}
+\DoxyCodeLine{00385                 \mbox{\hyperlink{classMyHour}{MyHour}}()}
+\DoxyCodeLine{00386         \};}
+\DoxyCodeLine{00387     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a460f0ca627431feff8e198bf0a735d8e}\label{classPersonalCalendar_a460f0ca627431feff8e198bf0a735d8e}} 
@@ -414,60 +414,60 @@ Test for the free\+Hour function
 \item Runs the \mbox{\hyperlink{classPersonalCalendar_a71f13f5ca89c83ef19844ac0f2f3a1b5}{find\+Free\+Hour()}} with 3 different time periods 
 \end{DoxyItemize}
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00758}{758}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00761}{761}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00758                               \{}
-\DoxyCodeLine{00759         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
-\DoxyCodeLine{00760         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 1"{}},}
-\DoxyCodeLine{00761                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00762                                      \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
-\DoxyCodeLine{00763                                      \mbox{\hyperlink{classMyHour}{MyHour}}(9, 0),}
-\DoxyCodeLine{00764                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0)}
-\DoxyCodeLine{00765         );}
-\DoxyCodeLine{00766         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 2"{}},}
-\DoxyCodeLine{00767                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00768                                      \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
-\DoxyCodeLine{00769                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
-\DoxyCodeLine{00770                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
-\DoxyCodeLine{00771         );}
-\DoxyCodeLine{00772 }
-\DoxyCodeLine{00773         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 3"{}},}
-\DoxyCodeLine{00774                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00775                                      \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
-\DoxyCodeLine{00776                                      \mbox{\hyperlink{classMyHour}{MyHour}}(17, 0),}
-\DoxyCodeLine{00777                                      \mbox{\hyperlink{classMyHour}{MyHour}}(20, 0)}
-\DoxyCodeLine{00778         );}
-\DoxyCodeLine{00779         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00780 }
-\DoxyCodeLine{00781         cout << \textcolor{stringliteral}{"{}Trying to find a free hour for 2022-\/10-\/23, 9:00 -\/ 20:00 with duration 2:00:"{}} << endl;}
-\DoxyCodeLine{00782 }
-\DoxyCodeLine{00783         \mbox{\hyperlink{classMeeting}{Meeting}} freeHour = personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a71f13f5ca89c83ef19844ac0f2f3a1b5}{findFreeHour}}(\mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
-\DoxyCodeLine{00784                                                          \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
-\DoxyCodeLine{00785                                                          \mbox{\hyperlink{classMyHour}{MyHour}}(9, 0),}
-\DoxyCodeLine{00786                                                          \mbox{\hyperlink{classMyHour}{MyHour}}(20, 0),}
-\DoxyCodeLine{00787                                                          \mbox{\hyperlink{classMyHour}{MyHour}}(2, 0));}
-\DoxyCodeLine{00788 }
-\DoxyCodeLine{00789         freeHour.\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
-\DoxyCodeLine{00790         cout<< endl << \textcolor{stringliteral}{"{}Trying to find a free hour for 2022-\/10-\/23, 8:00 -\/ 16:00 with duration 2:00:"{}} << endl;}
+\DoxyCodeLine{00761                               \{}
+\DoxyCodeLine{00762         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
+\DoxyCodeLine{00763         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 1"{}},}
+\DoxyCodeLine{00764                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00765                                      \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
+\DoxyCodeLine{00766                                      \mbox{\hyperlink{classMyHour}{MyHour}}(9, 0),}
+\DoxyCodeLine{00767                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0)}
+\DoxyCodeLine{00768         );}
+\DoxyCodeLine{00769         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 2"{}},}
+\DoxyCodeLine{00770                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00771                                      \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
+\DoxyCodeLine{00772                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
+\DoxyCodeLine{00773                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
+\DoxyCodeLine{00774         );}
+\DoxyCodeLine{00775 }
+\DoxyCodeLine{00776         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 3"{}},}
+\DoxyCodeLine{00777                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00778                                      \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
+\DoxyCodeLine{00779                                      \mbox{\hyperlink{classMyHour}{MyHour}}(17, 0),}
+\DoxyCodeLine{00780                                      \mbox{\hyperlink{classMyHour}{MyHour}}(20, 0)}
+\DoxyCodeLine{00781         );}
+\DoxyCodeLine{00782         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00783 }
+\DoxyCodeLine{00784         cout << \textcolor{stringliteral}{"{}Trying to find a free hour for 2022-\/10-\/23, 9:00 -\/ 20:00 with duration 2:00:"{}} << endl;}
+\DoxyCodeLine{00785 }
+\DoxyCodeLine{00786         \mbox{\hyperlink{classMeeting}{Meeting}} freeHour = personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a71f13f5ca89c83ef19844ac0f2f3a1b5}{findFreeHour}}(\mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
+\DoxyCodeLine{00787                                                          \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
+\DoxyCodeLine{00788                                                          \mbox{\hyperlink{classMyHour}{MyHour}}(9, 0),}
+\DoxyCodeLine{00789                                                          \mbox{\hyperlink{classMyHour}{MyHour}}(20, 0),}
+\DoxyCodeLine{00790                                                          \mbox{\hyperlink{classMyHour}{MyHour}}(2, 0));}
 \DoxyCodeLine{00791 }
-\DoxyCodeLine{00792         \mbox{\hyperlink{classMeeting}{Meeting}} freeHour2 = personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a71f13f5ca89c83ef19844ac0f2f3a1b5}{findFreeHour}}(\mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
-\DoxyCodeLine{00793                                                           \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
-\DoxyCodeLine{00794                                                           \mbox{\hyperlink{classMyHour}{MyHour}}(8, 0),}
-\DoxyCodeLine{00795                                                           \mbox{\hyperlink{classMyHour}{MyHour}}(16, 0),}
-\DoxyCodeLine{00796                                                           \mbox{\hyperlink{classMyHour}{MyHour}}(2, 0));}
-\DoxyCodeLine{00797         freeHour2.\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
-\DoxyCodeLine{00798 }
-\DoxyCodeLine{00799         cout<< endl << \textcolor{stringliteral}{"{}Trying to find a free hour for 2022-\/10-\/22 -\/ 2022-\/10-\/23, 8:00 -\/ 16:00 with duration 2:00:"{}} << endl;}
-\DoxyCodeLine{00800 }
-\DoxyCodeLine{00801         \mbox{\hyperlink{classMeeting}{Meeting}} freeHour3 = personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a71f13f5ca89c83ef19844ac0f2f3a1b5}{findFreeHour}}(\mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
-\DoxyCodeLine{00802                                                           \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
-\DoxyCodeLine{00803                                                           \mbox{\hyperlink{classMyHour}{MyHour}}(8, 0),}
-\DoxyCodeLine{00804                                                           \mbox{\hyperlink{classMyHour}{MyHour}}(16, 0),}
-\DoxyCodeLine{00805                                                           \mbox{\hyperlink{classMyHour}{MyHour}}(2, 0));}
-\DoxyCodeLine{00806         freeHour3.\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
-\DoxyCodeLine{00807     \}}
+\DoxyCodeLine{00792         freeHour.\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
+\DoxyCodeLine{00793         cout<< endl << \textcolor{stringliteral}{"{}Trying to find a free hour for 2022-\/10-\/23, 8:00 -\/ 16:00 with duration 2:00:"{}} << endl;}
+\DoxyCodeLine{00794 }
+\DoxyCodeLine{00795         \mbox{\hyperlink{classMeeting}{Meeting}} freeHour2 = personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a71f13f5ca89c83ef19844ac0f2f3a1b5}{findFreeHour}}(\mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
+\DoxyCodeLine{00796                                                           \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
+\DoxyCodeLine{00797                                                           \mbox{\hyperlink{classMyHour}{MyHour}}(8, 0),}
+\DoxyCodeLine{00798                                                           \mbox{\hyperlink{classMyHour}{MyHour}}(16, 0),}
+\DoxyCodeLine{00799                                                           \mbox{\hyperlink{classMyHour}{MyHour}}(2, 0));}
+\DoxyCodeLine{00800         freeHour2.\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
+\DoxyCodeLine{00801 }
+\DoxyCodeLine{00802         cout<< endl << \textcolor{stringliteral}{"{}Trying to find a free hour for 2022-\/10-\/22 -\/ 2022-\/10-\/23, 8:00 -\/ 16:00 with duration 2:00:"{}} << endl;}
+\DoxyCodeLine{00803 }
+\DoxyCodeLine{00804         \mbox{\hyperlink{classMeeting}{Meeting}} freeHour3 = personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a71f13f5ca89c83ef19844ac0f2f3a1b5}{findFreeHour}}(\mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
+\DoxyCodeLine{00805                                                           \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
+\DoxyCodeLine{00806                                                           \mbox{\hyperlink{classMyHour}{MyHour}}(8, 0),}
+\DoxyCodeLine{00807                                                           \mbox{\hyperlink{classMyHour}{MyHour}}(16, 0),}
+\DoxyCodeLine{00808                                                           \mbox{\hyperlink{classMyHour}{MyHour}}(2, 0));}
+\DoxyCodeLine{00809         freeHour3.\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
+\DoxyCodeLine{00810     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_af8472bd78254209b08c783e0e29b1bf2}\label{classPersonalCalendar_af8472bd78254209b08c783e0e29b1bf2}} 
@@ -478,20 +478,20 @@ Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00758}{758}} o
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00134}{134}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00137}{137}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00134                                                                  \{}
-\DoxyCodeLine{00135         \textcolor{keywordtype}{int} j = 0;}
-\DoxyCodeLine{00136         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
-\DoxyCodeLine{00137             \textcolor{keywordflow}{if}(meetingList[i].getDate() == date)\{}
-\DoxyCodeLine{00138                 newMeetingList[j] = meetingList[i];}
-\DoxyCodeLine{00139                 j++;}
-\DoxyCodeLine{00140             \}}
-\DoxyCodeLine{00141         \}}
-\DoxyCodeLine{00142         \textcolor{keywordflow}{return} j;}
-\DoxyCodeLine{00143     \}}
+\DoxyCodeLine{00137                                                                  \{}
+\DoxyCodeLine{00138         \textcolor{keywordtype}{int} j = 0;}
+\DoxyCodeLine{00139         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
+\DoxyCodeLine{00140             \textcolor{keywordflow}{if}(meetingList[i].getDate() == date)\{}
+\DoxyCodeLine{00141                 newMeetingList[j] = meetingList[i];}
+\DoxyCodeLine{00142                 j++;}
+\DoxyCodeLine{00143             \}}
+\DoxyCodeLine{00144         \}}
+\DoxyCodeLine{00145         \textcolor{keywordflow}{return} j;}
+\DoxyCodeLine{00146     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_ae1222a46df40bd418fa47aa0fabd4f67}\label{classPersonalCalendar_ae1222a46df40bd418fa47aa0fabd4f67}} 
@@ -506,20 +506,20 @@ Getter for all meeting which description contain a given word. NOTE\+: Returns t
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00112}{112}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00115}{115}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00112                                                                       \{}
-\DoxyCodeLine{00113         \textcolor{keywordtype}{int} j = 0;}
-\DoxyCodeLine{00114         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
-\DoxyCodeLine{00115             \textcolor{keywordflow}{if}(strstr(meetingList[i].getDescription(), word) != NULL)\{}
-\DoxyCodeLine{00116                 newMeetingList[j] = meetingList[i];}
-\DoxyCodeLine{00117                 j++;}
-\DoxyCodeLine{00118             \}}
-\DoxyCodeLine{00119         \}}
-\DoxyCodeLine{00120         \textcolor{keywordflow}{return} j;}
-\DoxyCodeLine{00121     \}}
+\DoxyCodeLine{00115                                                                       \{}
+\DoxyCodeLine{00116         \textcolor{keywordtype}{int} j = 0;}
+\DoxyCodeLine{00117         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
+\DoxyCodeLine{00118             \textcolor{keywordflow}{if}(strstr(meetingList[i].getDescription(), word) != NULL)\{}
+\DoxyCodeLine{00119                 newMeetingList[j] = meetingList[i];}
+\DoxyCodeLine{00120                 j++;}
+\DoxyCodeLine{00121             \}}
+\DoxyCodeLine{00122         \}}
+\DoxyCodeLine{00123         \textcolor{keywordflow}{return} j;}
+\DoxyCodeLine{00124     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_abc891cde7396fb9a024b21a6ccad9904}\label{classPersonalCalendar_abc891cde7396fb9a024b21a6ccad9904}} 
@@ -530,20 +530,20 @@ Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00112}{112}} o
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00123}{123}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00126}{126}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00123                                                                \{}
-\DoxyCodeLine{00124         \textcolor{keywordtype}{int} j = 0;}
-\DoxyCodeLine{00125         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
-\DoxyCodeLine{00126             \textcolor{keywordflow}{if}(strstr(meetingList[i].getName(), word) != NULL)\{}
-\DoxyCodeLine{00127                 newMeetingList[j] = meetingList[i];}
-\DoxyCodeLine{00128                 j++;}
-\DoxyCodeLine{00129             \}}
-\DoxyCodeLine{00130         \}}
-\DoxyCodeLine{00131         \textcolor{keywordflow}{return} j;}
-\DoxyCodeLine{00132     \}}
+\DoxyCodeLine{00126                                                                \{}
+\DoxyCodeLine{00127         \textcolor{keywordtype}{int} j = 0;}
+\DoxyCodeLine{00128         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
+\DoxyCodeLine{00129             \textcolor{keywordflow}{if}(strstr(meetingList[i].getName(), word) != NULL)\{}
+\DoxyCodeLine{00130                 newMeetingList[j] = meetingList[i];}
+\DoxyCodeLine{00131                 j++;}
+\DoxyCodeLine{00132             \}}
+\DoxyCodeLine{00133         \}}
+\DoxyCodeLine{00134         \textcolor{keywordflow}{return} j;}
+\DoxyCodeLine{00135     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a72b57dddafc5ab1dcd5525029d22db5f}\label{classPersonalCalendar_a72b57dddafc5ab1dcd5525029d22db5f}} 
@@ -558,18 +558,18 @@ Getter for meeting by date. NOTE\+: Throws invalid\+\_\+argument exception.
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00091}{91}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00094}{94}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00091                                          \{}
-\DoxyCodeLine{00092         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
-\DoxyCodeLine{00093             \textcolor{keywordflow}{if}(meetingList[i].getDate() == date)\{}
-\DoxyCodeLine{00094                 \textcolor{keywordflow}{return} meetingList[i];}
-\DoxyCodeLine{00095             \}}
-\DoxyCodeLine{00096         \}}
-\DoxyCodeLine{00097         \textcolor{keywordflow}{throw} std::invalid\_argument( \textcolor{stringliteral}{"{}Meeting not found"{}} );}
-\DoxyCodeLine{00098     \}}
+\DoxyCodeLine{00094                                          \{}
+\DoxyCodeLine{00095         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
+\DoxyCodeLine{00096             \textcolor{keywordflow}{if}(meetingList[i].getDate() == date)\{}
+\DoxyCodeLine{00097                 \textcolor{keywordflow}{return} meetingList[i];}
+\DoxyCodeLine{00098             \}}
+\DoxyCodeLine{00099         \}}
+\DoxyCodeLine{00100         \textcolor{keywordflow}{throw} std::invalid\_argument( \textcolor{stringliteral}{"{}Meeting not found"{}} );}
+\DoxyCodeLine{00101     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_aa800e2aeff45192a14e56d62c34b9e0d}\label{classPersonalCalendar_aa800e2aeff45192a14e56d62c34b9e0d}} 
@@ -584,18 +584,18 @@ Getter for meeting by name. NOTE\+: Throws invalid\+\_\+argument exception.
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00080}{80}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00083}{83}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00080                                      \{}
-\DoxyCodeLine{00081         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
-\DoxyCodeLine{00082             \textcolor{keywordflow}{if}(strcmp(meetingList[i].getName(), new\_name) == 0)\{}
-\DoxyCodeLine{00083                 \textcolor{keywordflow}{return} meetingList[i];}
-\DoxyCodeLine{00084             \}}
-\DoxyCodeLine{00085         \}}
-\DoxyCodeLine{00086         \textcolor{keywordflow}{throw} std::invalid\_argument( \textcolor{stringliteral}{"{}Meeting not found"{}} );}
-\DoxyCodeLine{00087     \}}
+\DoxyCodeLine{00083                                      \{}
+\DoxyCodeLine{00084         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
+\DoxyCodeLine{00085             \textcolor{keywordflow}{if}(strcmp(meetingList[i].getName(), new\_name) == 0)\{}
+\DoxyCodeLine{00086                 \textcolor{keywordflow}{return} meetingList[i];}
+\DoxyCodeLine{00087             \}}
+\DoxyCodeLine{00088         \}}
+\DoxyCodeLine{00089         \textcolor{keywordflow}{throw} std::invalid\_argument( \textcolor{stringliteral}{"{}Meeting not found"{}} );}
+\DoxyCodeLine{00090     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a645355f77fcf1ab6449f7c976a476aaf}\label{classPersonalCalendar_a645355f77fcf1ab6449f7c976a476aaf}} 
@@ -610,13 +610,13 @@ Getter for the current element number.
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00070}{70}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00073}{73}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00070                            \{}
-\DoxyCodeLine{00071         \textcolor{keywordflow}{return} current;}
-\DoxyCodeLine{00072     \}}
+\DoxyCodeLine{00073                            \{}
+\DoxyCodeLine{00074         \textcolor{keywordflow}{return} current;}
+\DoxyCodeLine{00075     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_ae326860586813893f36070b5e1723c4c}\label{classPersonalCalendar_ae326860586813893f36070b5e1723c4c}} 
@@ -627,29 +627,29 @@ Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00070}{70}} of
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00277}{277}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00280}{280}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00277                                                         \{}
-\DoxyCodeLine{00278         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} buffer = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}(*\textcolor{keyword}{this});}
-\DoxyCodeLine{00279         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} result = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
-\DoxyCodeLine{00280 }
-\DoxyCodeLine{00281         \mbox{\hyperlink{classMeeting}{Meeting}} min;}
-\DoxyCodeLine{00282 }
-\DoxyCodeLine{00283         \textcolor{keywordtype}{int} s = buffer.current;}
-\DoxyCodeLine{00284 }
-\DoxyCodeLine{00285         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < s; ++i) \{}
-\DoxyCodeLine{00286             min = buffer.\mbox{\hyperlink{classPersonalCalendar_af5f5021aaed68cdb656c406397c9983c}{getEarliestMeeting}}();}
-\DoxyCodeLine{00287             \textcolor{keywordflow}{if}(min.\mbox{\hyperlink{classMeeting_a5cd0547da990cc6cdd5caae61ab0d559}{getDate}}() == date)\{}
-\DoxyCodeLine{00288                 result.\mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(min);}
-\DoxyCodeLine{00289             \}}
-\DoxyCodeLine{00290             buffer.\mbox{\hyperlink{classPersonalCalendar_acefcc6e6364f856e876f46a59ae02728}{removeMeeting}}(min);}
-\DoxyCodeLine{00291         \}}
-\DoxyCodeLine{00292 }
-\DoxyCodeLine{00293         \textcolor{keywordflow}{return} result;}
-\DoxyCodeLine{00294 }
-\DoxyCodeLine{00295     \}}
+\DoxyCodeLine{00280                                                         \{}
+\DoxyCodeLine{00281         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} buffer = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}(*\textcolor{keyword}{this});}
+\DoxyCodeLine{00282         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} result = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
+\DoxyCodeLine{00283 }
+\DoxyCodeLine{00284         \mbox{\hyperlink{classMeeting}{Meeting}} min;}
+\DoxyCodeLine{00285 }
+\DoxyCodeLine{00286         \textcolor{keywordtype}{int} s = buffer.current;}
+\DoxyCodeLine{00287 }
+\DoxyCodeLine{00288         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < s; ++i) \{}
+\DoxyCodeLine{00289             min = buffer.\mbox{\hyperlink{classPersonalCalendar_af5f5021aaed68cdb656c406397c9983c}{getEarliestMeeting}}();}
+\DoxyCodeLine{00290             \textcolor{keywordflow}{if}(min.\mbox{\hyperlink{classMeeting_a5cd0547da990cc6cdd5caae61ab0d559}{getDate}}() == date)\{}
+\DoxyCodeLine{00291                 result.\mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(min);}
+\DoxyCodeLine{00292             \}}
+\DoxyCodeLine{00293             buffer.\mbox{\hyperlink{classPersonalCalendar_acefcc6e6364f856e876f46a59ae02728}{removeMeeting}}(min);}
+\DoxyCodeLine{00294         \}}
+\DoxyCodeLine{00295 }
+\DoxyCodeLine{00296         \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{00297 }
+\DoxyCodeLine{00298     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_ae72c5ce4fd1ff924289d51deedde1c25}\label{classPersonalCalendar_ae72c5ce4fd1ff924289d51deedde1c25}} 
@@ -660,43 +660,43 @@ Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00277}{277}} o
 
 Test for getting the first meeting in a list and getting the program for a specific date 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00628}{628}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00631}{631}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00628                                      \{}
-\DoxyCodeLine{00629         cout << \textcolor{stringliteral}{"{}\#Adding 3 meetings and returning the earliest of them: "{}} << endl;}
-\DoxyCodeLine{00630         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
-\DoxyCodeLine{00631         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 2"{}},}
-\DoxyCodeLine{00632                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00633                                      \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
-\DoxyCodeLine{00634                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
-\DoxyCodeLine{00635                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
-\DoxyCodeLine{00636         );}
-\DoxyCodeLine{00637         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 3"{}},}
-\DoxyCodeLine{00638                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00639                                      \mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
-\DoxyCodeLine{00640                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
-\DoxyCodeLine{00641                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
-\DoxyCodeLine{00642         );}
-\DoxyCodeLine{00643 }
-\DoxyCodeLine{00644         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 4"{}},}
-\DoxyCodeLine{00645                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00646                                      \mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
-\DoxyCodeLine{00647                                      \mbox{\hyperlink{classMyHour}{MyHour}}(10, 0),}
-\DoxyCodeLine{00648                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
-\DoxyCodeLine{00649         );}
-\DoxyCodeLine{00650         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00651         cout << \textcolor{stringliteral}{"{}\#The earliest meeting is: "{}} << endl;}
-\DoxyCodeLine{00652         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_af5f5021aaed68cdb656c406397c9983c}{getEarliestMeeting}}().\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
-\DoxyCodeLine{00653 }
-\DoxyCodeLine{00654         cout << \textcolor{stringliteral}{"{}\#Adding 3 meetings and returning the daily program for 2022-\/10-\/22: "{}} << endl;}
-\DoxyCodeLine{00655 }
+\DoxyCodeLine{00631                                      \{}
+\DoxyCodeLine{00632         cout << \textcolor{stringliteral}{"{}\#Adding 3 meetings and returning the earliest of them: "{}} << endl;}
+\DoxyCodeLine{00633         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
+\DoxyCodeLine{00634         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 2"{}},}
+\DoxyCodeLine{00635                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00636                                      \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
+\DoxyCodeLine{00637                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
+\DoxyCodeLine{00638                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
+\DoxyCodeLine{00639         );}
+\DoxyCodeLine{00640         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 3"{}},}
+\DoxyCodeLine{00641                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00642                                      \mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
+\DoxyCodeLine{00643                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
+\DoxyCodeLine{00644                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
+\DoxyCodeLine{00645         );}
+\DoxyCodeLine{00646 }
+\DoxyCodeLine{00647         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 4"{}},}
+\DoxyCodeLine{00648                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00649                                      \mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
+\DoxyCodeLine{00650                                      \mbox{\hyperlink{classMyHour}{MyHour}}(10, 0),}
+\DoxyCodeLine{00651                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
+\DoxyCodeLine{00652         );}
+\DoxyCodeLine{00653         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00654         cout << \textcolor{stringliteral}{"{}\#The earliest meeting is: "{}} << endl;}
+\DoxyCodeLine{00655         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_af5f5021aaed68cdb656c406397c9983c}{getEarliestMeeting}}().\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
 \DoxyCodeLine{00656 }
-\DoxyCodeLine{00657         cout << \textcolor{stringliteral}{"{}\#Calendar for 2022-\/10-\/22"{}} << endl;}
-\DoxyCodeLine{00658         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} calendarForTheDay = personalCalendar.getDailyProgram(\mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022));}
-\DoxyCodeLine{00659         calendarForTheDay.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00660     \}}
+\DoxyCodeLine{00657         cout << \textcolor{stringliteral}{"{}\#Adding 3 meetings and returning the daily program for 2022-\/10-\/22: "{}} << endl;}
+\DoxyCodeLine{00658 }
+\DoxyCodeLine{00659 }
+\DoxyCodeLine{00660         cout << \textcolor{stringliteral}{"{}\#Calendar for 2022-\/10-\/22"{}} << endl;}
+\DoxyCodeLine{00661         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} calendarForTheDay = personalCalendar.getDailyProgram(\mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022));}
+\DoxyCodeLine{00662         calendarForTheDay.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00663     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_af5f5021aaed68cdb656c406397c9983c}\label{classPersonalCalendar_af5f5021aaed68cdb656c406397c9983c}} 
@@ -711,21 +711,21 @@ Returns the earliest meeting found in the calendar.
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00165}{165}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00168}{168}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00165                                 \{}
-\DoxyCodeLine{00166         \textcolor{comment}{// If the array is empty throws exception}}
-\DoxyCodeLine{00167         \textcolor{keywordflow}{if}(current <= 0) \textcolor{keywordflow}{throw} std::invalid\_argument( \textcolor{stringliteral}{"{}Meeting list is empty so minimal date cannot be found"{}} );}
-\DoxyCodeLine{00168         \textcolor{comment}{// Sets the first element as minimal}}
-\DoxyCodeLine{00169         \mbox{\hyperlink{classMeeting}{Meeting}}* min = \&meetingList[0];}
-\DoxyCodeLine{00170         \textcolor{comment}{// Goes through all elements and if it finds an element that is smaller it sets it as a minimal}}
-\DoxyCodeLine{00171         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
-\DoxyCodeLine{00172             \textcolor{keywordflow}{if}(meetingList[i] < *min) min = \&meetingList[i];}
-\DoxyCodeLine{00173         \}}
-\DoxyCodeLine{00174         \textcolor{keywordflow}{return} *min;}
-\DoxyCodeLine{00175     \}}
+\DoxyCodeLine{00168                                 \{}
+\DoxyCodeLine{00169         \textcolor{comment}{// If the array is empty throws exception}}
+\DoxyCodeLine{00170         \textcolor{keywordflow}{if}(current <= 0) \textcolor{keywordflow}{throw} std::invalid\_argument( \textcolor{stringliteral}{"{}Meeting list is empty so minimal date cannot be found"{}} );}
+\DoxyCodeLine{00171         \textcolor{comment}{// Sets the first element as minimal}}
+\DoxyCodeLine{00172         \mbox{\hyperlink{classMeeting}{Meeting}}* min = \&meetingList[0];}
+\DoxyCodeLine{00173         \textcolor{comment}{// Goes through all elements and if it finds an element that is smaller it sets it as a minimal}}
+\DoxyCodeLine{00174         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
+\DoxyCodeLine{00175             \textcolor{keywordflow}{if}(meetingList[i] < *min) min = \&meetingList[i];}
+\DoxyCodeLine{00176         \}}
+\DoxyCodeLine{00177         \textcolor{keywordflow}{return} *min;}
+\DoxyCodeLine{00178     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a0fa4ff3a346080efe5634b929ee22979}\label{classPersonalCalendar_a0fa4ff3a346080efe5634b929ee22979}} 
@@ -740,18 +740,18 @@ Getter for first matched meeting by word in the description. NOTE\+: Throws inva
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00102}{102}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00105}{105}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00102                                                    \{}
-\DoxyCodeLine{00103         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
-\DoxyCodeLine{00104             \textcolor{keywordflow}{if}(strstr(meetingList[i].getDescription(), word) != NULL)\{}
-\DoxyCodeLine{00105                 \textcolor{keywordflow}{return} meetingList[i];}
-\DoxyCodeLine{00106             \}}
-\DoxyCodeLine{00107         \}}
-\DoxyCodeLine{00108         \textcolor{keywordflow}{throw} std::invalid\_argument( \textcolor{stringliteral}{"{}Meeting not found"{}} );}
-\DoxyCodeLine{00109     \}}
+\DoxyCodeLine{00105                                                    \{}
+\DoxyCodeLine{00106         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
+\DoxyCodeLine{00107             \textcolor{keywordflow}{if}(strstr(meetingList[i].getDescription(), word) != NULL)\{}
+\DoxyCodeLine{00108                 \textcolor{keywordflow}{return} meetingList[i];}
+\DoxyCodeLine{00109             \}}
+\DoxyCodeLine{00110         \}}
+\DoxyCodeLine{00111         \textcolor{keywordflow}{throw} std::invalid\_argument( \textcolor{stringliteral}{"{}Meeting not found"{}} );}
+\DoxyCodeLine{00112     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a6aa92290164262a7ca65233d8d989785}\label{classPersonalCalendar_a6aa92290164262a7ca65233d8d989785}} 
@@ -766,13 +766,13 @@ Getter for the meeting array.
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00065}{65}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00068}{68}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00065                                     \{}
-\DoxyCodeLine{00066         \textcolor{keywordflow}{return} meetingList;}
-\DoxyCodeLine{00067     \}}
+\DoxyCodeLine{00068                                     \{}
+\DoxyCodeLine{00069         \textcolor{keywordflow}{return} meetingList;}
+\DoxyCodeLine{00070     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a428037de05e5821cce655549e21c9e88}\label{classPersonalCalendar_a428037de05e5821cce655549e21c9e88}} 
@@ -787,13 +787,13 @@ Getter for the size of the array.
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00075}{75}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00078}{78}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00075                         \{}
-\DoxyCodeLine{00076         \textcolor{keywordflow}{return} size;}
-\DoxyCodeLine{00077     \}}
+\DoxyCodeLine{00078                         \{}
+\DoxyCodeLine{00079         \textcolor{keywordflow}{return} size;}
+\DoxyCodeLine{00080     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a7db6a599d4ea61576f54559501da7982}\label{classPersonalCalendar_a7db6a599d4ea61576f54559501da7982}} 
@@ -812,81 +812,81 @@ Test for initialization and get methods of the Personal calendar
 \item Creates a new calendar and adds all the meetings from the previous one with a certain word in them 
 \end{DoxyItemize}
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00483}{483}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00486}{486}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00483                                           \{}
-\DoxyCodeLine{00484         \textcolor{comment}{// Creating empty calendar}}
-\DoxyCodeLine{00485         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
-\DoxyCodeLine{00486 }
-\DoxyCodeLine{00487         \textcolor{comment}{// Creating test strings to put in the array as name and desc of the meeting}}
-\DoxyCodeLine{00488         \textcolor{keywordtype}{char}* test\_name = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[20];}
-\DoxyCodeLine{00489         \textcolor{keywordtype}{char}* test\_description = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[100];}
-\DoxyCodeLine{00490 }
-\DoxyCodeLine{00491         strcpy(test\_name, \textcolor{stringliteral}{"{}Appointment"{}});}
-\DoxyCodeLine{00492         strcpy(test\_description, \textcolor{stringliteral}{"{}Appointment with the doctor"{}});}
+\DoxyCodeLine{00486                                           \{}
+\DoxyCodeLine{00487         \textcolor{comment}{// Creating empty calendar}}
+\DoxyCodeLine{00488         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
+\DoxyCodeLine{00489 }
+\DoxyCodeLine{00490         \textcolor{comment}{// Creating test strings to put in the array as name and desc of the meeting}}
+\DoxyCodeLine{00491         \textcolor{keywordtype}{char}* test\_name = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[20];}
+\DoxyCodeLine{00492         \textcolor{keywordtype}{char}* test\_description = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[100];}
 \DoxyCodeLine{00493 }
-\DoxyCodeLine{00494         \textcolor{comment}{// Creating sample meeting}}
-\DoxyCodeLine{00495         \mbox{\hyperlink{classMeeting}{Meeting}} meeting = \mbox{\hyperlink{classMeeting}{Meeting}}(test\_name,}
-\DoxyCodeLine{00496                                   test\_description,}
-\DoxyCodeLine{00497                                   \mbox{\hyperlink{classMyDate}{MyDate}}(24, 10, 2022),}
-\DoxyCodeLine{00498                                   \mbox{\hyperlink{classMyHour}{MyHour}}(10, 15),}
-\DoxyCodeLine{00499                                   \mbox{\hyperlink{classMyHour}{MyHour}}(12, 15));}
-\DoxyCodeLine{00500 }
-\DoxyCodeLine{00501         \textcolor{keyword}{delete}[] test\_name;}
-\DoxyCodeLine{00502         \textcolor{keyword}{delete}[] test\_description;}
+\DoxyCodeLine{00494         strcpy(test\_name, \textcolor{stringliteral}{"{}Appointment"{}});}
+\DoxyCodeLine{00495         strcpy(test\_description, \textcolor{stringliteral}{"{}Appointment with the doctor"{}});}
+\DoxyCodeLine{00496 }
+\DoxyCodeLine{00497         \textcolor{comment}{// Creating sample meeting}}
+\DoxyCodeLine{00498         \mbox{\hyperlink{classMeeting}{Meeting}} meeting = \mbox{\hyperlink{classMeeting}{Meeting}}(test\_name,}
+\DoxyCodeLine{00499                                   test\_description,}
+\DoxyCodeLine{00500                                   \mbox{\hyperlink{classMyDate}{MyDate}}(24, 10, 2022),}
+\DoxyCodeLine{00501                                   \mbox{\hyperlink{classMyHour}{MyHour}}(10, 15),}
+\DoxyCodeLine{00502                                   \mbox{\hyperlink{classMyHour}{MyHour}}(12, 15));}
 \DoxyCodeLine{00503 }
-\DoxyCodeLine{00504         \textcolor{comment}{// Adding the meeting to the array}}
-\DoxyCodeLine{00505         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(meeting);}
+\DoxyCodeLine{00504         \textcolor{keyword}{delete}[] test\_name;}
+\DoxyCodeLine{00505         \textcolor{keyword}{delete}[] test\_description;}
 \DoxyCodeLine{00506 }
-\DoxyCodeLine{00507 }
-\DoxyCodeLine{00508         \textcolor{comment}{// Creating second meeting and adding it}}
-\DoxyCodeLine{00509         \mbox{\hyperlink{classMeeting}{Meeting}} m = \mbox{\hyperlink{classMeeting}{Meeting}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}pin"{}}, (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}go now"{}}, \mbox{\hyperlink{classMyDate}{MyDate}}(), \mbox{\hyperlink{classMyHour}{MyHour}}(), \mbox{\hyperlink{classMyHour}{MyHour}}());}
-\DoxyCodeLine{00510         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(m);}
-\DoxyCodeLine{00511 }
-\DoxyCodeLine{00512         \textcolor{comment}{// Adding 9 more meetings to make the array resize itself}}
-\DoxyCodeLine{00513         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i <= 9; ++i) \{}
-\DoxyCodeLine{00514             meeting.\mbox{\hyperlink{classMeeting_aeac8233eb3a1306f1c0179ffdec61581}{setStartHour}}(\mbox{\hyperlink{classMyHour}{MyHour}}(i, 0));}
-\DoxyCodeLine{00515             meeting.\mbox{\hyperlink{classMeeting_ac636364cd62cadb3948465956b703517}{setDate}}(\mbox{\hyperlink{classMyDate}{MyDate}}(i, 2, 2022));}
-\DoxyCodeLine{00516             personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(meeting);}
-\DoxyCodeLine{00517         \}}
-\DoxyCodeLine{00518 }
-\DoxyCodeLine{00519         \textcolor{comment}{// Printing the calendar}}
-\DoxyCodeLine{00520         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00507         \textcolor{comment}{// Adding the meeting to the array}}
+\DoxyCodeLine{00508         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(meeting);}
+\DoxyCodeLine{00509 }
+\DoxyCodeLine{00510 }
+\DoxyCodeLine{00511         \textcolor{comment}{// Creating second meeting and adding it}}
+\DoxyCodeLine{00512         \mbox{\hyperlink{classMeeting}{Meeting}} m = \mbox{\hyperlink{classMeeting}{Meeting}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}pin"{}}, (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}go now"{}}, \mbox{\hyperlink{classMyDate}{MyDate}}(), \mbox{\hyperlink{classMyHour}{MyHour}}(), \mbox{\hyperlink{classMyHour}{MyHour}}());}
+\DoxyCodeLine{00513         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(m);}
+\DoxyCodeLine{00514 }
+\DoxyCodeLine{00515         \textcolor{comment}{// Adding 9 more meetings to make the array resize itself}}
+\DoxyCodeLine{00516         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i <= 9; ++i) \{}
+\DoxyCodeLine{00517             meeting.\mbox{\hyperlink{classMeeting_aeac8233eb3a1306f1c0179ffdec61581}{setStartHour}}(\mbox{\hyperlink{classMyHour}{MyHour}}(i, 0));}
+\DoxyCodeLine{00518             meeting.\mbox{\hyperlink{classMeeting_ac636364cd62cadb3948465956b703517}{setDate}}(\mbox{\hyperlink{classMyDate}{MyDate}}(i, 2, 2022));}
+\DoxyCodeLine{00519             personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aaa55179bfccdb167138402572309b8fe}{addMeeting}}(meeting);}
+\DoxyCodeLine{00520         \}}
 \DoxyCodeLine{00521 }
-\DoxyCodeLine{00522         cout<< \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl;}
-\DoxyCodeLine{00523 }
-\DoxyCodeLine{00524         cout << \textcolor{stringliteral}{"{}Getting the meeting with name pin: "{}} << endl;}
-\DoxyCodeLine{00525         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aa800e2aeff45192a14e56d62c34b9e0d}{getByName}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}pin"{}}).\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
-\DoxyCodeLine{00526         cout << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl;}
-\DoxyCodeLine{00527         cout << \textcolor{stringliteral}{"{}Getting all meetings which name contains Appointment"{}} << endl;}
-\DoxyCodeLine{00528 }
-\DoxyCodeLine{00529         \textcolor{comment}{// Creating new personal calendar}}
-\DoxyCodeLine{00530         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar2 = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
-\DoxyCodeLine{00531         \textcolor{comment}{// Getting all the words and putting them in the personal calendar's array}}
-\DoxyCodeLine{00532         \textcolor{keywordtype}{int} p2\_size = personalCalendar.getAllByWordInName(personalCalendar2.\mbox{\hyperlink{classPersonalCalendar_a6aa92290164262a7ca65233d8d989785}{getMeetingList}}(), (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Appointment"{}});}
-\DoxyCodeLine{00533         \textcolor{comment}{// Setting the current element number}}
-\DoxyCodeLine{00534         personalCalendar2.\mbox{\hyperlink{classPersonalCalendar_ac8e968d25fa20906f0c747e295597640}{setCurrent}}(p2\_size);}
-\DoxyCodeLine{00535         personalCalendar2.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00536 }
-\DoxyCodeLine{00537         cout << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl;}
-\DoxyCodeLine{00538         cout << \textcolor{stringliteral}{"{}Getting the meeting with date 2022-\/02-\/04: "{}} << endl;}
-\DoxyCodeLine{00539         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a72b57dddafc5ab1dcd5525029d22db5f}{getByDate}}(\mbox{\hyperlink{classMyDate}{MyDate}}(4, 2, 2022)).\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
+\DoxyCodeLine{00522         \textcolor{comment}{// Printing the calendar}}
+\DoxyCodeLine{00523         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00524 }
+\DoxyCodeLine{00525         cout<< \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl;}
+\DoxyCodeLine{00526 }
+\DoxyCodeLine{00527         cout << \textcolor{stringliteral}{"{}Getting the meeting with name pin: "{}} << endl;}
+\DoxyCodeLine{00528         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_aa800e2aeff45192a14e56d62c34b9e0d}{getByName}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}pin"{}}).\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
+\DoxyCodeLine{00529         cout << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl;}
+\DoxyCodeLine{00530         cout << \textcolor{stringliteral}{"{}Getting all meetings which name contains Appointment"{}} << endl;}
+\DoxyCodeLine{00531 }
+\DoxyCodeLine{00532         \textcolor{comment}{// Creating new personal calendar}}
+\DoxyCodeLine{00533         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar2 = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
+\DoxyCodeLine{00534         \textcolor{comment}{// Getting all the words and putting them in the personal calendar's array}}
+\DoxyCodeLine{00535         \textcolor{keywordtype}{int} p2\_size = personalCalendar.getAllByWordInName(personalCalendar2.\mbox{\hyperlink{classPersonalCalendar_a6aa92290164262a7ca65233d8d989785}{getMeetingList}}(), (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Appointment"{}});}
+\DoxyCodeLine{00536         \textcolor{comment}{// Setting the current element number}}
+\DoxyCodeLine{00537         personalCalendar2.\mbox{\hyperlink{classPersonalCalendar_ac8e968d25fa20906f0c747e295597640}{setCurrent}}(p2\_size);}
+\DoxyCodeLine{00538         personalCalendar2.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00539 }
 \DoxyCodeLine{00540         cout << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl;}
-\DoxyCodeLine{00541         cout << \textcolor{stringliteral}{"{}Getting the first meeting containing the word \(\backslash\)"{}with\(\backslash\)"{} in it's description:"{}} << endl;}
-\DoxyCodeLine{00542         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a0fa4ff3a346080efe5634b929ee22979}{getFirstByWordInDescription}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}with"{}}).\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
-\DoxyCodeLine{00543 }
-\DoxyCodeLine{00544         cout << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl;}
-\DoxyCodeLine{00545         cout << \textcolor{stringliteral}{"{}Getting all meetings containing the word \(\backslash\)"{}with\(\backslash\)"{} in it's description and putting it into a calendar:"{}} << endl;}
-\DoxyCodeLine{00546         \textcolor{comment}{// Creating new personal calendar}}
-\DoxyCodeLine{00547         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar1 = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
-\DoxyCodeLine{00548         \textcolor{comment}{// Getting all the words and putting them in the personal calendar's array}}
-\DoxyCodeLine{00549         \textcolor{keywordtype}{int} cur = personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ae1222a46df40bd418fa47aa0fabd4f67}{getAllByWordInDescription}}(personalCalendar1.\mbox{\hyperlink{classPersonalCalendar_a6aa92290164262a7ca65233d8d989785}{getMeetingList}}(), (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}with"{}});}
-\DoxyCodeLine{00550         \textcolor{comment}{// Setting the current element number}}
-\DoxyCodeLine{00551         personalCalendar1.\mbox{\hyperlink{classPersonalCalendar_ac8e968d25fa20906f0c747e295597640}{setCurrent}}(cur);}
-\DoxyCodeLine{00552         personalCalendar1.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00553     \}}
+\DoxyCodeLine{00541         cout << \textcolor{stringliteral}{"{}Getting the meeting with date 2022-\/02-\/04: "{}} << endl;}
+\DoxyCodeLine{00542         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a72b57dddafc5ab1dcd5525029d22db5f}{getByDate}}(\mbox{\hyperlink{classMyDate}{MyDate}}(4, 2, 2022)).\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
+\DoxyCodeLine{00543         cout << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl;}
+\DoxyCodeLine{00544         cout << \textcolor{stringliteral}{"{}Getting the first meeting containing the word \(\backslash\)"{}with\(\backslash\)"{} in it's description:"{}} << endl;}
+\DoxyCodeLine{00545         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a0fa4ff3a346080efe5634b929ee22979}{getFirstByWordInDescription}}((\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}with"{}}).\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
+\DoxyCodeLine{00546 }
+\DoxyCodeLine{00547         cout << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl;}
+\DoxyCodeLine{00548         cout << \textcolor{stringliteral}{"{}Getting all meetings containing the word \(\backslash\)"{}with\(\backslash\)"{} in it's description and putting it into a calendar:"{}} << endl;}
+\DoxyCodeLine{00549         \textcolor{comment}{// Creating new personal calendar}}
+\DoxyCodeLine{00550         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar1 = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
+\DoxyCodeLine{00551         \textcolor{comment}{// Getting all the words and putting them in the personal calendar's array}}
+\DoxyCodeLine{00552         \textcolor{keywordtype}{int} cur = personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ae1222a46df40bd418fa47aa0fabd4f67}{getAllByWordInDescription}}(personalCalendar1.\mbox{\hyperlink{classPersonalCalendar_a6aa92290164262a7ca65233d8d989785}{getMeetingList}}(), (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}with"{}});}
+\DoxyCodeLine{00553         \textcolor{comment}{// Setting the current element number}}
+\DoxyCodeLine{00554         personalCalendar1.\mbox{\hyperlink{classPersonalCalendar_ac8e968d25fa20906f0c747e295597640}{setCurrent}}(cur);}
+\DoxyCodeLine{00555         personalCalendar1.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00556     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a46d02e3a5057b98ea444cd37791f4f70}\label{classPersonalCalendar_a46d02e3a5057b98ea444cd37791f4f70}} 
@@ -897,22 +897,22 @@ Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00483}{483}} o
 
 A function to load the class from a binary file 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00222}{222}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00225}{225}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00222                              \{}
-\DoxyCodeLine{00223         \textcolor{comment}{// Getting the size of the array first}}
-\DoxyCodeLine{00224         \textcolor{keywordtype}{int} new\_current = 0;}
-\DoxyCodeLine{00225         file.read((\textcolor{keywordtype}{char} *)\&new\_current, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));}
-\DoxyCodeLine{00226         current = new\_current;}
-\DoxyCodeLine{00227         \mbox{\hyperlink{classMeeting}{Meeting}}* buffer = \textcolor{keyword}{new} \mbox{\hyperlink{classMeeting}{Meeting}}[current+1];}
-\DoxyCodeLine{00228         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
-\DoxyCodeLine{00229             buffer[i].\mbox{\hyperlink{classMeeting_a439bdd485ef6b0551fefc548438446df}{load}}(file);}
-\DoxyCodeLine{00230         \}}
-\DoxyCodeLine{00231         \mbox{\hyperlink{classPersonalCalendar_a0063ceb2d3e7726f10f161c587a26aff}{setMeetingList}}(buffer, current, current*2);}
-\DoxyCodeLine{00232         \textcolor{keyword}{delete} [] buffer;}
-\DoxyCodeLine{00233     \}}
+\DoxyCodeLine{00225                              \{}
+\DoxyCodeLine{00226         \textcolor{comment}{// Getting the size of the array first}}
+\DoxyCodeLine{00227         \textcolor{keywordtype}{int} new\_current = 0;}
+\DoxyCodeLine{00228         file.read((\textcolor{keywordtype}{char} *)\&new\_current, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));}
+\DoxyCodeLine{00229         current = new\_current;}
+\DoxyCodeLine{00230         \mbox{\hyperlink{classMeeting}{Meeting}}* buffer = \textcolor{keyword}{new} \mbox{\hyperlink{classMeeting}{Meeting}}[current+1];}
+\DoxyCodeLine{00231         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
+\DoxyCodeLine{00232             buffer[i].\mbox{\hyperlink{classMeeting_a439bdd485ef6b0551fefc548438446df}{load}}(file);}
+\DoxyCodeLine{00233         \}}
+\DoxyCodeLine{00234         \mbox{\hyperlink{classPersonalCalendar_a0063ceb2d3e7726f10f161c587a26aff}{setMeetingList}}(buffer, current, current*2);}
+\DoxyCodeLine{00235         \textcolor{keyword}{delete} [] buffer;}
+\DoxyCodeLine{00236     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}\label{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}} 
@@ -927,17 +927,17 @@ A function to print the class.
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00236}{236}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00239}{239}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00236                 \{}
-\DoxyCodeLine{00237         cout << \textcolor{stringliteral}{"{}Personal calendar: "{}} << endl << endl;}
-\DoxyCodeLine{00238         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
-\DoxyCodeLine{00239             meetingList[i].\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
-\DoxyCodeLine{00240             cout << endl;}
-\DoxyCodeLine{00241         \}}
-\DoxyCodeLine{00242     \}}
+\DoxyCodeLine{00239                 \{}
+\DoxyCodeLine{00240         cout << \textcolor{stringliteral}{"{}Personal calendar: "{}} << endl << endl;}
+\DoxyCodeLine{00241         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
+\DoxyCodeLine{00242             meetingList[i].\mbox{\hyperlink{classMeeting_a0b970ba67ed4469b9f966a311ad257dd}{print}}();}
+\DoxyCodeLine{00243             cout << endl;}
+\DoxyCodeLine{00244         \}}
+\DoxyCodeLine{00245     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a017b65a84399be7b7ed896a278a4be4c}\label{classPersonalCalendar_a017b65a84399be7b7ed896a278a4be4c}} 
@@ -952,18 +952,18 @@ Removes all meetings that have a certain word in their description.
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00268}{268}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00271}{271}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00268                                                            \{}
-\DoxyCodeLine{00269         \mbox{\hyperlink{classMeeting}{Meeting}}* buffer = \textcolor{keyword}{new} \mbox{\hyperlink{classMeeting}{Meeting}}[current];}
-\DoxyCodeLine{00270         \textcolor{keywordtype}{int} buff\_size = \mbox{\hyperlink{classPersonalCalendar_ae1222a46df40bd418fa47aa0fabd4f67}{getAllByWordInDescription}}(buffer, word);}
-\DoxyCodeLine{00271         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < buff\_size; ++i) \{}
-\DoxyCodeLine{00272             \mbox{\hyperlink{classPersonalCalendar_acefcc6e6364f856e876f46a59ae02728}{removeMeeting}}(buffer[i]);}
-\DoxyCodeLine{00273         \}}
-\DoxyCodeLine{00274         \textcolor{keyword}{delete} [] buffer;}
-\DoxyCodeLine{00275     \}}
+\DoxyCodeLine{00271                                                            \{}
+\DoxyCodeLine{00272         \mbox{\hyperlink{classMeeting}{Meeting}}* buffer = \textcolor{keyword}{new} \mbox{\hyperlink{classMeeting}{Meeting}}[current];}
+\DoxyCodeLine{00273         \textcolor{keywordtype}{int} buff\_size = \mbox{\hyperlink{classPersonalCalendar_ae1222a46df40bd418fa47aa0fabd4f67}{getAllByWordInDescription}}(buffer, word);}
+\DoxyCodeLine{00274         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < buff\_size; ++i) \{}
+\DoxyCodeLine{00275             \mbox{\hyperlink{classPersonalCalendar_acefcc6e6364f856e876f46a59ae02728}{removeMeeting}}(buffer[i]);}
+\DoxyCodeLine{00276         \}}
+\DoxyCodeLine{00277         \textcolor{keyword}{delete} [] buffer;}
+\DoxyCodeLine{00278     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_acefcc6e6364f856e876f46a59ae02728}\label{classPersonalCalendar_acefcc6e6364f856e876f46a59ae02728}} 
@@ -978,33 +978,33 @@ This function removes given element from the array.
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00187}{187}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00190}{190}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00187                                               \{}
-\DoxyCodeLine{00188         \textcolor{comment}{// Going through the whole array}}
-\DoxyCodeLine{00189         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; i++)}
-\DoxyCodeLine{00190         \{}
-\DoxyCodeLine{00191 }
-\DoxyCodeLine{00192             \textcolor{comment}{// Checking if the elements match}}
-\DoxyCodeLine{00193             \textcolor{keywordflow}{if} (meetingList[i] == meeting)}
-\DoxyCodeLine{00194             \{}
-\DoxyCodeLine{00195                 \textcolor{comment}{// Going through remaining elements}}
-\DoxyCodeLine{00196                 \textcolor{keywordflow}{for} ( ; i < current -\/ 1; i++)}
-\DoxyCodeLine{00197                 \{}
-\DoxyCodeLine{00198                     \textcolor{comment}{// Assign the next element to current location.}}
-\DoxyCodeLine{00199                     meetingList[i] = meetingList[i + 1];}
-\DoxyCodeLine{00200                 \}}
-\DoxyCodeLine{00201 }
-\DoxyCodeLine{00202                 \textcolor{comment}{// Remove the last element as it has been moved to previous index.}}
-\DoxyCodeLine{00203                 meetingList[current -\/ 1] = \mbox{\hyperlink{classMeeting}{Meeting}}();}
-\DoxyCodeLine{00204                 current = current -\/ 1;}
-\DoxyCodeLine{00205                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
-\DoxyCodeLine{00206             \}}
-\DoxyCodeLine{00207         \}}
-\DoxyCodeLine{00208             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
-\DoxyCodeLine{00209     \}}
+\DoxyCodeLine{00190                                               \{}
+\DoxyCodeLine{00191         \textcolor{comment}{// Going through the whole array}}
+\DoxyCodeLine{00192         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; i++)}
+\DoxyCodeLine{00193         \{}
+\DoxyCodeLine{00194 }
+\DoxyCodeLine{00195             \textcolor{comment}{// Checking if the elements match}}
+\DoxyCodeLine{00196             \textcolor{keywordflow}{if} (meetingList[i] == meeting)}
+\DoxyCodeLine{00197             \{}
+\DoxyCodeLine{00198                 \textcolor{comment}{// Going through remaining elements}}
+\DoxyCodeLine{00199                 \textcolor{keywordflow}{for} ( ; i < current -\/ 1; i++)}
+\DoxyCodeLine{00200                 \{}
+\DoxyCodeLine{00201                     \textcolor{comment}{// Assign the next element to current location.}}
+\DoxyCodeLine{00202                     meetingList[i] = meetingList[i + 1];}
+\DoxyCodeLine{00203                 \}}
+\DoxyCodeLine{00204 }
+\DoxyCodeLine{00205                 \textcolor{comment}{// Remove the last element as it has been moved to previous index.}}
+\DoxyCodeLine{00206                 meetingList[current -\/ 1] = \mbox{\hyperlink{classMeeting}{Meeting}}();}
+\DoxyCodeLine{00207                 current = current -\/ 1;}
+\DoxyCodeLine{00208                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00209             \}}
+\DoxyCodeLine{00210         \}}
+\DoxyCodeLine{00211             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00212     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a6f8816a91ff6c30374d8596cc3855f17}\label{classPersonalCalendar_a6f8816a91ff6c30374d8596cc3855f17}} 
@@ -1019,13 +1019,13 @@ Removes the first meeting that it finds on a given date.
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00258}{258}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00261}{261}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00258                                          \{}
-\DoxyCodeLine{00259         \mbox{\hyperlink{classPersonalCalendar_acefcc6e6364f856e876f46a59ae02728}{removeMeeting}}(\mbox{\hyperlink{classPersonalCalendar_a72b57dddafc5ab1dcd5525029d22db5f}{getByDate}}(date));}
-\DoxyCodeLine{00260     \}}
+\DoxyCodeLine{00261                                          \{}
+\DoxyCodeLine{00262         \mbox{\hyperlink{classPersonalCalendar_acefcc6e6364f856e876f46a59ae02728}{removeMeeting}}(\mbox{\hyperlink{classPersonalCalendar_a72b57dddafc5ab1dcd5525029d22db5f}{getByDate}}(date));}
+\DoxyCodeLine{00263     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_aae559dd897969894ac60bcdedc65fecd}\label{classPersonalCalendar_aae559dd897969894ac60bcdedc65fecd}} 
@@ -1040,13 +1040,13 @@ Removes the first meeting that it finds which has a certain word in it\textquote
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00263}{263}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00266}{266}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00263                                                            \{}
-\DoxyCodeLine{00264         \mbox{\hyperlink{classPersonalCalendar_acefcc6e6364f856e876f46a59ae02728}{removeMeeting}}(\mbox{\hyperlink{classPersonalCalendar_a0fa4ff3a346080efe5634b929ee22979}{getFirstByWordInDescription}}(word));}
-\DoxyCodeLine{00265     \}}
+\DoxyCodeLine{00266                                                            \{}
+\DoxyCodeLine{00267         \mbox{\hyperlink{classPersonalCalendar_acefcc6e6364f856e876f46a59ae02728}{removeMeeting}}(\mbox{\hyperlink{classPersonalCalendar_a0fa4ff3a346080efe5634b929ee22979}{getFirstByWordInDescription}}(word));}
+\DoxyCodeLine{00268     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a75829f9558eba9abf9e8ca35497d079f}\label{classPersonalCalendar_a75829f9558eba9abf9e8ca35497d079f}} 
@@ -1061,13 +1061,13 @@ Removes the first meeting that it finds with the given name.
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00253}{253}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00256}{256}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00253                                         \{}
-\DoxyCodeLine{00254         \mbox{\hyperlink{classPersonalCalendar_acefcc6e6364f856e876f46a59ae02728}{removeMeeting}}(\mbox{\hyperlink{classPersonalCalendar_aa800e2aeff45192a14e56d62c34b9e0d}{getByName}}(name));}
-\DoxyCodeLine{00255     \}}
+\DoxyCodeLine{00256                                         \{}
+\DoxyCodeLine{00257         \mbox{\hyperlink{classPersonalCalendar_acefcc6e6364f856e876f46a59ae02728}{removeMeeting}}(\mbox{\hyperlink{classPersonalCalendar_aa800e2aeff45192a14e56d62c34b9e0d}{getByName}}(name));}
+\DoxyCodeLine{00258     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a32f8c94df67bd4ec2af9f67465572d43}\label{classPersonalCalendar_a32f8c94df67bd4ec2af9f67465572d43}} 
@@ -1078,18 +1078,18 @@ Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00253}{253}} o
 
 A function to save the class into a binary file 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00212}{212}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00215}{215}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00212                              \{}
-\DoxyCodeLine{00213         \textcolor{comment}{// Saving the size of the array, so we can later read it}}
-\DoxyCodeLine{00214         file.write((\textcolor{keywordtype}{char} *)\&current, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));}
-\DoxyCodeLine{00215 }
-\DoxyCodeLine{00216         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
-\DoxyCodeLine{00217             meetingList[i].\mbox{\hyperlink{classMeeting_a4ba766215f8932b69932dd442438f455}{save}}(file);}
-\DoxyCodeLine{00218         \}}
-\DoxyCodeLine{00219     \}}
+\DoxyCodeLine{00215                              \{}
+\DoxyCodeLine{00216         \textcolor{comment}{// Saving the size of the array, so we can later read it}}
+\DoxyCodeLine{00217         file.write((\textcolor{keywordtype}{char} *)\&current, \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));}
+\DoxyCodeLine{00218 }
+\DoxyCodeLine{00219         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
+\DoxyCodeLine{00220             meetingList[i].\mbox{\hyperlink{classMeeting_a4ba766215f8932b69932dd442438f455}{save}}(file);}
+\DoxyCodeLine{00221         \}}
+\DoxyCodeLine{00222     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a3950a6d6986c16c633d6058075d228b2}\label{classPersonalCalendar_a3950a6d6986c16c633d6058075d228b2}} 
@@ -1105,54 +1105,54 @@ Test for save and load functionality
 \item Loads the calendar into a new object and prints it 
 \end{DoxyItemize}
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00666}{666}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00669}{669}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00666                                  \{}
-\DoxyCodeLine{00667         cout << \textcolor{stringliteral}{"{}\#Saving personalCalendar to file and loading it to personalCalendar1:"{}} << endl;}
-\DoxyCodeLine{00668         ofstream file(\textcolor{stringliteral}{"{}PersonalCalendar.dat"{}}, ios::out | ios::binary);}
-\DoxyCodeLine{00669         \textcolor{keywordflow}{if}(!file)\{}
-\DoxyCodeLine{00670             \textcolor{keywordflow}{throw} invalid\_argument(\textcolor{stringliteral}{"{}Couldn't open file"{}});}
-\DoxyCodeLine{00671         \}}
-\DoxyCodeLine{00672 }
-\DoxyCodeLine{00673         cout << \textcolor{stringliteral}{"{}\#Adding 3 meetings and saving them: "{}} << endl;}
-\DoxyCodeLine{00674         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
-\DoxyCodeLine{00675         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 2"{}},}
-\DoxyCodeLine{00676                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00677                                      \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
-\DoxyCodeLine{00678                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
-\DoxyCodeLine{00679                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
-\DoxyCodeLine{00680         );}
-\DoxyCodeLine{00681         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 3"{}},}
-\DoxyCodeLine{00682                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00683                                      \mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
-\DoxyCodeLine{00684                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
-\DoxyCodeLine{00685                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
-\DoxyCodeLine{00686         );}
-\DoxyCodeLine{00687 }
-\DoxyCodeLine{00688         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 4"{}},}
-\DoxyCodeLine{00689                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00690                                      \mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
-\DoxyCodeLine{00691                                      \mbox{\hyperlink{classMyHour}{MyHour}}(10, 0),}
-\DoxyCodeLine{00692                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
-\DoxyCodeLine{00693         );}
-\DoxyCodeLine{00694         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00695 }
-\DoxyCodeLine{00696         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a32f8c94df67bd4ec2af9f67465572d43}{save}}(file);}
-\DoxyCodeLine{00697 }
-\DoxyCodeLine{00698         file.close();}
-\DoxyCodeLine{00699 }
-\DoxyCodeLine{00700         ifstream in(\textcolor{stringliteral}{"{}PersonalCalendar.dat"{}}, ios::in | ios::binary);}
-\DoxyCodeLine{00701         \textcolor{keywordflow}{if}(!in)\{}
-\DoxyCodeLine{00702             \textcolor{keywordflow}{throw} invalid\_argument(\textcolor{stringliteral}{"{}Couldn't open file"{}});}
-\DoxyCodeLine{00703         \}}
-\DoxyCodeLine{00704         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar1 = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
-\DoxyCodeLine{00705         personalCalendar1.\mbox{\hyperlink{classPersonalCalendar_a46d02e3a5057b98ea444cd37791f4f70}{load}}(in);}
-\DoxyCodeLine{00706         in.close();}
-\DoxyCodeLine{00707         cout << \textcolor{stringliteral}{"{}\#Loads the saved calendar: -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl;}
-\DoxyCodeLine{00708         personalCalendar1.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00709     \}}
+\DoxyCodeLine{00669                                  \{}
+\DoxyCodeLine{00670         cout << \textcolor{stringliteral}{"{}\#Saving personalCalendar to file and loading it to personalCalendar1:"{}} << endl;}
+\DoxyCodeLine{00671         ofstream file(\textcolor{stringliteral}{"{}PersonalCalendar.dat"{}}, ios::out | ios::binary);}
+\DoxyCodeLine{00672         \textcolor{keywordflow}{if}(!file)\{}
+\DoxyCodeLine{00673             \textcolor{keywordflow}{throw} invalid\_argument(\textcolor{stringliteral}{"{}Couldn't open file"{}});}
+\DoxyCodeLine{00674         \}}
+\DoxyCodeLine{00675 }
+\DoxyCodeLine{00676         cout << \textcolor{stringliteral}{"{}\#Adding 3 meetings and saving them: "{}} << endl;}
+\DoxyCodeLine{00677         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
+\DoxyCodeLine{00678         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 2"{}},}
+\DoxyCodeLine{00679                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00680                                      \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
+\DoxyCodeLine{00681                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
+\DoxyCodeLine{00682                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
+\DoxyCodeLine{00683         );}
+\DoxyCodeLine{00684         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 3"{}},}
+\DoxyCodeLine{00685                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00686                                      \mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
+\DoxyCodeLine{00687                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
+\DoxyCodeLine{00688                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
+\DoxyCodeLine{00689         );}
+\DoxyCodeLine{00690 }
+\DoxyCodeLine{00691         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 4"{}},}
+\DoxyCodeLine{00692                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00693                                      \mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
+\DoxyCodeLine{00694                                      \mbox{\hyperlink{classMyHour}{MyHour}}(10, 0),}
+\DoxyCodeLine{00695                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
+\DoxyCodeLine{00696         );}
+\DoxyCodeLine{00697         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00698 }
+\DoxyCodeLine{00699         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a32f8c94df67bd4ec2af9f67465572d43}{save}}(file);}
+\DoxyCodeLine{00700 }
+\DoxyCodeLine{00701         file.close();}
+\DoxyCodeLine{00702 }
+\DoxyCodeLine{00703         ifstream in(\textcolor{stringliteral}{"{}PersonalCalendar.dat"{}}, ios::in | ios::binary);}
+\DoxyCodeLine{00704         \textcolor{keywordflow}{if}(!in)\{}
+\DoxyCodeLine{00705             \textcolor{keywordflow}{throw} invalid\_argument(\textcolor{stringliteral}{"{}Couldn't open file"{}});}
+\DoxyCodeLine{00706         \}}
+\DoxyCodeLine{00707         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar1 = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
+\DoxyCodeLine{00708         personalCalendar1.\mbox{\hyperlink{classPersonalCalendar_a46d02e3a5057b98ea444cd37791f4f70}{load}}(in);}
+\DoxyCodeLine{00709         in.close();}
+\DoxyCodeLine{00710         cout << \textcolor{stringliteral}{"{}\#Loads the saved calendar: -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}} << endl;}
+\DoxyCodeLine{00711         personalCalendar1.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00712     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_ac8e968d25fa20906f0c747e295597640}\label{classPersonalCalendar_ac8e968d25fa20906f0c747e295597640}} 
@@ -1167,13 +1167,13 @@ Setter for the current element number.
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00155}{155}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00158}{158}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00155                                      \{}
-\DoxyCodeLine{00156         this-\/>current = new\_current;}
-\DoxyCodeLine{00157     \}}
+\DoxyCodeLine{00158                                      \{}
+\DoxyCodeLine{00159         this-\/>current = new\_current;}
+\DoxyCodeLine{00160     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a0063ceb2d3e7726f10f161c587a26aff}\label{classPersonalCalendar_a0063ceb2d3e7726f10f161c587a26aff}} 
@@ -1188,17 +1188,17 @@ Setter for the meeting list.
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00146}{146}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00149}{149}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00146                                                                                 \{}
-\DoxyCodeLine{00147         \textcolor{keyword}{delete} [] this-\/>meetingList;}
-\DoxyCodeLine{00148         this-\/>meetingList = \textcolor{keyword}{new} \mbox{\hyperlink{classMeeting}{Meeting}}[new\_size];}
-\DoxyCodeLine{00149         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < new\_current+1; ++i) \{}
-\DoxyCodeLine{00150             this-\/>meetingList[i] = newMeetingList[i];}
-\DoxyCodeLine{00151         \}}
-\DoxyCodeLine{00152     \}}
+\DoxyCodeLine{00149                                                                                 \{}
+\DoxyCodeLine{00150         \textcolor{keyword}{delete} [] this-\/>meetingList;}
+\DoxyCodeLine{00151         this-\/>meetingList = \textcolor{keyword}{new} \mbox{\hyperlink{classMeeting}{Meeting}}[new\_size];}
+\DoxyCodeLine{00152         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < new\_current+1; ++i) \{}
+\DoxyCodeLine{00153             this-\/>meetingList[i] = newMeetingList[i];}
+\DoxyCodeLine{00154         \}}
+\DoxyCodeLine{00155     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_ae2f2a38460b8abb6d71e05a3839eb5c8}\label{classPersonalCalendar_ae2f2a38460b8abb6d71e05a3839eb5c8}} 
@@ -1213,13 +1213,13 @@ Setter for the size of the array.
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00160}{160}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00163}{163}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00160                                \{}
-\DoxyCodeLine{00161         this-\/>size = new\_size;}
-\DoxyCodeLine{00162     \}}
+\DoxyCodeLine{00163                                \{}
+\DoxyCodeLine{00164         this-\/>size = new\_size;}
+\DoxyCodeLine{00165     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a7c0186b040eab1383abefb29ece90099}\label{classPersonalCalendar_a7c0186b040eab1383abefb29ece90099}} 
@@ -1230,17 +1230,17 @@ Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00160}{160}} o
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00305}{305}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00308}{308}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00305                                                                                                             \{}
-\DoxyCodeLine{00306         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
-\DoxyCodeLine{00307             \textcolor{keywordflow}{if}(meetingList[i].getDate() == new\_date \&\& meetingList[i].getStartHour() == new\_start)\{}
-\DoxyCodeLine{00308                 meetingList[i].\mbox{\hyperlink{classMeeting_a7e5c23e7937a995043acb0846832fe53}{setMeeting}}(new\_meeting.\mbox{\hyperlink{classMeeting_ac57e889f3d00628a79a889d681fe520c}{getName}}(), new\_meeting.\mbox{\hyperlink{classMeeting_a7c87cab6910ab1bc0e0278b61ffcf6e2}{getDescription}}(), new\_meeting.\mbox{\hyperlink{classMeeting_a5cd0547da990cc6cdd5caae61ab0d559}{getDate}}(), new\_meeting.\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}(), new\_meeting.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}());}
-\DoxyCodeLine{00309             \}}
-\DoxyCodeLine{00310         \}}
-\DoxyCodeLine{00311     \}}
+\DoxyCodeLine{00308                                                                                                             \{}
+\DoxyCodeLine{00309         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
+\DoxyCodeLine{00310             \textcolor{keywordflow}{if}(meetingList[i].getDate() == new\_date \&\& meetingList[i].getStartHour() == new\_start)\{}
+\DoxyCodeLine{00311                 meetingList[i].\mbox{\hyperlink{classMeeting_a7e5c23e7937a995043acb0846832fe53}{setMeeting}}(new\_meeting.\mbox{\hyperlink{classMeeting_ac57e889f3d00628a79a889d681fe520c}{getName}}(), new\_meeting.\mbox{\hyperlink{classMeeting_a7c87cab6910ab1bc0e0278b61ffcf6e2}{getDescription}}(), new\_meeting.\mbox{\hyperlink{classMeeting_a5cd0547da990cc6cdd5caae61ab0d559}{getDate}}(), new\_meeting.\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}(), new\_meeting.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}());}
+\DoxyCodeLine{00312             \}}
+\DoxyCodeLine{00313         \}}
+\DoxyCodeLine{00314     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a723a00969c885eccea9700aa40c09b51}\label{classPersonalCalendar_a723a00969c885eccea9700aa40c09b51}} 
@@ -1251,17 +1251,17 @@ Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00305}{305}} o
 
 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00297}{297}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00300}{300}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00297                                                                \{}
-\DoxyCodeLine{00298         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
-\DoxyCodeLine{00299             \textcolor{keywordflow}{if}(strcmp(meetingList[i].getName(), new\_name) == 0)\{}
-\DoxyCodeLine{00300                 meetingList[i].\mbox{\hyperlink{classMeeting_a7e5c23e7937a995043acb0846832fe53}{setMeeting}}(new\_meeting.\mbox{\hyperlink{classMeeting_ac57e889f3d00628a79a889d681fe520c}{getName}}(), new\_meeting.\mbox{\hyperlink{classMeeting_a7c87cab6910ab1bc0e0278b61ffcf6e2}{getDescription}}(), new\_meeting.\mbox{\hyperlink{classMeeting_a5cd0547da990cc6cdd5caae61ab0d559}{getDate}}(), new\_meeting.\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}(), new\_meeting.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}());}
-\DoxyCodeLine{00301             \}}
-\DoxyCodeLine{00302         \}}
-\DoxyCodeLine{00303     \}}
+\DoxyCodeLine{00300                                                                \{}
+\DoxyCodeLine{00301         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < current; ++i) \{}
+\DoxyCodeLine{00302             \textcolor{keywordflow}{if}(strcmp(meetingList[i].getName(), new\_name) == 0)\{}
+\DoxyCodeLine{00303                 meetingList[i].\mbox{\hyperlink{classMeeting_a7e5c23e7937a995043acb0846832fe53}{setMeeting}}(new\_meeting.\mbox{\hyperlink{classMeeting_ac57e889f3d00628a79a889d681fe520c}{getName}}(), new\_meeting.\mbox{\hyperlink{classMeeting_a7c87cab6910ab1bc0e0278b61ffcf6e2}{getDescription}}(), new\_meeting.\mbox{\hyperlink{classMeeting_a5cd0547da990cc6cdd5caae61ab0d559}{getDate}}(), new\_meeting.\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}(), new\_meeting.\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}());}
+\DoxyCodeLine{00304             \}}
+\DoxyCodeLine{00305         \}}
+\DoxyCodeLine{00306     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a5faf35c836e8abc46e1b2a468234dec3}\label{classPersonalCalendar_a5faf35c836e8abc46e1b2a468234dec3}} 
@@ -1277,49 +1277,49 @@ Test for update methods\+:
 \item Updates all meetings with a certain date and hour 
 \end{DoxyItemize}
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00715}{715}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00718}{718}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00715                             \{}
-\DoxyCodeLine{00716         cout << \textcolor{stringliteral}{"{}\#Adding 2 meetings and then updating them: "{}} << endl;}
-\DoxyCodeLine{00717         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
-\DoxyCodeLine{00718         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 2"{}},}
-\DoxyCodeLine{00719                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00720                                      \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
-\DoxyCodeLine{00721                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
-\DoxyCodeLine{00722                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
-\DoxyCodeLine{00723         );}
-\DoxyCodeLine{00724         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 3"{}},}
-\DoxyCodeLine{00725                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00726                                      \mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
-\DoxyCodeLine{00727                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
-\DoxyCodeLine{00728                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
-\DoxyCodeLine{00729         );}
-\DoxyCodeLine{00730         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00731 }
-\DoxyCodeLine{00732         personalCalendar.updateAllWithName((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 2"{}},}
-\DoxyCodeLine{00733                                            \mbox{\hyperlink{classMeeting}{Meeting}}(}
-\DoxyCodeLine{00734                                                    (\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Regular Convention 2"{}},}
-\DoxyCodeLine{00735                                                    (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to regular convention"{}},}
-\DoxyCodeLine{00736                                                    \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
-\DoxyCodeLine{00737                                                    \mbox{\hyperlink{classMyHour}{MyHour}}(12, 15),}
-\DoxyCodeLine{00738                                                    \mbox{\hyperlink{classMyHour}{MyHour}}(15, 15)}
-\DoxyCodeLine{00739                                            )}
-\DoxyCodeLine{00740         );}
-\DoxyCodeLine{00741 }
-\DoxyCodeLine{00742         personalCalendar.updateAllByDateAndHour(\mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
-\DoxyCodeLine{00743                                                 \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
-\DoxyCodeLine{00744                                                 \mbox{\hyperlink{classMeeting}{Meeting}}(}
-\DoxyCodeLine{00745                                                         (\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Regular"{}},}
-\DoxyCodeLine{00746                                                         (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to regular convention"{}},}
-\DoxyCodeLine{00747                                                         \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
-\DoxyCodeLine{00748                                                         \mbox{\hyperlink{classMyHour}{MyHour}}(12, 15),}
-\DoxyCodeLine{00749                                                         \mbox{\hyperlink{classMyHour}{MyHour}}(15, 15)}
-\DoxyCodeLine{00750                                                 )}
-\DoxyCodeLine{00751         );}
-\DoxyCodeLine{00752         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00753     \}}
+\DoxyCodeLine{00718                             \{}
+\DoxyCodeLine{00719         cout << \textcolor{stringliteral}{"{}\#Adding 2 meetings and then updating them: "{}} << endl;}
+\DoxyCodeLine{00720         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
+\DoxyCodeLine{00721         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 2"{}},}
+\DoxyCodeLine{00722                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00723                                      \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
+\DoxyCodeLine{00724                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
+\DoxyCodeLine{00725                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
+\DoxyCodeLine{00726         );}
+\DoxyCodeLine{00727         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 3"{}},}
+\DoxyCodeLine{00728                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00729                                      \mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
+\DoxyCodeLine{00730                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
+\DoxyCodeLine{00731                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
+\DoxyCodeLine{00732         );}
+\DoxyCodeLine{00733         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00734 }
+\DoxyCodeLine{00735         personalCalendar.updateAllWithName((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 2"{}},}
+\DoxyCodeLine{00736                                            \mbox{\hyperlink{classMeeting}{Meeting}}(}
+\DoxyCodeLine{00737                                                    (\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Regular Convention 2"{}},}
+\DoxyCodeLine{00738                                                    (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to regular convention"{}},}
+\DoxyCodeLine{00739                                                    \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
+\DoxyCodeLine{00740                                                    \mbox{\hyperlink{classMyHour}{MyHour}}(12, 15),}
+\DoxyCodeLine{00741                                                    \mbox{\hyperlink{classMyHour}{MyHour}}(15, 15)}
+\DoxyCodeLine{00742                                            )}
+\DoxyCodeLine{00743         );}
+\DoxyCodeLine{00744 }
+\DoxyCodeLine{00745         personalCalendar.updateAllByDateAndHour(\mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
+\DoxyCodeLine{00746                                                 \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
+\DoxyCodeLine{00747                                                 \mbox{\hyperlink{classMeeting}{Meeting}}(}
+\DoxyCodeLine{00748                                                         (\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Regular"{}},}
+\DoxyCodeLine{00749                                                         (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to regular convention"{}},}
+\DoxyCodeLine{00750                                                         \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
+\DoxyCodeLine{00751                                                         \mbox{\hyperlink{classMyHour}{MyHour}}(12, 15),}
+\DoxyCodeLine{00752                                                         \mbox{\hyperlink{classMyHour}{MyHour}}(15, 15)}
+\DoxyCodeLine{00753                                                 )}
+\DoxyCodeLine{00754         );}
+\DoxyCodeLine{00755         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00756     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a6ca819447ec3656681a11b6a2c6faec8}\label{classPersonalCalendar_a6ca819447ec3656681a11b6a2c6faec8}} 
@@ -1330,93 +1330,93 @@ Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00715}{715}} o
 
 A function to make a busyness statistic and save it to a .txt file The function accepts start and end date and in that interval sorts the day of the week depending on the busyness. In the text file the hours are written as floats where the number after the decimal point are the minutes 
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00390}{390}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00393}{393}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00390                                                         \{}
-\DoxyCodeLine{00391         \textcolor{keywordtype}{char}* fileName = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[25];}
-\DoxyCodeLine{00392         strcpy(fileName, \textcolor{stringliteral}{"{}stats-\/"{}});}
-\DoxyCodeLine{00393         strcat(fileName, s\_date.\mbox{\hyperlink{classMyDate_ab6b9c50b8bc7972168cb77ab66f66e9e}{getDateAsString}}());}
-\DoxyCodeLine{00394         strcat(fileName, \textcolor{stringliteral}{"{}.txt"{}});}
-\DoxyCodeLine{00395 }
-\DoxyCodeLine{00396         \textcolor{comment}{// Every element is a day of the week 0-\/Sunday, 1-\/Monday... etc.}}
-\DoxyCodeLine{00397         \textcolor{keywordtype}{float} days\_of\_week\_load[7];}
+\DoxyCodeLine{00393                                                         \{}
+\DoxyCodeLine{00394         \textcolor{keywordtype}{char}* fileName = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[25];}
+\DoxyCodeLine{00395         strcpy(fileName, \textcolor{stringliteral}{"{}stats-\/"{}});}
+\DoxyCodeLine{00396         strcat(fileName, s\_date.\mbox{\hyperlink{classMyDate_ab6b9c50b8bc7972168cb77ab66f66e9e}{getDateAsString}}());}
+\DoxyCodeLine{00397         strcat(fileName, \textcolor{stringliteral}{"{}.txt"{}});}
 \DoxyCodeLine{00398 }
-\DoxyCodeLine{00399         \textcolor{comment}{// Setting every value in the array to 0}}
-\DoxyCodeLine{00400         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 7; ++i) \{}
-\DoxyCodeLine{00401             days\_of\_week\_load[i] = 0;}
-\DoxyCodeLine{00402         \}}
-\DoxyCodeLine{00403 }
-\DoxyCodeLine{00404         \textcolor{comment}{// Checking if the date is valid}}
-\DoxyCodeLine{00405         \textcolor{keywordflow}{if}(s\_date > e\_date) \textcolor{keywordflow}{throw} invalid\_argument(\textcolor{stringliteral}{"{}The time range given to workloadStatistic() is invalid"{}});}
+\DoxyCodeLine{00399         \textcolor{comment}{// Every element is a day of the week 0-\/Sunday, 1-\/Monday... etc.}}
+\DoxyCodeLine{00400         \textcolor{keywordtype}{float} days\_of\_week\_load[7];}
+\DoxyCodeLine{00401 }
+\DoxyCodeLine{00402         \textcolor{comment}{// Setting every value in the array to 0}}
+\DoxyCodeLine{00403         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 7; ++i) \{}
+\DoxyCodeLine{00404             days\_of\_week\_load[i] = 0;}
+\DoxyCodeLine{00405         \}}
 \DoxyCodeLine{00406 }
-\DoxyCodeLine{00407         \textcolor{keywordflow}{while} (s\_date <= e\_date)\{}
-\DoxyCodeLine{00408             \textcolor{comment}{// Creating a new personal calendar containing only the meetings from the current date sorted}}
-\DoxyCodeLine{00409             \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} daily = getDailyProgram(s\_date);}
-\DoxyCodeLine{00410 }
-\DoxyCodeLine{00411             \textcolor{comment}{// If the daily is empty that means the whole day is free, so we dont add anything}}
-\DoxyCodeLine{00412             \textcolor{keywordflow}{if}(daily.current == 0)\{}
-\DoxyCodeLine{00413                 s\_date.\mbox{\hyperlink{classMyDate_a67254ea1dd4f8032066a1f4996d8e75e}{addDay}}();}
-\DoxyCodeLine{00414                 \textcolor{keywordflow}{continue};}
-\DoxyCodeLine{00415             \}}
-\DoxyCodeLine{00416 }
-\DoxyCodeLine{00417             \textcolor{comment}{// For every meeting we add the hours that are busy}}
-\DoxyCodeLine{00418             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < daily.current; ++i) \{}
-\DoxyCodeLine{00419                 \mbox{\hyperlink{classMyHour}{MyHour}} duration = daily.\mbox{\hyperlink{classPersonalCalendar_a6aa92290164262a7ca65233d8d989785}{getMeetingList}}()[i].\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}() -\/ daily.\mbox{\hyperlink{classPersonalCalendar_a6aa92290164262a7ca65233d8d989785}{getMeetingList}}()[i].\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}();}
-\DoxyCodeLine{00420                 \textcolor{keywordtype}{float} durInNum = duration.\mbox{\hyperlink{classMyHour_a5386a4615ab45dcdfdd40121e07a452c}{getHours}}() + 0.01*duration.\mbox{\hyperlink{classMyHour_a662dfa2d7eebe1038c121905b3511e1a}{getMinutes}}();}
-\DoxyCodeLine{00421                 days\_of\_week\_load[s\_date.\mbox{\hyperlink{classMyDate_af7f91fb64bb61fe7902c78202d184466}{getDayOfWeek}}()] += durInNum;}
-\DoxyCodeLine{00422             \}}
-\DoxyCodeLine{00423 }
-\DoxyCodeLine{00424             \textcolor{comment}{// Go to the next date}}
-\DoxyCodeLine{00425             s\_date.\mbox{\hyperlink{classMyDate_a67254ea1dd4f8032066a1f4996d8e75e}{addDay}}();}
-\DoxyCodeLine{00426         \}}
-\DoxyCodeLine{00427 }
-\DoxyCodeLine{00428         \textcolor{comment}{// Opening the file to write the changes}}
-\DoxyCodeLine{00429         ofstream dateFile;}
+\DoxyCodeLine{00407         \textcolor{comment}{// Checking if the date is valid}}
+\DoxyCodeLine{00408         \textcolor{keywordflow}{if}(s\_date > e\_date) \textcolor{keywordflow}{throw} invalid\_argument(\textcolor{stringliteral}{"{}The time range given to workloadStatistic() is invalid"{}});}
+\DoxyCodeLine{00409 }
+\DoxyCodeLine{00410         \textcolor{keywordflow}{while} (s\_date <= e\_date)\{}
+\DoxyCodeLine{00411             \textcolor{comment}{// Creating a new personal calendar containing only the meetings from the current date sorted}}
+\DoxyCodeLine{00412             \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} daily = getDailyProgram(s\_date);}
+\DoxyCodeLine{00413 }
+\DoxyCodeLine{00414             \textcolor{comment}{// If the daily is empty that means the whole day is free, so we dont add anything}}
+\DoxyCodeLine{00415             \textcolor{keywordflow}{if}(daily.current == 0)\{}
+\DoxyCodeLine{00416                 s\_date.\mbox{\hyperlink{classMyDate_a67254ea1dd4f8032066a1f4996d8e75e}{addDay}}();}
+\DoxyCodeLine{00417                 \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00418             \}}
+\DoxyCodeLine{00419 }
+\DoxyCodeLine{00420             \textcolor{comment}{// For every meeting we add the hours that are busy}}
+\DoxyCodeLine{00421             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < daily.current; ++i) \{}
+\DoxyCodeLine{00422                 \mbox{\hyperlink{classMyHour}{MyHour}} duration = daily.\mbox{\hyperlink{classPersonalCalendar_a6aa92290164262a7ca65233d8d989785}{getMeetingList}}()[i].\mbox{\hyperlink{classMeeting_ac36ebbda78049e6756d3e600e52f65be}{getEndHour}}() -\/ daily.\mbox{\hyperlink{classPersonalCalendar_a6aa92290164262a7ca65233d8d989785}{getMeetingList}}()[i].\mbox{\hyperlink{classMeeting_ad34dadb63bc5a943c8524959b2a67249}{getStartHour}}();}
+\DoxyCodeLine{00423                 \textcolor{keywordtype}{float} durInNum = duration.\mbox{\hyperlink{classMyHour_a5386a4615ab45dcdfdd40121e07a452c}{getHours}}() + 0.01*duration.\mbox{\hyperlink{classMyHour_a662dfa2d7eebe1038c121905b3511e1a}{getMinutes}}();}
+\DoxyCodeLine{00424                 days\_of\_week\_load[s\_date.\mbox{\hyperlink{classMyDate_af7f91fb64bb61fe7902c78202d184466}{getDayOfWeek}}()] += durInNum;}
+\DoxyCodeLine{00425             \}}
+\DoxyCodeLine{00426 }
+\DoxyCodeLine{00427             \textcolor{comment}{// Go to the next date}}
+\DoxyCodeLine{00428             s\_date.\mbox{\hyperlink{classMyDate_a67254ea1dd4f8032066a1f4996d8e75e}{addDay}}();}
+\DoxyCodeLine{00429         \}}
 \DoxyCodeLine{00430 }
-\DoxyCodeLine{00431         dateFile.open (fileName);}
-\DoxyCodeLine{00432         dateFile << \textcolor{stringliteral}{"{}Workload statistic: days of week sorted by busyness\(\backslash\)n"{}};}
+\DoxyCodeLine{00431         \textcolor{comment}{// Opening the file to write the changes}}
+\DoxyCodeLine{00432         ofstream dateFile;}
 \DoxyCodeLine{00433 }
-\DoxyCodeLine{00434         \textcolor{comment}{// Creating array with the numbers of the days of week}}
-\DoxyCodeLine{00435         \textcolor{keywordtype}{int} indexes[7];}
-\DoxyCodeLine{00436         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 7; ++i) \{}
-\DoxyCodeLine{00437             indexes[i] = i;}
-\DoxyCodeLine{00438         \}}
-\DoxyCodeLine{00439 }
-\DoxyCodeLine{00440         \textcolor{comment}{// Bubble sort for the two arrays at the same time}}
-\DoxyCodeLine{00441         \textcolor{comment}{// This is needed because we need the day of the weeks to be sorted not the values}}
-\DoxyCodeLine{00442         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<7;i++)\{}
-\DoxyCodeLine{00443             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0;j<6-\/i;j++)\{}
-\DoxyCodeLine{00444                 \textcolor{keywordflow}{if}(days\_of\_week\_load[j]<days\_of\_week\_load[j+1])\{}
-\DoxyCodeLine{00445                     \textcolor{comment}{// Swapping elements in both arrays}}
-\DoxyCodeLine{00446                     \textcolor{keywordtype}{float} temp=days\_of\_week\_load[j+1];}
-\DoxyCodeLine{00447                     days\_of\_week\_load[j+1]=days\_of\_week\_load[j];}
-\DoxyCodeLine{00448                     days\_of\_week\_load[j]=temp;}
-\DoxyCodeLine{00449 }
-\DoxyCodeLine{00450                     \textcolor{keywordtype}{int} temp2=indexes[j+1];}
-\DoxyCodeLine{00451                     indexes[j+1]=indexes[j];}
-\DoxyCodeLine{00452                     indexes[j]=temp2;}
-\DoxyCodeLine{00453                 \}}
-\DoxyCodeLine{00454             \}}
-\DoxyCodeLine{00455         \}}
-\DoxyCodeLine{00456 }
-\DoxyCodeLine{00457         \textcolor{comment}{// Putting the data into the text file}}
-\DoxyCodeLine{00458         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 7; ++i) \{}
-\DoxyCodeLine{00459             \textcolor{keywordflow}{switch} (indexes[i]) \{}
-\DoxyCodeLine{00460                 \textcolor{keywordflow}{case} 0: dateFile << \textcolor{stringliteral}{"{}Sunday: "{}} << days\_of\_week\_load[i] << \textcolor{stringliteral}{"{} hours"{}} <<endl; \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00461                 \textcolor{keywordflow}{case} 1: dateFile << \textcolor{stringliteral}{"{}Monday: "{}} << days\_of\_week\_load[i] << \textcolor{stringliteral}{"{} hours"{}} <<endl; \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00462                 \textcolor{keywordflow}{case} 2: dateFile << \textcolor{stringliteral}{"{}Tuesday: "{}} << days\_of\_week\_load[i] << \textcolor{stringliteral}{"{} hours"{}} <<endl; \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00463                 \textcolor{keywordflow}{case} 3: dateFile << \textcolor{stringliteral}{"{}Wednesday: "{}} << days\_of\_week\_load[i] << \textcolor{stringliteral}{"{} hours"{}} <<endl; \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00464                 \textcolor{keywordflow}{case} 4: dateFile << \textcolor{stringliteral}{"{}Thursday: "{}} << days\_of\_week\_load[i] << \textcolor{stringliteral}{"{} hours"{}} <<endl; \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00465                 \textcolor{keywordflow}{case} 5: dateFile << \textcolor{stringliteral}{"{}Friday: "{}} << days\_of\_week\_load[i] << \textcolor{stringliteral}{"{} hours"{}} <<endl; \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00466                 \textcolor{keywordflow}{case} 6: dateFile << \textcolor{stringliteral}{"{}Saturday: "{}} << days\_of\_week\_load[i] << \textcolor{stringliteral}{"{} hours"{}} <<endl; \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00467             \}}
-\DoxyCodeLine{00468         \}}
-\DoxyCodeLine{00469 }
-\DoxyCodeLine{00470         dateFile.close();}
-\DoxyCodeLine{00471         \textcolor{keyword}{delete} [] fileName;}
-\DoxyCodeLine{00472     \}}
+\DoxyCodeLine{00434         dateFile.open (fileName);}
+\DoxyCodeLine{00435         dateFile << \textcolor{stringliteral}{"{}Workload statistic: days of week sorted by busyness\(\backslash\)n"{}};}
+\DoxyCodeLine{00436 }
+\DoxyCodeLine{00437         \textcolor{comment}{// Creating array with the numbers of the days of week}}
+\DoxyCodeLine{00438         \textcolor{keywordtype}{int} indexes[7];}
+\DoxyCodeLine{00439         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 7; ++i) \{}
+\DoxyCodeLine{00440             indexes[i] = i;}
+\DoxyCodeLine{00441         \}}
+\DoxyCodeLine{00442 }
+\DoxyCodeLine{00443         \textcolor{comment}{// Bubble sort for the two arrays at the same time}}
+\DoxyCodeLine{00444         \textcolor{comment}{// This is needed because we need the day of the weeks to be sorted not the values}}
+\DoxyCodeLine{00445         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<7;i++)\{}
+\DoxyCodeLine{00446             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0;j<6-\/i;j++)\{}
+\DoxyCodeLine{00447                 \textcolor{keywordflow}{if}(days\_of\_week\_load[j]<days\_of\_week\_load[j+1])\{}
+\DoxyCodeLine{00448                     \textcolor{comment}{// Swapping elements in both arrays}}
+\DoxyCodeLine{00449                     \textcolor{keywordtype}{float} temp=days\_of\_week\_load[j+1];}
+\DoxyCodeLine{00450                     days\_of\_week\_load[j+1]=days\_of\_week\_load[j];}
+\DoxyCodeLine{00451                     days\_of\_week\_load[j]=temp;}
+\DoxyCodeLine{00452 }
+\DoxyCodeLine{00453                     \textcolor{keywordtype}{int} temp2=indexes[j+1];}
+\DoxyCodeLine{00454                     indexes[j+1]=indexes[j];}
+\DoxyCodeLine{00455                     indexes[j]=temp2;}
+\DoxyCodeLine{00456                 \}}
+\DoxyCodeLine{00457             \}}
+\DoxyCodeLine{00458         \}}
+\DoxyCodeLine{00459 }
+\DoxyCodeLine{00460         \textcolor{comment}{// Putting the data into the text file}}
+\DoxyCodeLine{00461         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 7; ++i) \{}
+\DoxyCodeLine{00462             \textcolor{keywordflow}{switch} (indexes[i]) \{}
+\DoxyCodeLine{00463                 \textcolor{keywordflow}{case} 0: dateFile << \textcolor{stringliteral}{"{}Sunday: "{}} << days\_of\_week\_load[i] << \textcolor{stringliteral}{"{} hours"{}} <<endl; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00464                 \textcolor{keywordflow}{case} 1: dateFile << \textcolor{stringliteral}{"{}Monday: "{}} << days\_of\_week\_load[i] << \textcolor{stringliteral}{"{} hours"{}} <<endl; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00465                 \textcolor{keywordflow}{case} 2: dateFile << \textcolor{stringliteral}{"{}Tuesday: "{}} << days\_of\_week\_load[i] << \textcolor{stringliteral}{"{} hours"{}} <<endl; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00466                 \textcolor{keywordflow}{case} 3: dateFile << \textcolor{stringliteral}{"{}Wednesday: "{}} << days\_of\_week\_load[i] << \textcolor{stringliteral}{"{} hours"{}} <<endl; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00467                 \textcolor{keywordflow}{case} 4: dateFile << \textcolor{stringliteral}{"{}Thursday: "{}} << days\_of\_week\_load[i] << \textcolor{stringliteral}{"{} hours"{}} <<endl; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00468                 \textcolor{keywordflow}{case} 5: dateFile << \textcolor{stringliteral}{"{}Friday: "{}} << days\_of\_week\_load[i] << \textcolor{stringliteral}{"{} hours"{}} <<endl; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00469                 \textcolor{keywordflow}{case} 6: dateFile << \textcolor{stringliteral}{"{}Saturday: "{}} << days\_of\_week\_load[i] << \textcolor{stringliteral}{"{} hours"{}} <<endl; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00470             \}}
+\DoxyCodeLine{00471         \}}
+\DoxyCodeLine{00472 }
+\DoxyCodeLine{00473         dateFile.close();}
+\DoxyCodeLine{00474         \textcolor{keyword}{delete} [] fileName;}
+\DoxyCodeLine{00475     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonalCalendar_a3e05042afe0a4d2c6c2abcae77d0fd49}\label{classPersonalCalendar_a3e05042afe0a4d2c6c2abcae77d0fd49}} 
@@ -1431,44 +1431,44 @@ This function tests the \mbox{\hyperlink{classPersonalCalendar_a6ca819447ec36566
 \item Runs the \mbox{\hyperlink{classPersonalCalendar_a6ca819447ec3656681a11b6a2c6faec8}{workload\+Statistic()}} function 
 \end{DoxyItemize}
 
-Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00812}{812}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
+Definition at line \mbox{\hyperlink{PersonalCalendar_8cpp_source_l00815}{815}} of file \mbox{\hyperlink{PersonalCalendar_8cpp_source}{Personal\+Calendar.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00812                                        \{}
-\DoxyCodeLine{00813         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
-\DoxyCodeLine{00814         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 1"{}},}
-\DoxyCodeLine{00815                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00816                                      \mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
-\DoxyCodeLine{00817                                      \mbox{\hyperlink{classMyHour}{MyHour}}(9, 0),}
-\DoxyCodeLine{00818                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
-\DoxyCodeLine{00819         );}
-\DoxyCodeLine{00820         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 2"{}},}
-\DoxyCodeLine{00821                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00822                                      \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
-\DoxyCodeLine{00823                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
-\DoxyCodeLine{00824                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
-\DoxyCodeLine{00825         );}
-\DoxyCodeLine{00826 }
-\DoxyCodeLine{00827         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 3"{}},}
-\DoxyCodeLine{00828                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00829                                      \mbox{\hyperlink{classMyDate}{MyDate}}(24, 10, 2022),}
-\DoxyCodeLine{00830                                      \mbox{\hyperlink{classMyHour}{MyHour}}(17, 0),}
-\DoxyCodeLine{00831                                      \mbox{\hyperlink{classMyHour}{MyHour}}(20, 0)}
-\DoxyCodeLine{00832         );}
-\DoxyCodeLine{00833 }
-\DoxyCodeLine{00834         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 1"{}},}
-\DoxyCodeLine{00835                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
-\DoxyCodeLine{00836                                      \mbox{\hyperlink{classMyDate}{MyDate}}(25, 10, 2022),}
-\DoxyCodeLine{00837                                      \mbox{\hyperlink{classMyHour}{MyHour}}(9, 16),}
-\DoxyCodeLine{00838                                      \mbox{\hyperlink{classMyHour}{MyHour}}(16, 0)}
-\DoxyCodeLine{00839         );}
-\DoxyCodeLine{00840 }
-\DoxyCodeLine{00841         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
-\DoxyCodeLine{00842 }
-\DoxyCodeLine{00843         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6ca819447ec3656681a11b6a2c6faec8}{workloadStatistic}}(\mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022), \mbox{\hyperlink{classMyDate}{MyDate}}(25, 10, 2022));}
-\DoxyCodeLine{00844 }
-\DoxyCodeLine{00845     \}}
+\DoxyCodeLine{00815                                        \{}
+\DoxyCodeLine{00816         \mbox{\hyperlink{classPersonalCalendar}{PersonalCalendar}} personalCalendar = \mbox{\hyperlink{classPersonalCalendar_a72994e96f636613c80d52cbc2111e2d8}{PersonalCalendar}}();}
+\DoxyCodeLine{00817         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 1"{}},}
+\DoxyCodeLine{00818                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00819                                      \mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022),}
+\DoxyCodeLine{00820                                      \mbox{\hyperlink{classMyHour}{MyHour}}(9, 0),}
+\DoxyCodeLine{00821                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
+\DoxyCodeLine{00822         );}
+\DoxyCodeLine{00823         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 2"{}},}
+\DoxyCodeLine{00824                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00825                                      \mbox{\hyperlink{classMyDate}{MyDate}}(23, 10, 2022),}
+\DoxyCodeLine{00826                                      \mbox{\hyperlink{classMyHour}{MyHour}}(12, 0),}
+\DoxyCodeLine{00827                                      \mbox{\hyperlink{classMyHour}{MyHour}}(15, 0)}
+\DoxyCodeLine{00828         );}
+\DoxyCodeLine{00829 }
+\DoxyCodeLine{00830         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 3"{}},}
+\DoxyCodeLine{00831                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00832                                      \mbox{\hyperlink{classMyDate}{MyDate}}(24, 10, 2022),}
+\DoxyCodeLine{00833                                      \mbox{\hyperlink{classMyHour}{MyHour}}(17, 0),}
+\DoxyCodeLine{00834                                      \mbox{\hyperlink{classMyHour}{MyHour}}(20, 0)}
+\DoxyCodeLine{00835         );}
+\DoxyCodeLine{00836 }
+\DoxyCodeLine{00837         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_ac1a2f47ec1c33e27a017d945703ae011}{bookMeeting}}((\textcolor{keywordtype}{char}*) \textcolor{stringliteral}{"{}Anime Convention 1"{}},}
+\DoxyCodeLine{00838                                      (\textcolor{keywordtype}{char}*)\textcolor{stringliteral}{"{}Going to anime convention"{}},}
+\DoxyCodeLine{00839                                      \mbox{\hyperlink{classMyDate}{MyDate}}(25, 10, 2022),}
+\DoxyCodeLine{00840                                      \mbox{\hyperlink{classMyHour}{MyHour}}(9, 16),}
+\DoxyCodeLine{00841                                      \mbox{\hyperlink{classMyHour}{MyHour}}(16, 0)}
+\DoxyCodeLine{00842         );}
+\DoxyCodeLine{00843 }
+\DoxyCodeLine{00844         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6bcde55c8ffbcbf60fb31ff9381ca6ef}{print}}();}
+\DoxyCodeLine{00845 }
+\DoxyCodeLine{00846         personalCalendar.\mbox{\hyperlink{classPersonalCalendar_a6ca819447ec3656681a11b6a2c6faec8}{workloadStatistic}}(\mbox{\hyperlink{classMyDate}{MyDate}}(22, 10, 2022), \mbox{\hyperlink{classMyDate}{MyDate}}(25, 10, 2022));}
+\DoxyCodeLine{00847 }
+\DoxyCodeLine{00848     \}}
 
 \end{DoxyCode}
 

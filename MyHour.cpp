@@ -6,8 +6,10 @@ using namespace std;
 
 /*! This is a custom class created to hold the information about the hour */
 class MyHour{
-    int hours;       //! INT: Used for displaying the hours in 24h format
-    int minutes;     //! INT: Used for displaying the minutes in decimal format
+    //! INT: Used for displaying the hours in 24h format
+    int hours;
+    //! INT: Used for displaying the minutes in decimal format
+    int minutes;
 
     // SECTION: VALIDATORS-----------------------------------------------------
 

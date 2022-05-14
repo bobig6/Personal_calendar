@@ -5,11 +5,16 @@
 using namespace std;
 
 class Meeting{
-    char* name;           //! TEXT: A char array used for containing the name of the meeting
-    char* description;    //! TEXT: A char array used for describing the meeting
-    MyDate date;          //! DATE: A MyDate object used for keeping the date of the meeting
-    MyHour startHour;     //! TIME: A MyHour object containing the starting hour
-    MyHour endHour;       //! TIME: A MyHour object containing the ending hour
+    //! TEXT: A char array used for containing the name of the meeting
+    char* name;
+    //! TEXT: A char array used for describing the meeting
+    char* description;
+    //! DATE: A MyDate object used for keeping the date of the meeting
+    MyDate date;
+    //! TIME: A MyHour object containing the starting hour
+    MyHour startHour;
+    //! TIME: A MyHour object containing the ending hour
+    MyHour endHour;
 
 public:
     // SECTION: CONSTRUCTORS--------------------------------------------------------
