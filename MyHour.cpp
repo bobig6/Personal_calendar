@@ -52,12 +52,14 @@ public:
     }
 
     // SECTION: HELPER FUNCTIONS------------------------------------------
+    /*! Saves the hour into a file*/
     void save(ofstream& file){
         file.write((char*)&hours, sizeof(int));
         file.write((char*)&minutes, sizeof(int));
 
     }
 
+    /*! Loads the hour from a file*/
     void load(ifstream& file){
         file.read((char*)&hours, sizeof(int));
         file.read((char*)&minutes, sizeof(int));
@@ -126,6 +128,7 @@ public:
         return str;
     }
 
+    /*! Prints the hour into a correct HH:MM format*/
     void print() const {
         char* string_hour = getHourAsString();
         cout <<  string_hour << endl;
@@ -133,6 +136,44 @@ public:
     }
 
     // SECTION: OPERATORS------------------------------------------------
+
+    //! Overloading of the + operator
+    MyHour operator + (MyHour const &obj) const {
+        MyHour res;
+        res.hours = this->hours + obj.hours;
+        res.minutes = this->minutes + obj.minutes;
+
+        if(res.minutes >= 60){
+            res.minutes -= 60;
+            res.hours++;
+        }
+
+        if(res.hours >= 24){
+            res.hours-=24;
+        }
+        return res;
+    }
+
+    //! Overloading of the - operator
+    MyHour operator - (MyHour const &obj) const {
+        if(obj >= *this){
+            return {};
+        }
+
+        MyHour res;
+        res.hours = this->hours - obj.hours;
+        res.minutes = this->minutes - obj.minutes;
+
+        if(res.minutes < 0){
+            res.minutes += 60;
+            res.hours--;
+        }
+
+        if(res.hours < 0){
+            return {};
+        }
+        return res;
+    }
 
     //! Overloading of the = operator
     void operator = (const MyHour& rhs){
@@ -210,6 +251,14 @@ public:
         cout << "< : " << ((myHour<myHour1) ? "true" : "false") << endl;
         cout << ">= : " << ((myHour>=myHour1) ? "true" : "false") << endl;
         cout << "<= : " << ((myHour<=myHour1) ? "true" : "false") << endl;
+
+        cout << "10:35 + 9:30 = ";
+        MyHour res = MyHour(10, 35) + MyHour(9, 30);
+        res.print();
+
+        cout << "11:30 - 10:31 = ";
+        MyHour res2 = MyHour(11, 30) - MyHour(10, 31);
+        res2.print();
     }
     
     /*! Test for saving and loading the hour to file*/
@@ -232,4 +281,6 @@ public:
         in.close();
         hour2.print();
     }
+
+
 };

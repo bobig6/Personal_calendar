@@ -280,7 +280,9 @@ public:
 
         Meeting min;
 
-        for (int i = 0; i < buffer.current; ++i) {
+        int s = buffer.current;
+
+        for (int i = 0; i < s; ++i) {
             min = buffer.getEarliestMeeting();
             if(min.getDate() == date){
                 result.addMeeting(min);
@@ -306,6 +308,79 @@ public:
                 meetingList[i].setMeeting(new_meeting.getName(), new_meeting.getDescription(), new_meeting.getDate(), new_meeting.getStartHour(), new_meeting.getEndHour());
             }
         }
+    }
+
+    /*! This function finds a free hour in a given time period and duration*/
+    Meeting findFreeHour(MyDate s_date, const MyDate& e_date, const MyHour& s_hour, const MyHour& e_hour,const MyHour& duration){
+        if(s_date > e_date || s_hour > e_hour) throw invalid_argument("The time range given to findFreeHour() is invalid");
+
+        while (s_date <= e_date){
+            // Creating a new personal calendar containing only the meetings from the current date sorted
+            PersonalCalendar daily = getDailyProgram(s_date);
+
+            // If the daily is empty that means the whole day is free, so we return the first free hour
+            if(daily.current == 0){
+                return Meeting((char*)"Free Hour",
+                               (char*)"This meeting contains free hour",
+                               s_date,
+                               s_hour,
+                               s_hour + duration
+                );
+            }
+
+            // Removing all the meetings that aren't in the hours' interval specified
+            for (int i = 0; i < daily.current; ++i) {
+                if(daily.meetingList[i].getStartHour() < s_hour || daily.meetingList[i].getStartHour() > e_hour){
+                    daily.removeMeeting(daily.meetingList[i]);
+                }
+            }
+
+            // Getting the first meeting for the day
+            Meeting previous = daily.meetingList[0];
+
+            // Checking if there is a free hour between s_hour and first meeting
+            if((previous.getStartHour() - s_hour) >= duration){
+                return Meeting((char*)"Free Hour",
+                               (char*)"This meeting contains free hour",
+                               s_date,
+                               s_hour,
+                               s_hour + duration
+                );
+            }
+
+            // Checking if there are free hours between meetings
+            for (int i = 0; i < daily.current; ++i) {
+                if((daily.getMeetingList()[i].getStartHour() - previous.getEndHour()) >= duration){
+                    return Meeting((char*)"Free Hour",
+                                   (char*)"This meeting contains free hour",
+                                   s_date,
+                                   previous.getEndHour(),
+                                   previous.getEndHour() + duration
+                                   );
+                }
+                previous = daily.getMeetingList()[i];
+            }
+
+            // Checking if there is a free hour between last meeting and e_hour
+            if((e_hour - previous.getEndHour()) >= duration){
+                return Meeting((char*)"Free Hour",
+                               (char*)"This meeting contains free hour",
+                               s_date,
+                               previous.getEndHour(),
+                               previous.getEndHour() + duration
+                );
+            }
+
+            // If no free hour is found we go to the next date
+            s_date.addDay();
+        }
+
+        return {(char *) "No free hour",
+                (char *) "There is no free hour in this time period",
+                MyDate(),
+                MyHour(),
+                MyHour()
+        };
     }
 
     // SECTION: TESTS---------------------------------------------------------
@@ -496,14 +571,18 @@ public:
         calendarForTheDay.print();
     }
 
+    /*! Test for save and load functionality
+     *   - Creates a personal calendar and adds 3 meetings to it
+     *   - Prints and saves the calendar
+     *   - Loads the calendar into a new object and prints it */
     static void saveAndLoadTest(){
-        cout << "Saving personalCalendar to file and loading it to personalCalendar1:" << endl;
+        cout << "#Saving personalCalendar to file and loading it to personalCalendar1:" << endl;
         ofstream file("PersonalCalendar.dat", ios::out | ios::binary);
         if(!file){
             throw invalid_argument("Couldn't open file");
         }
 
-        cout << "#Adding 3 meetings and returning the earliest of them: " << endl;
+        cout << "#Adding 3 meetings and saving them: " << endl;
         PersonalCalendar personalCalendar = PersonalCalendar();
         personalCalendar.bookMeeting((char*) "Anime Convention 2",
                                      (char*)"Going to anime convention",
@@ -537,10 +616,14 @@ public:
         PersonalCalendar personalCalendar1 = PersonalCalendar();
         personalCalendar1.load(in);
         in.close();
-        cout << "New calendar: -----------------------------------------------" << endl;
+        cout << "#Loads the saved calendar: -----------------------------------------------" << endl;
         personalCalendar1.print();
     }
 
+    /*! Test for update methods:
+     *   - Creates personal calendar and books 2 meetings to it
+     *   - Updates all meetings with a certain name
+     *   - Updates all meetings with a certain date and hour*/
     static void updateTest(){
         cout << "#Adding 2 meetings and then updating them: " << endl;
         PersonalCalendar personalCalendar = PersonalCalendar();
@@ -580,9 +663,63 @@ public:
         );
         personalCalendar.print();
     }
+
+    /*! Test for the freeHour function
+     *  - Creates a personal calendar with 3 meetings
+     *  - Runs the findFreeHour() with 3 different time periods */
+    static void freeHourTest(){
+        PersonalCalendar personalCalendar = PersonalCalendar();
+        personalCalendar.bookMeeting((char*) "Anime Convention 1",
+                                     (char*)"Going to anime convention",
+                                     MyDate(23, 10, 2022),
+                                     MyHour(9, 0),
+                                     MyHour(12, 0)
+        );
+        personalCalendar.bookMeeting((char*) "Anime Convention 2",
+                                     (char*)"Going to anime convention",
+                                     MyDate(23, 10, 2022),
+                                     MyHour(12, 0),
+                                     MyHour(15, 0)
+        );
+
+        personalCalendar.bookMeeting((char*) "Anime Convention 3",
+                                     (char*)"Going to anime convention",
+                                     MyDate(23, 10, 2022),
+                                     MyHour(17, 0),
+                                     MyHour(20, 0)
+        );
+        personalCalendar.print();
+
+        cout << "Trying to find a free hour for 2022-10-23, 9:00 - 20:00 with duration 2:00:" << endl;
+
+        Meeting freeHour = personalCalendar.findFreeHour(MyDate(23, 10, 2022),
+                                                         MyDate(23, 10, 2022),
+                                                         MyHour(9, 0),
+                                                         MyHour(20, 0),
+                                                         MyHour(2, 0));
+
+        freeHour.print();
+        cout<< endl << "Trying to find a free hour for 2022-10-23, 8:00 - 16:00 with duration 2:00:" << endl;
+
+        Meeting freeHour2 = personalCalendar.findFreeHour(MyDate(23, 10, 2022),
+                                                          MyDate(23, 10, 2022),
+                                                          MyHour(8, 0),
+                                                          MyHour(16, 0),
+                                                          MyHour(2, 0));
+        freeHour2.print();
+
+        cout<< endl << "Trying to find a free hour for 2022-10-22 - 2022-10-23, 8:00 - 16:00 with duration 2:00:" << endl;
+
+        Meeting freeHour3 = personalCalendar.findFreeHour(MyDate(22, 10, 2022),
+                                                          MyDate(23, 10, 2022),
+                                                          MyHour(8, 0),
+                                                          MyHour(16, 0),
+                                                          MyHour(2, 0));
+        freeHour3.print();
+    }
 };
 
 
 int main(){
-
+    
 }

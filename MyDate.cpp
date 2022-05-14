@@ -67,6 +67,8 @@ public:
     }
 
     // SECTION: HELPER FUNCTIONS------------------------------------------
+
+    /*! A function to save the date into a file*/
     void save(ofstream& file){
         file.write((char*)&day, sizeof(int));
         file.write((char*)&month, sizeof(int));
@@ -74,10 +76,64 @@ public:
 
     }
 
+    /*! A function to load the date from file*/
     void load(ifstream& file){
         file.read((char*)&day, sizeof(int));
         file.read((char*)&month, sizeof(int));
         file.read((char*)&year, sizeof(int));
+    }
+
+    /*! A function to add a day to current date. Includes validation*/
+    void addDay(){
+        // Adds a day
+        day++;
+
+        // Checks if the month is over and if yes it increments the month
+        switch (month) {
+            // Months with 31 days
+            case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                if(day > 31){
+                    day-=31;
+                    month++;
+                }
+                break;
+                // Months with 30 days
+            case 4: case 6: case 9: case 11:
+                if(day > 30){
+                    day-=30;
+                    month++;
+                }
+                break;
+                // February
+            case 2:
+                // Leap year - there are 29 days in February
+                if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
+                    if(day > 29){
+                        day-=29;
+                        month++;
+                    }
+                }
+                    // Not a leap year - 28 days in February
+                else{
+                    if(day > 28){
+                        day-=28;
+                        month++;
+                    }
+                }
+                break;
+        }
+
+        // If the year is over it resets the months and increments the year
+        if(month>12){
+            month-=12;
+            year++;
+        }
+
+        // Checks the date for problems
+        if(!validateDate(day, month, year)){
+            cout << "Something went wrong. Date is: ";
+            print();
+        }
     }
 
     // SECTION: GETTERS AND SETTERS------------------------------------------------
@@ -131,7 +187,7 @@ public:
         this->year = new_year;
     }
 
-    /*! A function for getting the hour in HH:MM format as char*
+    /*! A function for getting the date in YYYY-MM-DD format as char*
       - NOTE: The string has to be freed after use
     */
     char * getDateAsString() const {
@@ -165,6 +221,7 @@ public:
         return str;
     }
 
+    /*! A function to print date into the console with YYYY-MM-DD formatting*/
     void print() const {
         char* string_date = getDateAsString();
         cout <<  string_date << endl;
@@ -172,6 +229,8 @@ public:
     }
 
     // SECTION: OPERATORS--------------------------------------------------
+
+
 
     //! Overloading of the = operator
     void operator = (const MyDate& rhs){
@@ -269,13 +328,17 @@ public:
     }
 
     /*! Test for all operators. The function accepts two dates and runs tests on the operators of the class. */
-    static void operatorsTest(const MyDate& date1, const MyDate& date2){
+    static void operatorsTest(const MyDate& date1, MyDate date2){
         cout << "== : " << ((date1==date2) ? "true" : "false") << endl;
         cout << "!= : " << ((date1!=date2) ? "true" : "false") << endl;
         cout << "> : " << ((date1>date2) ? "true" : "false") << endl;
         cout << "< : " << ((date1<date2) ? "true" : "false") << endl;
         cout << ">= : " << ((date1>=date2) ? "true" : "false") << endl;
         cout << "<= : " << ((date1<=date2) ? "true" : "false") << endl;
+
+        cout << "Adding a day to date2: ";
+        date2.addDay();
+        date2.print();
     }
 
     static void saveAndLoadTest(){
