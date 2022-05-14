@@ -187,6 +187,17 @@ public:
         this->year = new_year;
     }
 
+    /*! This function returns the day of the week in a number form 0-Sunday, 1-Monday... etc.
+     *  The logic for the function is from this article
+     *  https://www.codespeedy.com/how-to-find-day-from-date-in-cpp/ */
+    int getDayOfWeek()
+    {
+        static int t[] = {0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4};
+        year -= month < 3;
+        return (year + year/4 - year/100 + year/400 + t[month-1] + day) % 7;
+    }
+
+
     /*! A function for getting the date in YYYY-MM-DD format as char*
       - NOTE: The string has to be freed after use
     */

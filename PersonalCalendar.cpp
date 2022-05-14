@@ -383,6 +383,94 @@ public:
         };
     }
 
+    /*! A function to make a busyness statistic and save it to a .txt file
+     *  The function accepts start and end date and in that interval sorts the day of the week
+     *  depending on the busyness. In the text file the hours are written as floats where the number after the
+     *  decimal point are the minutes*/
+    void workloadStatistic(MyDate s_date, MyDate e_date){
+        char* fileName = new char[25];
+        strcpy(fileName, "stats-");
+        strcat(fileName, s_date.getDateAsString());
+        strcat(fileName, ".txt");
+
+        // Every element is a day of the week 0-Sunday, 1-Monday... etc.
+        float days_of_week_load[7];
+
+        // Setting every value in the array to 0
+        for (int i = 0; i < 7; ++i) {
+            days_of_week_load[i] = 0;
+        }
+
+        // Checking if the date is valid
+        if(s_date > e_date) throw invalid_argument("The time range given to workloadStatistic() is invalid");
+
+        while (s_date <= e_date){
+            // Creating a new personal calendar containing only the meetings from the current date sorted
+            PersonalCalendar daily = getDailyProgram(s_date);
+
+            // If the daily is empty that means the whole day is free, so we dont add anything
+            if(daily.current == 0){
+                s_date.addDay();
+                continue;
+            }
+
+            // For every meeting we add the hours that are busy
+            for (int i = 0; i < daily.current; ++i) {
+                MyHour duration = daily.getMeetingList()[i].getEndHour() - daily.getMeetingList()[i].getStartHour();
+                float durInNum = duration.getHours() + 0.01*duration.getMinutes();
+                days_of_week_load[s_date.getDayOfWeek()] += durInNum;
+            }
+
+            // Go to the next date
+            s_date.addDay();
+        }
+
+        // Opening the file to write the changes
+        ofstream dateFile;
+
+        dateFile.open (fileName);
+        dateFile << "Workload statistic: days of week sorted by busyness\n";
+
+        // Creating array with the numbers of the days of week
+        int indexes[7];
+        for (int i = 0; i < 7; ++i) {
+            indexes[i] = i;
+        }
+
+        // Bubble sort for the two arrays at the same time
+        // This is needed because we need the day of the weeks to be sorted not the values
+        for(int i=0;i<7;i++){
+            for(int j=0;j<6-i;j++){
+                if(days_of_week_load[j]<days_of_week_load[j+1]){
+                    // Swapping elements in both arrays
+                    float temp=days_of_week_load[j+1];
+                    days_of_week_load[j+1]=days_of_week_load[j];
+                    days_of_week_load[j]=temp;
+
+                    int temp2=indexes[j+1];
+                    indexes[j+1]=indexes[j];
+                    indexes[j]=temp2;
+                }
+            }
+        }
+
+        // Putting the data into the text file
+        for (int i = 0; i < 7; ++i) {
+            switch (indexes[i]) {
+                case 0: dateFile << "Sunday: " << days_of_week_load[i] << " hours" <<endl; break;
+                case 1: dateFile << "Monday: " << days_of_week_load[i] << " hours" <<endl; break;
+                case 2: dateFile << "Tuesday: " << days_of_week_load[i] << " hours" <<endl; break;
+                case 3: dateFile << "Wednesday: " << days_of_week_load[i] << " hours" <<endl; break;
+                case 4: dateFile << "Thursday: " << days_of_week_load[i] << " hours" <<endl; break;
+                case 5: dateFile << "Friday: " << days_of_week_load[i] << " hours" <<endl; break;
+                case 6: dateFile << "Saturday: " << days_of_week_load[i] << " hours" <<endl; break;
+            }
+        }
+
+        dateFile.close();
+        delete [] fileName;
+    }
+
     // SECTION: TESTS---------------------------------------------------------
 
     /*! Test for initialization and get methods of the Personal calendar
@@ -717,9 +805,48 @@ public:
                                                           MyHour(2, 0));
         freeHour3.print();
     }
+
+    /*! This function tests the workloadStatistic():
+     *  - Creates personal calendar with 3 meetings
+     *  - Runs the workloadStatistic() function*/
+    static void workloadStatisticTest(){
+        PersonalCalendar personalCalendar = PersonalCalendar();
+        personalCalendar.bookMeeting((char*) "Anime Convention 1",
+                                     (char*)"Going to anime convention",
+                                     MyDate(22, 10, 2022),
+                                     MyHour(9, 0),
+                                     MyHour(15, 0)
+        );
+        personalCalendar.bookMeeting((char*) "Anime Convention 2",
+                                     (char*)"Going to anime convention",
+                                     MyDate(23, 10, 2022),
+                                     MyHour(12, 0),
+                                     MyHour(15, 0)
+        );
+
+        personalCalendar.bookMeeting((char*) "Anime Convention 3",
+                                     (char*)"Going to anime convention",
+                                     MyDate(24, 10, 2022),
+                                     MyHour(17, 0),
+                                     MyHour(20, 0)
+        );
+
+        personalCalendar.bookMeeting((char*) "Anime Convention 1",
+                                     (char*)"Going to anime convention",
+                                     MyDate(25, 10, 2022),
+                                     MyHour(9, 16),
+                                     MyHour(16, 0)
+        );
+
+        personalCalendar.print();
+
+        personalCalendar.workloadStatistic(MyDate(22, 10, 2022), MyDate(25, 10, 2022));
+
+    }
+
 };
 
 
 int main(){
-    
+
 }
