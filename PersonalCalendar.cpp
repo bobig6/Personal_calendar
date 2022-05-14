@@ -3,6 +3,18 @@
 
 using namespace std;
 
+/*! \mainpage My Personal Index Page
+ *
+ * \section intro_sec Introduction
+ *
+ * This is a personal calendar project for OOP class in FMI
+ *
+ * \section repo_sec Repo
+ *
+ * \subsection rep https://github.com/bobig6/Personal_calendar
+ *
+ */
+
 class PersonalCalendar{
     //! MEETING: An array that contains all the meetings
     Meeting* meetingList;
